@@ -21,15 +21,19 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
-      setOpenAccordion(null);
     }
     return () => {
       document.body.style.overflow = "unset";
     };
   }, [isOpen]);
 
+  const handleClose = () => {
+    setOpenAccordion(null);
+    onClose();
+  };
+
   const toggleAccordion = (title: string) => {
-    setOpenAccordion(openAccordion === title ? null : title);
+    setOpenAccordion((prev) => (prev === title ? null : title));
   };
 
   if (!isOpen) return null;
@@ -39,20 +43,20 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="mobile-nav-title"
-      className="fixed inset-0 z-50 bg-[#060b13]/80 backdrop-blur-md lg:hidden animate-fade-in-fast"
+      className="fixed inset-0 z-50 bg-slate-950/40 backdrop-blur-sm lg:hidden animate-fade-in-fast"
     >
-      <div className="fixed inset-y-0 right-0 w-full max-w-md bg-[#0b1524] text-white flex flex-col shadow-2xl overflow-hidden border-l border-stone-800 animate-slide-down">
+      <div className="fixed inset-y-0 right-0 w-full max-w-md bg-white text-[#0b1524] flex flex-col shadow-2xl overflow-hidden border-l border-stone-200 animate-slide-down">
         {/* Header Bar */}
-        <div className="flex items-center justify-between px-6 py-5 border-b border-stone-800">
+        <div className="flex items-center justify-between px-6 py-5 border-b border-stone-200 bg-stone-50/50">
           <div className="flex items-center gap-2">
-            <span className="font-extrabold tracking-tight text-xl text-white">Vikas CA</span>
-            <span className="text-stone-400 text-xs uppercase tracking-widest font-semibold border-l border-stone-700 pl-2">
+            <span className="font-extrabold tracking-tight text-xl text-[#0b1524]">Vikas CA</span>
+            <span className="text-stone-500 text-xs uppercase tracking-widest font-semibold border-l border-stone-300 pl-2">
               Australia
             </span>
           </div>
           <button
-            onClick={onClose}
-            className="p-2 text-stone-400 hover:text-white hover:bg-stone-800/60 rounded-sm transition-colors cursor-pointer"
+            onClick={handleClose}
+            className="p-2 text-stone-500 hover:text-[#0b1524] hover:bg-stone-200/60 rounded-lg transition-colors cursor-pointer"
             aria-label="Close mobile menu"
           >
             <X className="w-6 h-6" />
@@ -60,59 +64,59 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         </div>
 
         {/* Quick Search Action */}
-        <div className="p-6 pb-4 border-b border-stone-800">
+        <div className="p-6 pb-4 border-b border-stone-200">
           <button
             onClick={() => {
               onClose();
               onOpenSearch();
             }}
-            className="w-full flex items-center justify-between px-4 py-3 bg-stone-900 border border-stone-700/80 rounded-sm text-stone-300 hover:text-white hover:border-stone-500 transition-colors text-sm"
+            className="w-full flex items-center justify-between px-4 py-3 bg-stone-100/80 border border-stone-200 rounded-lg text-stone-600 hover:text-[#0b1524] hover:border-stone-400 transition-colors text-sm"
           >
             <span className="flex items-center gap-2">
-              <Search className="w-4 h-4 text-[#00a3e0]" />
+              <Search className="w-4 h-4 text-[#0056b3]" />
               Search services, offices, insights...
             </span>
-            <span className="text-xs text-stone-400 bg-stone-800 px-2 py-0.5 rounded">⌘K</span>
+            <span className="text-xs text-stone-500 bg-white border border-stone-200 px-2 py-0.5 rounded shadow-2xs">⌘K</span>
           </button>
         </div>
 
         {/* Scrollable Navigation List */}
-        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-1 divide-y divide-stone-800/60">
+        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-1 divide-y divide-stone-100">
           {navigationData.map((item) => {
             const isExpanded = openAccordion === item.title;
             return (
               <div key={item.title} className="pt-2">
                 <button
                   onClick={() => toggleAccordion(item.title)}
-                  className="w-full flex items-center justify-between py-3 text-left font-semibold text-lg text-white hover:text-[#00a3e0] transition-colors cursor-pointer"
+                  className="w-full flex items-center justify-between py-3 text-left font-semibold text-lg text-[#0b1524] hover:text-[#0056b3] transition-colors cursor-pointer"
                   aria-expanded={isExpanded}
                 >
                   <span>{item.title}</span>
                   <ChevronDown
                     className={`w-5 h-5 text-stone-400 transition-transform duration-200 ${
-                      isExpanded ? "rotate-180 text-[#00a3e0]" : ""
+                      isExpanded ? "rotate-180 text-[#0056b3]" : ""
                     }`}
                   />
                 </button>
 
                 {isExpanded && (
                   <div className="pl-3 pb-4 pt-1 space-y-4 animate-fade-in-fast">
-                    <p className="text-xs text-stone-400 leading-relaxed">
+                    <p className="text-xs text-stone-600 leading-relaxed">
                       {item.description}
                     </p>
 
                     {item.columns?.map((col, cIdx) => (
                       <div key={cIdx} className="space-y-2">
-                        <div className="text-xs font-bold uppercase tracking-wider text-stone-400">
+                        <div className="text-xs font-bold uppercase tracking-wider text-stone-500">
                           {col.heading}
                         </div>
-                        <ul className="space-y-1.5 pl-2 border-l border-stone-800">
+                        <ul className="space-y-1.5 pl-2 border-l border-stone-200">
                           {col.items.map((sub, sIdx) => (
                             <li key={sIdx}>
                               <Link
                                 href={sub.href}
-                                onClick={onClose}
-                                className="block py-1 text-sm text-stone-300 hover:text-white"
+                                onClick={handleClose}
+                                className="block py-1 text-sm text-stone-700 hover:text-[#0056b3]"
                               >
                                 {sub.title}
                               </Link>
@@ -125,8 +129,8 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
                     <div className="pt-2">
                       <Link
                         href={item.href}
-                        onClick={onClose}
-                        className="text-xs font-bold uppercase tracking-wider text-[#00a3e0] hover:underline flex items-center gap-1.5"
+                        onClick={handleClose}
+                        className="text-xs font-bold uppercase tracking-wider text-[#0056b3] hover:underline flex items-center gap-1.5"
                       >
                         Explore all {item.title}
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -140,8 +144,8 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
 
           {/* Quick Offices List */}
           <div className="pt-6 pb-4">
-            <div className="text-xs font-bold uppercase tracking-wider text-stone-400 mb-3 flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#00a3e0]" />
+            <div className="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3 flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#0056b3]" />
               Direct Office Lines (10 Locations)
             </div>
             <div className="grid grid-cols-2 gap-2 text-xs">
@@ -149,10 +153,10 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
                 <a
                   key={loc.id}
                   href={`tel:${loc.phone.replace(/[^0-9+]/g, "")}`}
-                  className="p-2 bg-stone-900/80 border border-stone-800 rounded hover:border-stone-600 block transition-colors"
+                  className="p-2.5 bg-stone-50 border border-stone-200 rounded-lg hover:border-stone-400 block transition-colors"
                 >
-                  <span className="font-semibold text-white block">{loc.name}</span>
-                  <span className="text-stone-400 text-[11px]">{loc.phone}</span>
+                  <span className="font-semibold text-[#0b1524] block">{loc.name}</span>
+                  <span className="text-stone-500 text-[11px]">{loc.phone}</span>
                 </a>
               ))}
             </div>
@@ -160,23 +164,23 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         </div>
 
         {/* Bottom CTA Box */}
-        <div className="p-6 border-t border-stone-800 bg-[#060b13] space-y-3">
+        <div className="p-6 border-t border-stone-200 bg-stone-50 space-y-3">
           <Button
             href="#contact"
-            onClick={onClose}
+            onClick={handleClose}
             variant="primary-blue"
             className="w-full justify-center"
             iconRight={<ArrowRight className="w-4 h-4" />}
           >
             Contact our team
           </Button>
-          <div className="flex items-center justify-center gap-4 text-xs text-stone-400">
+          <div className="flex items-center justify-center gap-4 text-xs text-stone-500">
             <span className="flex items-center gap-1">
-              <PhoneCall className="w-3.5 h-3.5 text-stone-500" />
+              <PhoneCall className="w-3.5 h-3.5 text-stone-400" />
               1300 Vikas CA AUS
             </span>
             <span>•</span>
-            <Link href="#locations" onClick={onClose} className="hover:text-white underline">
+            <Link href="#locations" onClick={handleClose} className="hover:text-[#0b1524] underline">
               All 10 Offices
             </Link>
           </div>

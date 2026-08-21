@@ -68,13 +68,13 @@ export function CultureStatement() {
                 whileInView={{ opacity: 1, y: 0, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute -bottom-6 -right-4 sm:right-6 p-4 bg-[#0b1524] text-white rounded-2xl max-w-xs shadow-2xl border border-white/[0.08] hidden sm:block"
+                className="absolute -bottom-6 -right-4 sm:right-6 p-4 bg-white text-[#0b1524] rounded-2xl max-w-xs shadow-2xl border border-stone-200 hidden sm:block"
                 style={{ backdropFilter: "blur(12px)" }}
               >
-                <div className="text-[10px] font-semibold text-[#00a3e0] uppercase tracking-wider mb-1">
+                <div className="text-[10px] font-bold text-[#0056b3] uppercase tracking-wider mb-1">
                   Our Philosophy
                 </div>
-                <p className="text-[11px] text-stone-300 italic leading-relaxed">
+                <p className="text-[11px] text-stone-600 italic leading-relaxed">
                   &ldquo;Expertise is most powerful when paired with a trusted human advisor.&rdquo;
                 </p>
               </motion.div>

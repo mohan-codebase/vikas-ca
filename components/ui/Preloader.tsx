@@ -191,7 +191,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
                 className="relative z-10 flex flex-col items-center"
               >
                 <span
-                  className="text-3xl font-extrabold tracking-tighter text-white"
+                  className="text-3xl font-extrabold tracking-tighter text-[#0b1524]"
                   style={{ letterSpacing: "-0.04em" }}
                 >
                   Vikas CA
@@ -208,7 +208,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
             >
               <div className="preloader__counter">
                 {String(displayCounter).padStart(2, "0")}
-                <span className="text-[#0099db]">%</span>
+                <span className="text-[#0056b3]">%</span>
               </div>
 
               <motion.div
@@ -229,9 +229,9 @@ export function Preloader({ onComplete }: PreloaderProps) {
               transition={{ delay: 0.6 }}
               className="flex items-center gap-2 text-xs text-stone-500 uppercase tracking-[0.22em] font-medium"
             >
-              <span className="w-6 h-px bg-stone-700" />
+              <span className="w-6 h-px bg-stone-300" />
               MANN JUDD AUSTRALIA
-              <span className="w-6 h-px bg-stone-700" />
+              <span className="w-6 h-px bg-stone-300" />
             </motion.div>
           </div>
 
@@ -239,7 +239,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
           <div className="preloader__bar" style={{ width: `${progress}%` }} />
 
           {/* Bottom status bar */}
-          <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between text-[10px] text-stone-600 uppercase tracking-widest font-medium">
+          <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between text-[10px] text-stone-500 uppercase tracking-widest font-medium">
             <span>Vikas CA International Network — 157 Countries</span>
             <span>Client Choice Awards 2026 — #1 Accounting Firm</span>
           </div>

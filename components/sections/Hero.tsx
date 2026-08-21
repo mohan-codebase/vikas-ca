@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, MapPin, Award, Shield, Globe, ChevronDown } from "lucide-react";
 
@@ -31,7 +30,7 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col bg-[#060c15] overflow-hidden"
+      className="relative min-h-screen flex flex-col bg-gradient-to-b from-[#f8fafc] via-[#f1f5f9]/60 to-white overflow-hidden text-[#0b1524]"
     >
       {/* ── Background Layers ──────────────────────────────────── */}
 
@@ -40,9 +39,9 @@ export function Hero() {
 
       {/* Dot grid */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
+        className="absolute inset-0 pointer-events-none opacity-[0.15]"
         style={{
-          backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(#94a3b8 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
@@ -71,9 +70,9 @@ export function Hero() {
           sizes="(max-width: 1024px) 100vw, 55vw"
         />
         {/* Left gradient fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#060c15] via-[#060c15]/80 lg:via-[#060c15]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f8fafc] via-[#f8fafc]/90 lg:via-[#f8fafc]/70 to-transparent" />
         {/* Bottom gradient fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#060c15] via-transparent to-[#060c15]/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-[#f8fafc]/30" />
         {/* Overlay tint */}
         <div className="absolute inset-0 bg-[#0056b3]/5 mix-blend-multiply" />
       </motion.div>
@@ -91,9 +90,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="inline-flex items-center gap-2.5 mb-8"
           >
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-[#0056b3]/15 border border-[#0056b3]/30 rounded-full backdrop-blur-sm">
-              <Award className="w-3.5 h-3.5 text-[#c89d5c]" />
-              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#00a3e0]">
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 border border-blue-200/90 rounded-full shadow-2xs backdrop-blur-sm">
+              <Award className="w-3.5 h-3.5 text-[#916524]" />
+              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#0056b3]">
                 Client Choice Awards 2026 — #1 Accounting Firm
               </span>
             </div>
@@ -102,14 +101,14 @@ export function Hero() {
           {/* Main headline — stagger words */}
           <div className="mb-6">
             <motion.h1
-              className="text-5xl sm:text-6xl md:text-7xl xl:text-[84px] font-extrabold leading-[1.03] tracking-tight-title"
+              className="text-5xl sm:text-6xl md:text-7xl xl:text-[84px] font-extrabold leading-[1.03] tracking-tight-title text-[#0b1524]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               {/* Line 1 */}
               <motion.span
-                className="block text-white"
+                className="block text-[#0b1524]"
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
@@ -124,7 +123,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
               >
-                <span className="text-white">advice </span>
+                <span className="text-[#0b1524]">advice </span>
                 <span className="relative inline-block overflow-hidden h-[1.1em] align-bottom">
                   {WORDS.map((w, i) => (
                     <motion.span
@@ -137,7 +136,7 @@ export function Hero() {
                       }}
                       transition={{ duration: 0.55, ease: [0.76, 0, 0.24, 1] }}
                       style={{
-                        background: "linear-gradient(135deg, #0099db 0%, #0056b3 60%, #c89d5c 100%)",
+                        background: "linear-gradient(135deg, #0056b3 0%, #0099db 60%, #c89d5c 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         backgroundClip: "text",
@@ -157,7 +156,7 @@ export function Hero() {
 
               {/* Line 3 */}
               <motion.span
-                className="block text-white"
+                className="block text-[#0b1524]"
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
@@ -169,7 +168,7 @@ export function Hero() {
 
           {/* Body text */}
           <motion.p
-            className="text-lg sm:text-xl text-stone-400 leading-relaxed max-w-2xl mb-10"
+            className="text-lg sm:text-xl text-stone-600 leading-relaxed max-w-2xl mb-10"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
@@ -186,7 +185,7 @@ export function Hero() {
           >
             <motion.a
               href="#services"
-              className="group flex items-center justify-center gap-2 px-6 py-3.5 bg-[#0056b3] hover:bg-[#004494] text-white font-bold text-sm rounded-xl transition-all duration-300 shadow-lg shadow-[#0056b3]/20"
+              className="group flex items-center justify-center gap-2 px-6 py-3.5 bg-[#0056b3] hover:bg-[#004494] text-white font-bold text-sm rounded-xl transition-all duration-300 shadow-md shadow-[#0056b3]/25"
               whileHover={{ scale: 1.03, y: -1 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -196,18 +195,18 @@ export function Hero() {
 
             <motion.a
               href="#locations"
-              className="group flex items-center justify-center gap-2 px-6 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white font-semibold text-sm rounded-xl transition-all duration-300 backdrop-blur-sm"
+              className="group flex items-center justify-center gap-2 px-6 py-3.5 bg-white hover:bg-stone-50 border border-stone-300 hover:border-stone-400 text-[#0b1524] font-semibold text-sm rounded-xl transition-all duration-300 shadow-xs"
               whileHover={{ scale: 1.02, y: -1 }}
               whileTap={{ scale: 0.97 }}
             >
-              <MapPin className="w-4 h-4 text-stone-400 group-hover:text-[#00a3e0]" />
+              <MapPin className="w-4 h-4 text-stone-500 group-hover:text-[#0056b3]" />
               Find an office
             </motion.a>
           </motion.div>
 
           {/* Stats strip */}
           <motion.div
-            className="flex flex-wrap items-center gap-6 sm:gap-8 pt-8 border-t border-white/[0.07]"
+            className="flex flex-wrap items-center gap-6 sm:gap-8 pt-8 border-t border-stone-200"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.15 }}
@@ -230,10 +229,10 @@ export function Hero() {
                   style={{
                     color:
                       stat.accent === "gold"
-                        ? "#c89d5c"
+                        ? "#916524"
                         : stat.accent === "cyan"
-                        ? "#00a3e0"
-                        : "#ffffff",
+                        ? "#007bb5"
+                        : "#0b1524",
                   }}
                 >
                   {stat.value}
@@ -244,17 +243,17 @@ export function Hero() {
               </motion.div>
             ))}
 
-            <div className="h-8 w-px bg-white/10 hidden sm:block" />
+            <div className="h-8 w-px bg-stone-200 hidden sm:block" />
 
             {/* Vikas CA International badge */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5 }}
-              className="flex items-center gap-2 px-3 py-1.5 bg-white/[0.04] border border-white/[0.08] rounded-xl"
+              className="flex items-center gap-2 px-3 py-1.5 bg-white border border-stone-200 rounded-xl shadow-2xs"
             >
-              <Globe className="w-3.5 h-3.5 text-[#00a3e0]" />
-              <span className="text-[11px] text-stone-400 font-medium">
+              <Globe className="w-3.5 h-3.5 text-[#0056b3]" />
+              <span className="text-[11px] text-stone-600 font-medium">
                 Vikas CA International · 157 Countries
               </span>
             </motion.div>
@@ -272,30 +271,30 @@ export function Hero() {
         style={{ animation: "float 5s ease-in-out infinite" }}
       >
         <div
-          className="w-64 p-4 rounded-2xl border border-white/[0.09] shadow-2xl"
+          className="w-64 p-4 rounded-2xl border border-stone-200 shadow-xl"
           style={{
-            background: "rgba(10, 18, 30, 0.88)",
+            background: "rgba(255, 255, 255, 0.95)",
             backdropFilter: "blur(24px)",
           }}
         >
           <div className="flex items-center gap-3 mb-2">
-            <div className="p-2 bg-[#0056b3]/20 text-[#00a3e0] rounded-lg">
+            <div className="p-2 bg-blue-50 text-[#0056b3] border border-blue-100 rounded-lg">
               <Shield className="w-4 h-4" />
             </div>
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-wider text-[#00a3e0]">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-[#0056b3]">
                 Award Recognition
               </div>
-              <div className="text-[12px] font-bold text-white">
+              <div className="text-[12px] font-bold text-[#0b1524]">
                 Client Choice Awards 2026
               </div>
             </div>
           </div>
           <div className="flex items-center gap-1 mt-2">
             {[...Array(5)].map((_, i) => (
-              <div key={i} className="w-4 h-1 rounded-full bg-[#c89d5c] opacity-80" />
+              <div key={i} className="w-4 h-1 rounded-full bg-[#c89d5c]" />
             ))}
-            <span className="text-[10px] text-stone-500 ml-1">Best Accounting Firm</span>
+            <span className="text-[10px] text-stone-500 ml-1 font-medium">Best Accounting Firm</span>
           </div>
         </div>
       </motion.div>
@@ -307,14 +306,14 @@ export function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.6 }}
       >
-        <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-stone-600">
+        <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-stone-400">
           Scroll
         </span>
         <motion.div
           animate={{ y: [0, 5, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ChevronDown className="w-4 h-4 text-stone-600" />
+          <ChevronDown className="w-4 h-4 text-stone-400" />
         </motion.div>
       </motion.div>
     </section>

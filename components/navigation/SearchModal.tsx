@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Link from "next/link";
 import { Search, X, ArrowRight, Building, FileText, Briefcase, MapPin, Sparkles } from "lucide-react";
 import { servicesData } from "@/data/servicesData";
@@ -16,13 +16,17 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const handleClose = useCallback(() => {
+    setQuery("");
+    onClose();
+  }, [onClose]);
+
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 100);
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
-      setQuery("");
     }
     return () => {
       document.body.style.overflow = "unset";
@@ -32,20 +36,18 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isOpen) {
-        onClose();
+        handleClose();
       }
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
         if (isOpen) {
-          onClose();
-        } else {
-          // Open handled by parent or trigger
+          handleClose();
         }
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   // Aggregate searchable items
   const allSearchableItems = useMemo(() => {
@@ -180,15 +182,15 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
       role="dialog"
       aria-modal="true"
       aria-labelledby="search-modal-title"
-      className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-[#060b13]/80 backdrop-blur-md animate-fade-in-fast"
-      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-slate-950/40 backdrop-blur-sm animate-fade-in-fast"
+      onClick={handleClose}
     >
       <div
-        className="w-full max-w-2xl bg-white shadow-2xl border border-stone-200 overflow-hidden transform transition-all animate-slide-down rounded-sm"
+        className="w-full max-w-2xl bg-white shadow-2xl border border-stone-200 overflow-hidden transform transition-all animate-slide-down rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
-        <div className="flex items-center px-4 sm:px-6 py-4 border-b border-stone-200 bg-stone-50/50">
+        <div className="flex items-center px-4 sm:px-6 py-4 border-b border-stone-200 bg-stone-50/60">
           <Search className="w-5 h-5 text-stone-400 mr-3 flex-shrink-0" />
           <input
             ref={inputRef}
@@ -208,7 +210,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             </button>
           )}
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="px-2.5 py-1 text-xs font-semibold text-stone-500 bg-stone-200/80 hover:bg-stone-300 rounded transition-colors cursor-pointer"
           >
             ESC
@@ -228,7 +230,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <button
                     key={term}
                     onClick={() => setQuery(term)}
-                    className="text-xs sm:text-sm px-3 py-1.5 bg-stone-100 hover:bg-[#0056b3] hover:text-white text-stone-700 rounded-sm transition-colors cursor-pointer border border-stone-200/80"
+                    className="text-xs sm:text-sm px-3 py-1.5 bg-stone-100 hover:bg-[#0056b3] hover:text-white text-stone-700 rounded-lg transition-colors cursor-pointer border border-stone-200/80"
                   >
                     {term}
                   </button>
@@ -241,34 +243,34 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 <Link
                   href="#services"
-                  onClick={onClose}
-                  className="p-3 bg-stone-50 hover:bg-[#0b1524] hover:text-white group border border-stone-200/70 rounded-xs transition-colors"
+                  onClick={handleClose}
+                  className="p-3 bg-stone-50 hover:bg-[#0056b3] hover:text-white text-[#0b1524] group border border-stone-200 rounded-xl transition-colors"
                 >
-                  <Briefcase className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white" />
+                  <Briefcase className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white transition-colors" />
                   <span className="text-xs font-semibold block">5 Core Services</span>
                 </Link>
                 <Link
                   href="#locations"
-                  onClick={onClose}
-                  className="p-3 bg-stone-50 hover:bg-[#0b1524] hover:text-white group border border-stone-200/70 rounded-xs transition-colors"
+                  onClick={handleClose}
+                  className="p-3 bg-stone-50 hover:bg-[#0056b3] hover:text-white text-[#0b1524] group border border-stone-200 rounded-xl transition-colors"
                 >
-                  <MapPin className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white" />
+                  <MapPin className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white transition-colors" />
                   <span className="text-xs font-semibold block">10 AU/NZ Offices</span>
                 </Link>
                 <Link
                   href="#insights"
-                  onClick={onClose}
-                  className="p-3 bg-stone-50 hover:bg-[#0b1524] hover:text-white group border border-stone-200/70 rounded-xs transition-colors"
+                  onClick={handleClose}
+                  className="p-3 bg-stone-50 hover:bg-[#0056b3] hover:text-white text-[#0b1524] group border border-stone-200 rounded-xl transition-colors"
                 >
-                  <FileText className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white" />
+                  <FileText className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white transition-colors" />
                   <span className="text-xs font-semibold block">The Bottom Line</span>
                 </Link>
                 <Link
                   href="#stories"
-                  onClick={onClose}
-                  className="p-3 bg-stone-50 hover:bg-[#0b1524] hover:text-white group border border-stone-200/70 rounded-xs transition-colors"
+                  onClick={handleClose}
+                  className="p-3 bg-stone-50 hover:bg-[#0056b3] hover:text-white text-[#0b1524] group border border-stone-200 rounded-xl transition-colors"
                 >
-                  <Building className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white" />
+                  <Building className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white transition-colors" />
                   <span className="text-xs font-semibold block">Client Stories</span>
                 </Link>
               </div>
@@ -284,7 +286,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <Link
                     key={item.id}
                     href={item.href}
-                    onClick={onClose}
+                    onClick={handleClose}
                     className="flex items-start justify-between p-3.5 hover:bg-stone-100/90 rounded-sm group transition-colors border border-transparent hover:border-stone-200"
                   >
                     <div className="flex items-start gap-3">

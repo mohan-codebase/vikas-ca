@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Mic, Building2, UserCheck, Play, ArrowRight, Quote } from "lucide-react";
+import { Mic, Building2, UserCheck, Play, Quote } from "lucide-react";
 import { featuredCaseStudy, podcastStory, peopleQAStory } from "@/data/storiesData";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";

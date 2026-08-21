@@ -11,12 +11,12 @@
   --brand-blue-hover: #004494;
   --brand-cyan: #0099db;
   --brand-gold: #c89d5c;
-  --surface-warm: #f7f6f2;
-  --surface-warm-2: #f0efe9;
-  --surface-border: #e6e4dc;
-  --glass-bg: rgba(11, 21, 36, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.07);
-  --glass-shadow: 0 8px 48px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255,255,255,0.06) inset;
+  --surface-warm: #f8fafc;
+  --surface-warm-2: #f1f5f9;
+  --surface-border: #e2e8f0;
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 @theme {
@@ -60,18 +60,18 @@ body {
 
 /* ─── Custom Scrollbar ────────────────────────────────────────── */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0f1923;
+  background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #253550;
+  background: #cbd5e1;
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0056b3;
+  background: #94a3b8;
 }
 
 /* ─── Preloader ───────────────────────────────────────────────── */
@@ -79,7 +79,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: #060c15;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,8 +96,8 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0, 86, 179, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 86, 179, 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
 }
@@ -106,7 +106,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(90deg, #0056b3, #0099db, #c89d5c);
   transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -116,7 +116,7 @@ body {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.04em;
-  color: white;
+  color: #0b1524;
   line-height: 1;
 }
 
@@ -125,7 +125,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #0099db;
+  color: #0056b3;
   margin-top: 0.75rem;
 }
 
@@ -139,10 +139,10 @@ body {
 }
 
 .glass-footer {
-  background: rgba(6, 12, 21, 0.85);
+  background: rgba(248, 250, 252, 0.95);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 /* ─── Magnetic Cursor Glow ───────────────────────────────────── */
@@ -152,7 +152,7 @@ body {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 86, 179, 0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 86, 179, 0.04) 0%, transparent 70%);
   transform: translate(-50%, -50%);
   transition: transform 0.08s linear;
   z-index: 0;
@@ -266,7 +266,7 @@ body {
 /* Animated gradient border */
 .gradient-border {
   position: relative;
-  background: linear-gradient(#060c15, #060c15) padding-box,
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
               linear-gradient(135deg, #0056b3, #0099db, #c89d5c, #0056b3) border-box;
   border: 1px solid transparent;
   background-size: 300% 300%;
@@ -276,9 +276,9 @@ body {
 /* Hero parallax container */
 .hero-mesh {
   background:
-    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(0, 86, 179, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(0, 153, 219, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 30% at 50% 90%, rgba(200, 157, 92, 0.06) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(0, 86, 179, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(0, 153, 219, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 50% 90%, rgba(200, 157, 92, 0.04) 0%, transparent 60%);
 }
 
 /* Magnetic button effect */
@@ -405,5 +405,5 @@ body {
 /* Section divider line */
 .divider-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  background: linear-gradient(90deg, transparent, rgba(15, 23, 42, 0.08), transparent);
 }

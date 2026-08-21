@@ -2,9 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { BookOpen, Clock, FileText, ArrowRight, User } from "lucide-react";
+import { Clock, ArrowRight, User } from "lucide-react";
 import { featuredInsight, secondaryInsights } from "@/data/insightsData";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -37,7 +35,7 @@ export function Insights() {
         {/* Major Editorial Grid: 1 Dominant Feature + 3 Secondary Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-16 items-stretch">
           {/* Dominant Flagship Publication Card */}
-          <div className="lg:col-span-7 bg-[#0b1524] text-white rounded-xl overflow-hidden border border-stone-800 shadow-md flex flex-col justify-between group card-lift cursor-pointer">
+          <div className="lg:col-span-7 bg-white text-[#0b1524] rounded-xl overflow-hidden border border-stone-200 shadow-md flex flex-col justify-between group card-lift cursor-pointer">
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
                 src={featuredInsight.image}
@@ -46,23 +44,23 @@ export function Insights() {
                 className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 sizes="(max-width: 1024px) 100vw, 60vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0b1524] via-[#0b1524]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
               <div className="absolute top-4 left-4">
-                <Badge variant="navy" size="md" className="bg-[#0056b3] text-white border-none">
+                <Badge variant="navy" size="md" className="bg-[#0056b3] text-white border-none shadow-xs">
                   {featuredInsight.edition}
                 </Badge>
               </div>
 
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-stone-300">
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-stone-200">
                 <div className="flex items-center gap-2">
                   <Clock className="w-3.5 h-3.5 text-[#00a3e0]" />
                   <span>{featuredInsight.readTime}</span>
                   <span>•</span>
                   <span>{featuredInsight.date}</span>
                 </div>
-                <div className="flex items-center gap-1 text-[#00a3e0] font-medium">
-                  <User className="w-3.5 h-3.5" />
+                <div className="flex items-center gap-1 text-white font-medium">
+                  <User className="w-3.5 h-3.5 text-[#00a3e0]" />
                   <span>{featuredInsight.author.office} Office</span>
                 </div>
               </div>
@@ -70,15 +68,15 @@ export function Insights() {
 
             <div className="p-6 sm:p-8 lg:p-10 space-y-4 flex-1 flex flex-col justify-between">
               <div className="space-y-3">
-                <div className="text-xs font-bold uppercase tracking-[0.14em] text-[#00a3e0]">
+                <div className="text-xs font-bold uppercase tracking-[0.14em] text-[#0056b3]">
                   {featuredInsight.category}
                 </div>
 
-                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-white leading-snug group-hover:text-[#00a3e0] transition-colors">
+                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0b1524] leading-snug group-hover:text-[#0056b3] transition-colors">
                   {featuredInsight.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
                   {featuredInsight.excerpt}
                 </p>
 
@@ -86,7 +84,7 @@ export function Insights() {
                   {featuredInsight.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[11px] font-medium text-stone-400 bg-stone-900 border border-stone-800 px-2 py-0.5 rounded-xs"
+                      className="text-[11px] font-medium text-stone-600 bg-stone-100 border border-stone-200 px-2 py-0.5 rounded-xs"
                     >
                       #{tag}
                     </span>
@@ -94,8 +92,8 @@ export function Insights() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-stone-800">
-                <ArrowLink href={featuredInsight.href} variant="white" size="md">
+              <div className="pt-6 border-t border-stone-100">
+                <ArrowLink href={featuredInsight.href} variant="blue" size="md">
                   Read full issue of The Bottom Line
                 </ArrowLink>
               </div>

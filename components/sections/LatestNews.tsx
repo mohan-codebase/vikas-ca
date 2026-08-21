@@ -44,7 +44,7 @@ export function LatestNews() {
 
           {/* Right Column: Compact Editorial List with Dividers */}
           <div className="lg:col-span-8 bg-white border border-[#e6e4dc] rounded-xs divide-y divide-[#e6e4dc] shadow-xs">
-            {latestNewsItems.map((item, idx) => (
+            {latestNewsItems.map((item) => (
               <Link
                 key={item.id}
                 href={item.href}

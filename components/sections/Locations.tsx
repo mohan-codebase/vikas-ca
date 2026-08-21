@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { MapPin, Phone, Mail, User, Building, ArrowRight, Compass } from "lucide-react";
+import { MapPin, Phone, Mail, User, ArrowRight } from "lucide-react";
 import clsx from "clsx";
-import { locationsData, OfficeLocation } from "@/data/locationsData";
+import { locationsData } from "@/data/locationsData";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ArrowLink } from "@/components/ui/ArrowLink";
@@ -54,9 +54,9 @@ export function Locations() {
                       onClick={() => setActiveLocationId(loc.id)}
                       onMouseEnter={() => setActiveLocationId(loc.id)}
                       className={clsx(
-                        "w-full flex items-center justify-between px-4 py-3 text-left transition-all duration-200 rounded-xs cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0056b3]",
+                        "w-full flex items-center justify-between px-4 py-3 text-left transition-all duration-200 rounded-lg cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0056b3]",
                         isActive
-                          ? "bg-[#0b1524] text-white shadow-xs font-bold"
+                          ? "bg-[#0056b3] text-white shadow-sm font-bold"
                           : "text-stone-700 hover:bg-stone-200/60 font-medium"
                       )}
                       aria-selected={isActive}
@@ -66,7 +66,7 @@ export function Locations() {
                         <span
                           className={clsx(
                             "text-xs font-mono w-5",
-                            isActive ? "text-[#00a3e0]" : "text-stone-400"
+                            isActive ? "text-blue-100 font-bold" : "text-stone-400"
                           )}
                         >
                           {String(idx + 1).padStart(2, "0")}
@@ -76,7 +76,7 @@ export function Locations() {
                           className={clsx(
                             "text-[10px] px-1.5 py-0.5 rounded font-normal",
                             isActive
-                              ? "bg-stone-800 text-stone-300"
+                              ? "bg-white/20 text-white"
                               : "bg-stone-200 text-stone-600"
                           )}
                         >
@@ -87,7 +87,7 @@ export function Locations() {
                         className={clsx(
                           "w-4 h-4 transition-transform duration-200",
                           isActive
-                            ? "text-[#00a3e0] translate-x-1"
+                            ? "text-white translate-x-1"
                             : "text-stone-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5"
                         )}
                       />

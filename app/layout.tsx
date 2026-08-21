@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#0b1524",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -134,7 +134,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col font-sans bg-white text-[#0f172a] selection:bg-[#0b1524] selection:text-white">
+      <body className="min-h-full flex flex-col font-sans bg-white text-[#0f172a] selection:bg-[#0056b3] selection:text-white">
         {children}
       </body>
     </html>

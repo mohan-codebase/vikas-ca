@@ -56,7 +56,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="flex flex-col min-h-screen bg-[#060c15]"
+            className="flex flex-col min-h-screen bg-white text-[#0f172a]"
           >
             {/* Floating Navbar */}
             <Header />
