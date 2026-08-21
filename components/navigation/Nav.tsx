@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect, useCallback, useId } from "react";
+import React, { useState, useRef, useEffect, useId } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.css";
 import { NavItem, NavLink, NavColumn, defaultNavItems } from "@/data/navItemsData";
@@ -50,51 +50,46 @@ export function Nav({
   }, []);
 
   // ── 2. Dynamic Height Calculation for Mega-Menu ─────────────────────────
-  const applyMenuHeight = useCallback((index: number | null) => {
+  useEffect(() => {
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
 
-    if (index === null) {
+    if (activeIndex === null) {
       wrapper.style.height = "0px";
       prevHeightRef.current = 0;
       return;
     }
 
-    const panelEl = panelsRef.current.get(index);
+    const panelEl = panelsRef.current.get(activeIndex);
     if (!panelEl) return;
 
-    const currentHeight = panelEl.offsetHeight;
-    const delta = Math.abs(currentHeight - prevHeightRef.current);
-    // Dynamic transition duration scaling with distance: Math.min(0.34, 0.2 + delta / 10000)s
-    const duration = Math.min(0.34, 0.2 + delta / 10000);
-
-    wrapper.style.setProperty("--dynamic-duration", `${duration}s`);
-    wrapper.style.height = `${currentHeight}px`;
-    prevHeightRef.current = currentHeight;
-  }, []);
-
-  const changeActiveIndex = useCallback(
-    (index: number | null) => {
-      setActiveIndex(index);
-      requestAnimationFrame(() => {
-        applyMenuHeight(index);
-      });
-    },
-    [applyMenuHeight]
-  );
+    const currentHeight = panelEl.scrollHeight || panelEl.offsetHeight;
+    if (currentHeight > 0) {
+      const delta = Math.abs(currentHeight - prevHeightRef.current);
+      const duration = Math.min(0.34, 0.2 + delta / 10000);
+      wrapper.style.setProperty("--dynamic-duration", `${duration}s`);
+      wrapper.style.height = `${currentHeight}px`;
+      prevHeightRef.current = currentHeight;
+    }
+  }, [activeIndex]);
 
   // Recalculate on window resize
   useEffect(() => {
     const handleResize = () => {
       if (activeIndex !== null) {
-        applyMenuHeight(activeIndex);
+        const wrapper = wrapperRef.current;
+        const panelEl = panelsRef.current.get(activeIndex);
+        if (wrapper && panelEl) {
+          const currentHeight = panelEl.scrollHeight || panelEl.offsetHeight;
+          wrapper.style.height = `${currentHeight}px`;
+        }
       }
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [activeIndex, applyMenuHeight]);
+  }, [activeIndex]);
 
-  // ── 3. Hover Tolerance Buffer (~150ms) ──────────────────────────────────
+  // ── 3. Hover Tolerance Buffer (~180ms) ──────────────────────────────────
   const handleMouseEnterItem = (index: number) => {
     if (leaveTimerRef.current) {
       clearTimeout(leaveTimerRef.current);
@@ -102,9 +97,9 @@ export function Nav({
     }
     const item = items[index];
     if (item && (item.columns?.length || item.heroTitle)) {
-      changeActiveIndex(index);
+      setActiveIndex(index);
     } else {
-      changeActiveIndex(null);
+      setActiveIndex(null);
     }
   };
 
@@ -113,8 +108,8 @@ export function Nav({
       clearTimeout(leaveTimerRef.current);
     }
     leaveTimerRef.current = setTimeout(() => {
-      changeActiveIndex(null);
-    }, 150);
+      setActiveIndex(null);
+    }, 180);
   };
 
   const handleDropdownMouseEnter = () => {
@@ -128,13 +123,13 @@ export function Nav({
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        changeActiveIndex(null);
+        setActiveIndex(null);
         setMobileOpen(false);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [changeActiveIndex]);
+  }, []);
 
   // Lock body scroll when mobile drawer is open
   useEffect(() => {
@@ -179,7 +174,7 @@ export function Nav({
               href="/"
               className={styles.brand}
               onClick={() => {
-                changeActiveIndex(null);
+                setActiveIndex(null);
                 setMobileOpen(false);
               }}
             >
@@ -219,7 +214,7 @@ export function Nav({
                         aria-controls={controlsId}
                         className={`${styles.navButton} ${isActive ? styles.navButtonActive : ""}`}
                         onFocus={() => handleMouseEnterItem(idx)}
-                        onClick={() => changeActiveIndex(isActive ? null : idx)}
+                        onClick={() => setActiveIndex(isActive ? null : idx)}
                       >
                         <span>{item.label}</span>
                         <svg
@@ -240,7 +235,7 @@ export function Nav({
                         href={item.href}
                         role="menuitem"
                         className={styles.navButton}
-                        onFocus={() => changeActiveIndex(null)}
+                        onFocus={() => setActiveIndex(null)}
                       >
                         {item.label}
                       </Link>
@@ -303,7 +298,7 @@ export function Nav({
                       panelsRef.current.delete(idx);
                     }
                   }}
-                  style={{ display: isActive ? "block" : "none" }}
+                  className={`${styles.panel} ${isActive ? styles.panelActive : ""}`}
                   role="region"
                   aria-label={`${item.label} submenu`}
                   tabIndex={-1}

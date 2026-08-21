@@ -36,7 +36,8 @@
   width: 100%;
 }
 
-.headerWrapper * {
+.navContainer,
+.megaMenuWrapperOpen {
   pointer-events: auto;
 }
 
@@ -319,6 +320,17 @@
   border-radius: 20px;
   border: 1px solid var(--hairline);
   overflow: hidden;
+}
+
+/* Panel Show/Hide */
+.panel {
+  display: none;
+  width: 100%;
+}
+
+.panelActive {
+  display: block;
+  width: 100%;
 }
 
 /* Mega-Menu Inner Layout */
