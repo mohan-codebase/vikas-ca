@@ -198,7 +198,7 @@ export function Services() {
                   Specialist Advisory Practice
                 </div>
                 <div className="text-base font-bold">
-                  Vikas CA {activeService.title}
+                  NICS {activeService.title}
                 </div>
               </div>
             </div>

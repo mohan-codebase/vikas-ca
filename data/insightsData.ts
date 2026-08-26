@@ -18,114 +18,114 @@ export interface InsightArticle {
 }
 
 export const featuredInsight: InsightArticle = {
-  id: "the-bottom-line-25",
+  id: "bpo-guide-2026",
   category: "Flagship Publication",
-  edition: "The Bottom Line — Issue 25",
-  title: "AASB 18 Disclosures, Aged Care Prudential Overhaul & FY27 Tax Preparedness",
-  excerpt: "In this landmark edition of The Bottom Line, our national technical leaders provide an authoritative roadmap through the transformative AASB 18 presentation requirements, the new Aged Care Act financial mandates, and emerging ATO transfer pricing enforcement.",
+  edition: "The NICS Guide — 2026 Edition",
+  title: "Maximising Margins: The Strategic Advantage of BPO in 2026",
+  excerpt: "Discover how accounting and financial planning firms are utilizing offshore teams to combat local skill shortages, achieving up to 70% cost savings without compromising on quality or security.",
   date: "August 2026",
   readTime: "12 min read",
   author: {
-    name: "Dr. Kimberley Stewart",
-    role: "National Head of Financial Reporting & Audit Technical",
+    name: "Boobalan Madhavan",
+    role: "Founder & MD",
     office: "Sydney"
   },
   featured: true,
-  tags: ["AASB 18", "Financial Reporting", "Aged Care", "Tax Governance"],
-  image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
-  href: "#insights-bottomline"
+  tags: ["BPO", "Cost Savings", "Offshore Teams", "Strategy"],
+  image: "/images/svg-security.svg",
+  href: "#insights-bpo-guide"
 };
 
 export const secondaryInsights: InsightArticle[] = [
   {
-    id: "aasb-18-part-5",
+    id: "iso-27001-security",
     category: "Technical Guide",
-    title: "A Guide to AASB 18: Part 5 — Aggregation, Disaggregation and Labelling",
-    excerpt: "Exploring the stringent new principles for presenting operating, investing, and financing categories in the statement of profit or loss, and avoiding misleading aggregation.",
+    title: "Why ISO 27001 Certification is Non-Negotiable for Your BPO Partner",
+    excerpt: "Understanding the stringent requirements of ISO 27001 and how NICS guarantees 100% data security for your sensitive client information.",
     date: "August 18, 2026",
     readTime: "6 min read",
     author: {
-      name: "Marcus Leung",
-      role: "Audit & Assurance Partner",
-      office: "Melbourne"
+      name: "Gorav Gupta",
+      role: "Co-Founder & Director",
+      office: "Chennai"
     },
-    tags: ["AASB 18", "IFRS 18", "Financial Statements"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    href: "#insights-aasb"
+    tags: ["ISO 27001", "Data Security", "Compliance"],
+    image: "/images/svg-security.svg",
+    href: "#insights-security"
   },
   {
-    id: "tax-alert-august-2026",
-    category: "Tax Alert",
-    title: "Tax Alert August 2026: ATO Targeted Compliance on Family Trust Distributions",
-    excerpt: "Key considerations following recent Federal Court precedents and updated ATO guidelines on Section 100A and Division 7A benchmark interest rates.",
+    id: "mortgage-broking-scale",
+    category: "Industry Analysis",
+    title: "Accelerating Settlements: Outsourcing for Mortgage Brokers",
+    excerpt: "How dedicated offshore processing teams enable brokers to write more loans and reduce turnaround times dramatically.",
     date: "August 12, 2026",
     readTime: "5 min read",
     author: {
-      name: "Fiona Callaghan",
-      role: "Tax Consulting Partner",
-      office: "Brisbane"
+      name: "Andrew Noble",
+      role: "Co-Founder",
+      office: "USA"
     },
-    tags: ["Tax Consulting", "Trusts", "ATO Compliance"],
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
-    href: "#insights-tax-alert"
+    tags: ["Mortgage Broking", "Loan Processing", "Growth"],
+    image: "/images/svg-security.svg",
+    href: "#insights-mortgage"
   },
   {
-    id: "aged-care-prudential",
+    id: "financial-planning-paraplanning",
     category: "Industry Analysis",
-    title: "Navigating the New Aged Care Financial and Prudential Standards",
-    excerpt: "With the new Aged Care Act in effect, providers must align liquidity management, refundable accommodation deposit (RAD) reserves, and governance reporting.",
+    title: "Solving the Paraplanning Bottleneck with Offshore Teams",
+    excerpt: "Turn around Statements of Advice faster and reduce the cost of compliance with scalable paraplanning support.",
     date: "August 04, 2026",
     readTime: "7 min read",
     author: {
-      name: "David Edwards",
-      role: "National Aged Care Sector Lead",
+      name: "Boobalan Madhavan",
+      role: "Founder & MD",
       office: "Sydney"
     },
-    tags: ["Aged Care", "Governance", "Prudential Standards"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-    href: "#insights-aged-care"
+    tags: ["Financial Planning", "Paraplanning", "Efficiency"],
+    image: "/images/svg-security.svg",
+    href: "#insights-paraplanning"
   }
 ];
 
 export const latestNewsItems = [
   {
     id: "news-1",
-    category: "Regulatory Update",
-    title: "Navigating the new aged care Financial and Prudential Standards",
+    category: "Security Update",
+    title: "NICS renews ISO 27001 certification with zero non-conformances",
     date: "14 Aug 2026",
     readTime: "4 min",
-    href: "#insights-aged-care"
+    href: "#insights-security"
   },
   {
     id: "news-2",
-    category: "Accounting Standards",
-    title: "A guide to AASB 18: Part 5 – Aggregation, disaggregation and labelling",
+    category: "BPO Strategy",
+    title: "Talent collaboration simplified: integrating your local and offshore teams",
     date: "11 Aug 2026",
     readTime: "6 min",
-    href: "#insights-aasb"
+    href: "#insights-bpo-guide"
   },
   {
     id: "news-3",
     category: "Advisory Briefing",
-    title: "New Financial Year Financial Health Check: Key Priorities for Mid-Market CFOs",
+    title: "Outsource your way forward: 5 tasks you should delegate today",
     date: "02 Aug 2026",
     readTime: "5 min",
-    href: "#insights-health-check"
+    href: "#insights-delegate"
   },
   {
     id: "news-4",
-    category: "Tax Alert",
-    title: "Tax Alert – August 2026: Federal Court Rulings and State Surcharges",
+    category: "Tax Update",
+    title: "Streamlining tax season with 24/7 compliance processing",
     date: "28 Jul 2026",
     readTime: "5 min",
-    href: "#insights-tax-alert"
+    href: "#insights-tax"
   },
   {
     id: "news-5",
-    category: "Wealth & Family",
-    title: "Family trusts: are they still worth it? Evaluating modern structuring benefits",
+    category: "Firm News",
+    title: "NICS expands support for US accounting practices",
     date: "22 Jul 2026",
     readTime: "7 min",
-    href: "#insights-family-trusts"
+    href: "#insights-us-expansion"
   }
 ];

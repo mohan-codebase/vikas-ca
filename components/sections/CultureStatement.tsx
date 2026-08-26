@@ -10,18 +10,18 @@ import { ArrowLink } from "@/components/ui/ArrowLink";
 const pillars = [
   {
     icon: HeartHandshake,
-    title: "Trusted Relationships",
-    description: "Direct access to experienced partners who invest in understanding your business from the ground up.",
+    title: "Dedicated Teams",
+    description: "Your own dedicated offshore professionals fully integrated into your daily workflows and culture.",
   },
   {
     icon: Compass,
-    title: "Commercial Foresight",
-    description: "Anticipating regulatory shifts, market turbulence, and tax complexity before they impact your balance sheet.",
+    title: "Domain Expertise",
+    description: "Highly qualified accountants, mortgage brokers, and administrators trained in international standards.",
   },
   {
     icon: Sparkles,
-    title: "Collaborative Agility",
-    description: "Cross-functional teams uniting advisory, tax, and audit specialists seamlessly across 10 national offices.",
+    title: "ISO 27001 Security",
+    description: "Bank-level data security and strict compliance protocols to ensure your sensitive information is always protected.",
   },
 ];
 
@@ -52,8 +52,8 @@ export function CultureStatement() {
             <div className="relative">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <Image
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-                  alt="Vikas CA partners collaborating"
+                  src="/images/svg-team.svg"
+                  alt="NICS team collaborating"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -118,7 +118,7 @@ export function CultureStatement() {
               </h2>
 
               <p className="text-base sm:text-lg text-stone-600 leading-relaxed mb-10">
-                Our specialists work with private businesses, publicly listed companies, not-for-profit organisations, and individual leaders — pairing technical rigor with genuine personal investment.
+                Our specialists seamlessly integrate with your local operations — pairing technical rigor with genuine personal investment to deliver exceptional BPO services across accounting and administration.
               </p>
 
               {/* Pillars */}

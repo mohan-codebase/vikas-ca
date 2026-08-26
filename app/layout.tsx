@@ -22,62 +22,59 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vikasca.com"),
+  metadataBase: new URL("https://www.nics.com"),
   title: {
-    default: "Vikas CA | Chartered Accountants & Financial Advisers",
-    template: "%s | Vikas CA",
+    default: "NICS | Outsource your way forward",
+    template: "%s | NICS",
   },
   description:
-    "Award-winning Australian chartered accounting and advisory network. Providing specialist advisory, audit & assurance, business services, tax consulting, and wealth management across 10 offices.",
+    "NICS is a business process outsource company for accounting, operational, administrative and compliance business processes in small to large enterprises.",
   keywords: [
-    "Vikas CA",
-    "Chartered Accountants Sydney",
-    "Business Advisers Melbourne",
-    "Audit and Assurance Perth",
-    "Tax Consulting Brisbane",
-    "Family Business Advisory",
-    "AASB 18 Guidance",
-    "Debt Advisory Australia",
-    "Client Choice Awards 2026",
+    "NICS",
+    "outsourcing",
+    "BPO",
+    "accounting outsourcing",
+    "SMSF compliance",
+    "mortgage broking support",
+    "paraplanning offshore",
+    "offshore talent",
   ],
-  authors: [{ name: "Vikas CA" }],
-  creator: "Vikas CA",
-  publisher: "Vikas CA",
+  authors: [{ name: "NICS" }],
+  creator: "NICS",
+  publisher: "NICS",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   alternates: {
-    canonical: "https://vikasca.com",
+    canonical: "https://www.nics.com",
   },
   openGraph: {
-    title: "Vikas CA | Chartered Accountants & Financial Advisers",
+    title: "NICS | Outsource your way forward",
     description:
-      "Together we make it happen. Integrated advisory, accounting, tax, and wealth management across Australia and New Zealand.",
-    url: "https://vikasca.com",
-    siteName: "Vikas CA",
-    locale: "en_AU",
+      "Your trusted back-office BPO partner specializing in Accounting, Compliance, Operations, and Administration.",
+    url: "https://www.nics.com",
+    siteName: "NICS",
+    locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=630&q=80",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Vikas CA",
+        alt: "NICS",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vikas CA | Chartered Accountants & Business Advisers",
+    title: "NICS | Talent collaboration simplified",
     description:
-      "Award-winning chartered accounting and business advisory network across 10 offices in Australia and New Zealand.",
-    site: "@VikasCA",
-    creator: "@VikasCA",
-    images: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=630&q=80",
-    ],
+      "NICS empowers small and medium businesses to compete with large enterprise corporations by providing institutional-grade back-office infrastructure.",
+    site: "@NICS",
+    creator: "@NICS",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -99,33 +96,30 @@ export default function RootLayout({
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "AccountingService",
-    name: "Vikas CA",
-    alternateName: "Vikas CA",
-    url: "https://vikasca.com",
-    logo: "https://vikasca.com/wp-content/themes/hlb/img/hlb-logo-white.svg",
+    "@type": "Organization",
+    name: "NICS",
+    alternateName: "NICS BPO",
+    url: "https://www.nics.com",
+    logo: "https://www.nics.com/logo.png",
     description:
-      "Vikas CA is an association of award-winning chartered accounting and advisory firms with offices throughout Australia and New Zealand.",
-    areaServed: ["AU", "NZ"],
-    award: "Best Accounting & Consulting Services Firm 2026 - Client Choice Awards",
+      "NICS is a business process outsourcing company for accounting, operational, administrative and compliance business processes.",
     sameAs: [
-      "https://x.com/VikasCA",
-      "https://www.linkedin.com/company/vikas-ca/",
-      "https://www.youtube.com/user/VikasCA",
+      "https://twitter.com/NICS",
+      "https://www.linkedin.com/company/nics/"
     ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Level 19, 207 Kent Street",
-      addressLocality: "Sydney",
-      addressRegion: "NSW",
-      postalCode: "2000",
-      addressCountry: "AU",
+      streetAddress: "Tidel Park, Tharamani",
+      addressLocality: "Chennai",
+      addressRegion: "Tamil Nadu",
+      postalCode: "600113",
+      addressCountry: "IN",
     },
   };
 
   return (
     <html
-      lang="en-IN"
+      lang="en-US"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <head>
@@ -140,4 +134,3 @@ export default function RootLayout({
     </html>
   );
 }
-

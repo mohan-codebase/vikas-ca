@@ -170,7 +170,7 @@ export function ClientStories() {
               <div className="relative aspect-[16/9] w-full rounded-xs overflow-hidden">
                 <Image
                   src={peopleQAStory.image}
-                  alt="Vikas CA professionals Will and Rémi collaborating"
+                  alt="NICS professionals Will and Rémi collaborating"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

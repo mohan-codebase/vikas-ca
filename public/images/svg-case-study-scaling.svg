@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+    <defs>
+        <linearGradient id="csBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#071529" />
+            <stop offset="50%" stop-color="#0f2b48" />
+            <stop offset="100%" stop-color="#003d73" />
+        </linearGradient>
+        <linearGradient id="glowGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#0099db" stop-opacity="0.1" />
+            <stop offset="100%" stop-color="#0099db" stop-opacity="0.6" />
+        </linearGradient>
+        <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#c89d5c" />
+            <stop offset="100%" stop-color="#e6ca94" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#csBg)" />
+
+    <!-- Grid pattern -->
+    <g opacity="0.15">
+        <path d="M 0 100 L 800 100 M 0 200 L 800 200 M 0 300 L 800 300 M 0 400 L 800 400 M 0 500 L 800 500" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 4" />
+        <path d="M 160 0 L 160 600 M 320 0 L 320 600 M 480 0 L 480 600 M 640 0 L 640 600" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 4" />
+    </g>
+
+    <!-- Central Dashboard Card UI -->
+    <g transform="translate(100, 100)">
+        <!-- Card Backdrop -->
+        <rect width="600" height="380" rx="16" fill="#0b1b2d" stroke="#1e3a5f" stroke-width="2" opacity="0.9" />
+        
+        <!-- Window header dots -->
+        <circle cx="30" cy="28" r="6" fill="#ef4444" opacity="0.8" />
+        <circle cx="50" cy="28" r="6" fill="#eab308" opacity="0.8" />
+        <circle cx="70" cy="28" r="6" fill="#22c55e" opacity="0.8" />
+        <text x="100" y="33" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600">CAPACITY &amp; PRODUCTIVITY BENCHMARK</text>
+
+        <!-- Metric Cards row -->
+        <g transform="translate(30, 60)">
+            <!-- Metric 1 -->
+            <rect width="160" height="75" rx="8" fill="#13273e" stroke="#23456b" stroke-width="1" />
+            <text x="16" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">COST REDUCTION</text>
+            <text x="16" y="58" fill="#c89d5c" font-family="monospace" font-size="24" font-weight="bold">-70%</text>
+
+            <!-- Metric 2 -->
+            <rect x="185" y="0" width="160" height="75" rx="8" fill="#13273e" stroke="#23456b" stroke-width="1" />
+            <text x="201" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TURNAROUND SPEED</text>
+            <text x="201" y="58" fill="#00d2ff" font-family="monospace" font-size="24" font-weight="bold">+45%</text>
+
+            <!-- Metric 3 -->
+            <rect x="370" y="0" width="170" height="75" rx="8" fill="#13273e" stroke="#23456b" stroke-width="1" />
+            <text x="386" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">CLIENT COMPLIANCE</text>
+            <text x="386" y="58" fill="#22c55e" font-family="monospace" font-size="24" font-weight="bold">100%</text>
+        </g>
+
+        <!-- Dynamic Growth Curve Chart -->
+        <g transform="translate(30, 160)">
+            <rect width="540" height="190" rx="8" fill="#0e2034" />
+            
+            <!-- Axis lines -->
+            <line x1="40" y1="150" x2="500" y2="150" stroke="#23456b" stroke-width="1" />
+            <line x1="40" y1="30" x2="40" y2="150" stroke="#23456b" stroke-width="1" />
+            
+            <!-- Area under curve -->
+            <path d="M 40 130 Q 150 120, 260 85 T 500 25 L 500 150 L 40 150 Z" fill="url(#glowGrad)" />
+            
+            <!-- Growth Line -->
+            <path d="M 40 130 Q 150 120, 260 85 T 500 25" fill="none" stroke="#00d2ff" stroke-width="4" stroke-linecap="round" />
+            
+            <!-- Baseline constraint line -->
+            <path d="M 40 110 L 500 110" fill="none" stroke="#e11d48" stroke-width="2" stroke-dasharray="6 6" opacity="0.6" />
+            <text x="380" y="104" fill="#fb7185" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Previous Capacity Ceiling</text>
+
+            <!-- Data Points -->
+            <circle cx="40" cy="130" r="5" fill="#00d2ff" stroke="#ffffff" stroke-width="2" />
+            <circle cx="260" cy="85" r="5" fill="#00d2ff" stroke="#ffffff" stroke-width="2" />
+            <circle cx="500" cy="25" r="7" fill="#c89d5c" stroke="#ffffff" stroke-width="2" />
+
+            <text x="350" y="45" fill="#e6ca94" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Uncapped Scaled Growth ✦</text>
+        </g>
+    </g>
+</svg>

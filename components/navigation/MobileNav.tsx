@@ -6,6 +6,7 @@ import { X, ChevronDown, Search, PhoneCall, MapPin, ArrowRight } from "lucide-re
 import { navigationData } from "@/data/navigationData";
 import { locationsData } from "@/data/locationsData";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -49,9 +50,9 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         {/* Header Bar */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-stone-200 bg-stone-50/50">
           <div className="flex items-center gap-2">
-            <span className="font-extrabold tracking-tight text-xl text-[#0b1524]">Vikas CA</span>
+            <Logo className="h-[34px]" />
             <span className="text-stone-500 text-xs uppercase tracking-widest font-semibold border-l border-stone-300 pl-2">
-              Australia
+              India
             </span>
           </div>
           <button
@@ -177,7 +178,7 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
           <div className="flex items-center justify-center gap-4 text-xs text-stone-500">
             <span className="flex items-center gap-1">
               <PhoneCall className="w-3.5 h-3.5 text-stone-400" />
-              1300 Vikas CA AUS
+              +61 406 727 061
             </span>
             <span>•</span>
             <Link href="#locations" onClick={handleClose} className="hover:text-[#0b1524] underline">

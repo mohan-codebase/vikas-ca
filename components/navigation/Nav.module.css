@@ -20,7 +20,7 @@
   --accent-light: #eef5fc;
   --accent-cyan: #0099db;
   --accent-gold: #c89d5c;
-  --shadow-pill: 0 10px 30px -5px rgba(0, 0, 0, 0.08), 0 20px 25px -5px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.1);
+  --shadow-pill: none;
   --shadow-dropdown: 0 24px 60px -12px rgba(0, 0, 0, 0.12), 0 12px 24px -6px rgba(0, 0, 0, 0.06);
   --dynamic-duration: 0.28s;
 }
@@ -89,7 +89,7 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(15, 23, 42, 0.09);
-  box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: none;
 }
 
 /* ── Inner Navigation Flex ────────────────────────────────────────────── */
@@ -113,42 +113,14 @@
   padding-left: 2px;
 }
 
-.brandMonogram {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-cyan) 100%);
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 0.8125rem;
-  letter-spacing: -0.05em;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0, 86, 179, 0.25);
-  transition: transform 0.25s ease;
-}
-
-.brand:hover .brandMonogram {
-  transform: scale(1.08);
-}
-
-.brandText {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-  line-height: 1;
-}
-
-.brandName {
-  font-size: 0.9375rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  white-space: nowrap;
+.brandLogo {
+  height: 40px;
+  display: block;
 }
 
 .brandSub {
+  padding-left: 8px;
+  border-left: 1px solid var(--hairline);
   font-size: 0.5625rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -237,25 +209,25 @@
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0, 86, 179, 0.25);
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: none;
+  transform: none;
+  transition: none;
 }
 
 .ctaButton:hover,
 .ctaButton:focus-visible {
-  background: var(--accent-hover);
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.35);
+  background: var(--accent);
+  transform: none;
+  box-shadow: none;
 }
 
 .ctaIcon {
   width: 13px;
   height: 13px;
-  transition: transform 0.2s ease;
 }
 
 .ctaButton:hover .ctaIcon {
-  transform: translateX(2px);
+  transform: none;
 }
 
 /* ── Page Curtain Overlay ─────────────────────────────────────────────── */
@@ -729,6 +701,14 @@
     padding: 12px 18px;
   }
 
+  .brandLogo {
+    height: 30px;
+  }
+
+  .brandSub {
+    display: none;
+  }
+
   .stage2 {
     max-width: calc(100% - 24px);
     margin-top: 10px;
@@ -738,7 +718,7 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
   }
 }
 
@@ -753,7 +733,7 @@
   .burgerBar,
   .navChevron,
   .mobileAccordionChevron,
-  .brandMonogram,
+  .brandLogo,
   .ctaButton,
   .heroColumn {
     transition-duration: 0.01s !important;

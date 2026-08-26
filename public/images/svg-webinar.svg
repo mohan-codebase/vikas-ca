@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+        <linearGradient id="webBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0a192f" />
+            <stop offset="100%" stop-color="#003566" />
+        </linearGradient>
+        <linearGradient id="goldPill" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#c89d5c" />
+            <stop offset="100%" stop-color="#e6ca94" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="100%" height="100%" fill="url(#webBg)" />
+
+    <!-- Soundwave visuals & Screen frame -->
+    <g transform="translate(100, 60)">
+        <rect width="600" height="330" rx="12" fill="#0d213a" stroke="#1f426d" stroke-width="2" />
+        
+        <!-- Screen title -->
+        <rect x="25" y="25" width="110" height="28" rx="6" fill="url(#goldPill)" />
+        <text x="40" y="44" fill="#071529" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">WEBINAR</text>
+        <text x="150" y="44" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="14" font-weight="600">EPISODE 01 · SCALING THROUGH OFFSHORING</text>
+
+        <!-- Studio Speaker Avatars / Video Screens -->
+        <g transform="translate(40, 80)">
+            <!-- Speaker 1 Box -->
+            <rect width="240" height="150" rx="8" fill="#132c4a" stroke="#255182" stroke-width="1.5" />
+            <circle cx="120" cy="65" r="35" fill="#0056b3" />
+            <circle cx="120" cy="55" r="15" fill="#ffffff" opacity="0.9" />
+            <path d="M 95 88 C 95 75, 145 75, 145 88 Z" fill="#ffffff" opacity="0.9" />
+            <rect x="20" y="115" width="200" height="22" rx="4" fill="#0a192f" />
+            <text x="120" y="130" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Boobalan Madhavan · Founder</text>
+
+            <!-- Speaker 2 Box -->
+            <rect x="270" y="0" width="240" height="150" rx="8" fill="#132c4a" stroke="#255182" stroke-width="1.5" />
+            <circle cx="390" cy="65" r="35" fill="#c89d5c" />
+            <circle cx="390" cy="55" r="15" fill="#ffffff" opacity="0.9" />
+            <path d="M 365 88 C 365 75, 415 75, 415 88 Z" fill="#ffffff" opacity="0.9" />
+            <rect x="290" y="115" width="200" height="22" rx="4" fill="#0a192f" />
+            <text x="390" y="130" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Andrew Noble · Co-Founder</text>
+        </g>
+
+        <!-- Audio Waveform bar at bottom -->
+        <g transform="translate(40, 260)">
+            <rect width="520" height="45" rx="6" fill="#0a192f" />
+            <g fill="#00a3e0" opacity="0.85">
+                <rect x="25" y="18" width="4" height="10" rx="2" />
+                <rect x="35" y="12" width="4" height="22" rx="2" />
+                <rect x="45" y="8" width="4" height="30" rx="2" />
+                <rect x="55" y="15" width="4" height="16" rx="2" />
+                <rect x="65" y="6" width="4" height="33" rx="2" />
+                <rect x="75" y="14" width="4" height="18" rx="2" />
+                <rect x="85" y="10" width="4" height="25" rx="2" />
+                <rect x="95" y="18" width="4" height="10" rx="2" />
+                <rect x="105" y="12" width="4" height="22" rx="2" />
+                <rect x="115" y="5" width="4" height="35" rx="2" />
+                <rect x="125" y="14" width="4" height="18" rx="2" />
+                <rect x="135" y="9" width="4" height="27" rx="2" />
+                <rect x="145" y="16" width="4" height="14" rx="2" />
+                <rect x="155" y="7" width="4" height="31" rx="2" />
+                <rect x="165" y="15" width="4" height="16" rx="2" />
+            </g>
+            <text x="200" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Interactive Live Q&amp;A · Strategy Breakdown</text>
+        </g>
+    </g>
+</svg>
