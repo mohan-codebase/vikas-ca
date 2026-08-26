@@ -37,7 +37,7 @@ export function LatestNews() {
                 Receive crucial regulatory and tax updates directly to your inbox every fortnight.
               </p>
               <ArrowLink href="#contact" variant="blue" size="sm">
-                Subscribe to Vikas CA alerts
+                Subscribe to NICS alerts
               </ArrowLink>
             </div>
           </div>

@@ -3,9 +3,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, MapPin, Award, Shield, Globe, ChevronDown } from "lucide-react";
+import { ArrowRight, MapPin, Shield, Globe, ChevronDown } from "lucide-react";
 
-const WORDS = ["accounting", "advisory", "strategy", "confidence", "clarity"];
+const WORDS = ["accounting", "compliance", "operations", "efficiency", "growth"];
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -62,8 +62,8 @@ export function Hero() {
         style={{ y: imageY }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85"
-          alt="Modern Australian corporate architecture — Vikas CA"
+          src="/images/svg-hero.svg"
+          alt="NICS Corporate Office"
           fill
           priority
           className="object-cover object-center"
@@ -83,20 +83,6 @@ export function Hero() {
         style={{ y: textY, opacity }}
       >
         <div className="max-w-3xl">
-          {/* Eyebrow badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-flex items-center gap-2.5 mb-8"
-          >
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 border border-blue-200/90 rounded-full shadow-2xs backdrop-blur-sm">
-              <Award className="w-3.5 h-3.5 text-[#916524]" />
-              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#0056b3]">
-                Client Choice Awards 2026 — #1 Accounting Firm
-              </span>
-            </div>
-          </motion.div>
 
           {/* Main headline — stagger words */}
           <div className="mb-6">
@@ -123,7 +109,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
               >
-                <span className="text-[#0b1524]">advice </span>
+                <span className="text-[#0b1524]">outsourcing </span>
                 <span className="relative inline-block overflow-hidden h-[1.1em] align-bottom">
                   {WORDS.map((w, i) => (
                     <motion.span
@@ -173,7 +159,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
           >
-            Accounting, advisory, and wealth expertise built around the pivotal decisions that shape your commercial legacy — delivered by Australia&apos;s premier independent network.
+            Accounting, compliance, and operational excellence built around scaling your business — delivered by our human-first offshore teams.
           </motion.p>
 
           {/* CTAs */}
@@ -212,10 +198,10 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1.15 }}
           >
             {[
-              { value: "10", label: "Offices AU & NZ" },
-              { value: "130+", label: "Partners", color: true },
-              { value: "40+", label: "Years", accent: "cyan" },
-              { value: "#1", label: "Client Choice 2026", accent: "gold" },
+              { value: "3", label: "Global Offices" },
+              { value: "70%", label: "Cost Savings", color: true },
+              { value: "24/7", label: "Workflow", accent: "cyan" },
+              { value: "100%", label: "ISO 27001", accent: "gold" },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -245,7 +231,7 @@ export function Hero() {
 
             <div className="h-8 w-px bg-stone-200 hidden sm:block" />
 
-            {/* Vikas CA International badge */}
+            {/* NICS International badge */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -254,7 +240,7 @@ export function Hero() {
             >
               <Globe className="w-3.5 h-3.5 text-[#0056b3]" />
               <span className="text-[11px] text-stone-600 font-medium">
-                Vikas CA International · 157 Countries
+                NICS Global · India, USA, Australia
               </span>
             </motion.div>
           </motion.div>
@@ -283,10 +269,10 @@ export function Hero() {
             </div>
             <div>
               <div className="text-[10px] font-bold uppercase tracking-wider text-[#0056b3]">
-                Award Recognition
+                Security Standard
               </div>
               <div className="text-[12px] font-bold text-[#0b1524]">
-                Client Choice Awards 2026
+                ISO 27001 Certified
               </div>
             </div>
           </div>
@@ -294,7 +280,7 @@ export function Hero() {
             {[...Array(5)].map((_, i) => (
               <div key={i} className="w-4 h-1 rounded-full bg-[#c89d5c]" />
             ))}
-            <span className="text-[10px] text-stone-500 ml-1 font-medium">Best Accounting Firm</span>
+            <span className="text-[10px] text-stone-500 ml-1 font-medium">Global BPO Partner</span>
           </div>
         </div>
       </motion.div>

@@ -26,132 +26,118 @@ export interface ServiceCategory {
 
 export const servicesData: ServiceCategory[] = [
   {
-    id: "advisory",
+    id: "accounting",
     number: "01",
-    title: "Advisory",
-    subtitle: "Strategic Guidance & Capital Optimization",
-    leadSummary: "Guiding organizations through high-stakes growth, transaction execution, transformation, and complex financial challenges.",
-    fullDescription: "From debt restructuring and independent valuations to M&A due diligence and ESG roadmaps, our advisory specialists combine commercial pragmatism with technical precision to help directors and leadership teams make confident decisions.",
+    title: "Accounting",
+    subtitle: "End-to-End Accounting & Bookkeeping",
+    leadSummary: "Comprehensive accounting solutions designed to streamline operations and enhance financial clarity for your practice.",
+    fullDescription: "Our accounting specialists provide reliable, scalable support for firms, allowing them to focus on advisory and client relationships rather than day-to-day data entry and reconciliations.",
     keyMetric: {
-      value: "$4.2B+",
-      label: "Annual transactions and capital advised across Australasia"
+      value: "Up to 70%",
+      label: "Cost savings for accounting practices"
     },
     subServices: [
-      { name: "Debt Advisory", description: "Capital structuring, refinancing negotiations, and credit facility optimization." },
-      { name: "ESG & Sustainability", description: "Readiness assessments, decarbonization roadmaps, and mandatory ESG governance.", tag: "High Demand" },
-      { name: "Finance Transformation", description: "Modernizing CFO architecture, chart of accounts, and financial forecasting." },
-      { name: "Financial Modelling", description: "Dynamic financial models for project feasibility, capital raising, and valuations." },
-      { name: "Forensic Services", description: "Fraud investigation, dispute advisory, and expert witness testimony." },
-      { name: "Insolvency & Turnaround", description: "Formal insolvency administrations, voluntary administrations, and turnarounds." },
-      { name: "Restructuring & Risk", description: "Operational recovery, liquidity management, and stakeholder workouts." },
-      { name: "Transaction Advisory", description: "Buy-side and sell-side financial due diligence and transaction structuring." },
-      { name: "Business Valuations", description: "Independent valuations for tax, litigation, M&A, and financial reporting." }
+      { name: "Bookkeeping", description: "Accurate ledger management, bank reconciliations, and AR/AP." },
+      { name: "Management Accounts", description: "Monthly and quarterly management reporting with deep insights." },
+      { name: "Payroll Services", description: "End-to-end payroll processing and compliance." },
+      { name: "Year-End Finalisation", description: "Preparation of year-end accounts and working papers." }
     ],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/svg-accounting-new.svg",
     featuredCaseStudy: {
-      client: "ASX-Listed Infrastructure Group",
-      outcome: "Executed complex capital restructuring and $85M debt refinancing program."
+      client: "Mid-Tier Accounting Firm",
+      outcome: "Scaled operations with a dedicated offshore team, reducing overheads by 55%."
     }
   },
   {
-    id: "audit-assurance",
+    id: "compliance",
     number: "02",
-    title: "Audit & Assurance",
-    subtitle: "Clarity, Credibility & Independence",
-    leadSummary: "Delivering robust, independent assurance that enhances financial integrity and stakeholder trust.",
-    fullDescription: "Our partner-led audit practice provides transparent, insightful reporting for publicly listed companies, large proprietary firms, not-for-profits, and government entities. We combine modern analytics with deep regulatory mastery.",
+    title: "Compliance",
+    subtitle: "SMSF & Tax Compliance Simplified",
+    leadSummary: "Ensuring your clients remain compliant with evolving SMSF and tax regulations, delivered with 100% ISO 27001 certified data security.",
+    fullDescription: "From complex SMSF administration to tax return preparation, our compliance team ensures meticulous accuracy and adherence to regulatory frameworks across multiple jurisdictions.",
     keyMetric: {
-      value: "99.4%",
-      label: "Audit quality review rating across national engagements"
+      value: "100%",
+      label: "ISO 27001 Certified Data Security"
     },
     subServices: [
-      { name: "Financial Audits & Reviews", description: "Statutory audits and half-year reviews for listed, unlisted, and NFP entities." },
-      { name: "Financial Reporting Advisory", description: "Technical guidance on complex AASB/IFRS accounting standards implementation." },
-      { name: "Internal Audit & Controls", description: "Evaluating governance frameworks, risk appetite, and internal control effectiveness." },
-      { name: "Risk Assurance & Consulting", description: "Specialized reviews across IT controls, cybersecurity, and regulatory compliance." },
-      { name: "Sustainability Reporting & Assurance", description: "Independent assurance for AASB S1/S2 climate disclosures and ESG reports.", tag: "New Standards" },
-      { name: "Transparency & Quality", description: "Commitment to public reporting and rigorous quality management frameworks." }
+      { name: "SMSF Administration", description: "Comprehensive self-managed super fund compliance and reporting." },
+      { name: "Tax Return Preparation", description: "Individual, company, trust, and partnership tax returns." },
+      { name: "BAS & IAS Preparation", description: "Timely and accurate business and instalment activity statements." },
+      { name: "Corporate Secretarial", description: "ASIC compliance, company formations, and statutory updates.", tag: "High Demand" }
     ],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/svg-security.svg",
     featuredCaseStudy: {
-      client: "National Aged Care Provider",
-      outcome: "Full statutory audit and AASB 18 transition roadmap across 32 regional facilities."
+      client: "Boutique Advisory Practice",
+      outcome: "Outsourced SMSF processing for 200+ funds, achieving 100% lodgement compliance."
     }
   },
   {
-    id: "business-services",
+    id: "mortgage-broking",
     number: "03",
-    title: "Business Services",
-    subtitle: "Proactive Accounting & Commercial Advisory",
-    leadSummary: "Empowering mid-market enterprises and business owners with actionable financial clarity and strategic support.",
-    fullDescription: "We act as an integrated extension of your leadership team. Whether managing day-to-day financial operations, structuring overseas expansion, or designing multi-year succession plans, we help business owners unlock sustainable value.",
+    title: "Mortgage Broking",
+    subtitle: "Back-Office Support for Brokers",
+    leadSummary: "Empowering mortgage brokers with seamless loan processing, data entry, and follow-up support to accelerate settlement times.",
+    fullDescription: "We act as an integrated extension of your mortgage broking business. By handling the time-consuming administrative tasks, we free up your brokers to write more loans and build stronger client relationships.",
     keyMetric: {
-      value: "1,200+",
-      label: "Private and mid-market enterprises actively supported"
+      value: "24/7",
+      label: "Capacity and operational support"
     },
     subServices: [
-      { name: "Accounting & Financial Reporting", description: "Timely management reporting, cash flow visibility, and statutory compliance." },
-      { name: "Business Planning & Strategy", description: "Strategic workshops, KPI frameworks, and growth acceleration roadmaps." },
-      { name: "Cloud Accounting Ecosystems", description: "Modern ERP and cloud accounting integration for automated workflows." },
-      { name: "Finance Function Outsourcing", description: "Virtual CFO and full outsourced bookkeeping, payroll, and controller services." },
-      { name: "International Business Services", description: "Inbound and outbound structuring, entity setup, and cross-border expansion." },
-      { name: "Operational Efficiency Reviews", description: "Cost rationalization, margin improvement, and working capital optimization." },
-      { name: "Succession & Governance", description: "Intergenerational wealth transition and family business board governance." }
+      { name: "Loan Processing", description: "End-to-end processing from submission to settlement." },
+      { name: "Data Entry & CRM Management", description: "Accurate input into aggregator platforms and CRM systems." },
+      { name: "Lender Follow-Ups", description: "Proactive communication with lenders to fast-track approvals." },
+      { name: "Post-Settlement Support", description: "Ongoing client care and portfolio management." }
     ],
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/svg-mortgage.svg",
     featuredCaseStudy: {
-      client: "Australian Manufacturing Group",
-      outcome: "Transitioned finance function to virtual CFO model, achieving 28% overhead reduction."
+      client: "National Broker Network",
+      outcome: "Reduced average loan processing time by 40% through round-the-clock support."
     }
   },
   {
-    id: "tax-consulting",
+    id: "financial-planning",
     number: "04",
-    title: "Tax Consulting",
-    subtitle: "Strategic Tax Structuring & Compliance",
-    leadSummary: "Pragmatic tax strategies that safeguard compliance while optimizing enterprise value across complex jurisdictions.",
-    fullDescription: "In an era of intensified regulatory scrutiny and constant statutory shifts, our senior tax specialists provide forward-looking counsel for corporate groups, international operators, private family enterprises, and high-net-worth individuals.",
+    title: "Financial Planning Support",
+    subtitle: "Paraplanning & Advice Administration",
+    leadSummary: "Reliable paraplanning and administrative support to help financial planners deliver high-quality advice efficiently.",
+    fullDescription: "Our specialized team assists financial advisers with Statement of Advice (SoA) preparation, financial modelling, and ongoing portfolio administration, ensuring high standards of compliance and quality.",
     keyMetric: {
-      value: "40+ Years",
-      label: "Of trusted Australian and international tax advisory excellence"
+      value: "Up to 70%",
+      label: "Cost savings on paraplanning functions"
     },
     subServices: [
-      { name: "Corporate Tax Advisory", description: "Tax consolidation, CGT rollovers, debt/equity characterization, and ATO rulings." },
-      { name: "Employment & Payroll Tax", description: "Fringe benefits tax (FBT), payroll tax harmonization, and contractor risk reviews." },
-      { name: "Family-Owned Businesses", description: "Division 7A structuring, trust distributions, and capital gains tax concessions." },
-      { name: "International Tax & Transfer Pricing", description: "Cross-border tax planning, thin capitalization, and BEPS documentation." },
-      { name: "R&D Tax Incentives", description: "Maximizing eligible innovation claims with robust technical and financial substantiation." },
-      { name: "Tax Compliance & Governance", description: "Corporate tax returns, tax risk governance frameworks, and audit defense." }
+      { name: "Paraplanning", description: "Preparation of complex Statements of Advice (SoAs) and RoAs." },
+      { name: "Financial Modelling", description: "Detailed projections and scenario analysis." },
+      { name: "Implementation Support", description: "Execution of advice and platform administration." },
+      { name: "Fee Disclosure & Opt-In", description: "Managing compliance with FDS and opt-in requirements." }
     ],
-    image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/svg-team.svg",
     featuredCaseStudy: {
-      client: "BioTech Innovation Firm",
-      outcome: "Secured $3.4M in R&D tax refunds while structuring IP holding architecture for US rollout."
+      client: "Wealth Management Firm",
+      outcome: "Streamlined SoA turnaround times from 10 days to 3 days."
     }
   },
   {
-    id: "wealth-management",
+    id: "operations-admin",
     number: "05",
-    title: "Wealth Management",
-    subtitle: "Personal Stewardship & Intergenerational Legacy",
-    leadSummary: "Holistic wealth advisory, family office stewardship, and superannuation tailored to your personal ambitions.",
-    fullDescription: "We partner with business owners, executives, retirees, and multigenerational families to build resilient wealth strategies. Our advice is independent, transparent, and seamlessly coordinated with your accounting and tax structures.",
+    title: "Operations",
+    subtitle: "Business Process Outsourcing & Admin",
+    leadSummary: "Customized operational support to drive efficiency, reduce overheads, and scale your business effortlessly.",
+    fullDescription: "From virtual assistants to specialized back-office roles, NICS provides the talent you need to optimize operations. We simplify talent collaboration so you can outsource your way forward.",
     keyMetric: {
-      value: "$3.8B+",
-      label: "Funds under advisory and stewardship across Australasia"
+      value: "100%",
+      label: "Scalable workforce solutions"
     },
     subServices: [
-      { name: "Aged Care Financial Planning", description: "RAD calculations, accommodation options, and pension optimization for families." },
-      { name: "Estate Planning & Asset Protection", description: "Wills, testamentary trusts, powers of attorney, and wealth transfer structures." },
-      { name: "Family Office Services", description: "Consolidated portfolio reporting, lifestyle asset administration, and governance." },
-      { name: "Risk Management & Insurance", description: "Life, TPD, income protection, and key person insurance structures." },
-      { name: "Philanthropic Strategy", description: "Private Ancillary Funds (PAFs), charitable trusts, and structured giving." },
-      { name: "Superannuation & SMSF", description: "Self-managed super fund establishment, investment strategy, and compliance." }
+      { name: "Virtual Assistants", description: "Dedicated administrative support for executives and teams." },
+      { name: "Data Management", description: "Secure data entry, cleansing, and database maintenance." },
+      { name: "Customer Support", description: "Email and chat support to enhance client experience." },
+      { name: "Custom BPO Solutions", description: "Tailored outsourcing strategies for unique business needs." }
     ],
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/svg-global.svg",
     featuredCaseStudy: {
-      client: "Multi-Generational Australian Family",
-      outcome: "Structured family office governance framework and generational wealth transfer across 3 lineages."
+      client: "Growing SME Enterprise",
+      outcome: "Built an offshore administrative hub that scales dynamically with seasonal demand."
     }
   }
 ];

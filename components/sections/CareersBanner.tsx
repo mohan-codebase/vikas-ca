@@ -10,18 +10,18 @@ import { Button } from "@/components/ui/Button";
 const highlights = [
   {
     icon: GraduationCap,
-    title: "Graduate Development",
-    description: "Direct client contact and partner mentoring from week one.",
+    title: "CA/CMA Graduates",
+    description: "Access to India's top talent pool of certified professionals.",
   },
   {
     icon: Compass,
-    title: "Global Secondments",
-    description: "Mobility across 157 Vikas CA International member countries.",
+    title: "Global Reach",
+    description: "Seamless collaboration across India, USA, and Australia.",
   },
   {
     icon: Award,
-    title: "Fast-Track Pathways",
-    description: "Merit-based advancement from manager to equity partner.",
+    title: "Empowering EVP",
+    description: "A human-first approach with excellent employee value proposition.",
   },
 ];
 
@@ -47,7 +47,7 @@ export function CareersBanner() {
           <div className="lg:col-span-7 space-y-7 reveal-left">
             <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.14em] uppercase text-[#0056b3]">
               <Briefcase className="w-4 h-4" />
-              Careers at Vikas CA
+              Careers at NICS
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight-title text-[#0b1524] leading-[1.07]">
@@ -76,7 +76,7 @@ export function CareersBanner() {
             </h2>
 
             <p className="text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
-              It is our differences and shared purpose that bring strength, empathy, and innovation. At Vikas CA, you are never just a number — you contribute to our clients&apos; outcomes from day one.
+              It is our differences and shared purpose that bring strength, empathy, and innovation. At NICS, you are never just a number — you contribute to our clients&apos; outcomes from day one.
             </p>
 
             {/* Highlights */}
@@ -121,8 +121,8 @@ export function CareersBanner() {
             >
               <div className="relative aspect-[4/3] sm:aspect-[1/1] rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
-                  alt="Vikas CA young professionals graduate cohort"
+                  src="/images/svg-accounting.svg"
+                  alt="NICS young professionals graduate cohort"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"

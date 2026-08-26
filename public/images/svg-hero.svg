@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+    <defs>
+        <!-- ── Sophisticated Color & Light Gradients ── -->
+        <linearGradient id="bgAtmosphere" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f8fafc" stop-opacity="0" />
+            <stop offset="45%" stop-color="#f1f5f9" stop-opacity="0.3" />
+            <stop offset="80%" stop-color="#e2e8f0" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#cbd5e1" stop-opacity="0.9" />
+        </linearGradient>
+
+        <radialGradient id="causticGlow1" cx="72%" cy="46%" r="42%">
+            <stop offset="0%" stop-color="#0077cc" stop-opacity="0.18" />
+            <stop offset="45%" stop-color="#0099db" stop-opacity="0.08" />
+            <stop offset="100%" stop-color="#0099db" stop-opacity="0" />
+        </radialGradient>
+
+        <radialGradient id="causticGlow2" cx="84%" cy="68%" r="35%">
+            <stop offset="0%" stop-color="#c89d5c" stop-opacity="0.16" />
+            <stop offset="50%" stop-color="#d4af37" stop-opacity="0.05" />
+            <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+        </radialGradient>
+
+        <radialGradient id="coreAura" cx="78%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#003d7a" stop-opacity="0.12" />
+            <stop offset="60%" stop-color="#0056b3" stop-opacity="0.03" />
+            <stop offset="100%" stop-color="#0056b3" stop-opacity="0" />
+        </radialGradient>
+
+        <!-- ── Glass Panel Surfaces ── -->
+        <linearGradient id="glassPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+            <stop offset="25%" stop-color="#f0f7ff" stop-opacity="0.65" />
+            <stop offset="70%" stop-color="#dbeafe" stop-opacity="0.4" />
+            <stop offset="100%" stop-color="#bfdbfe" stop-opacity="0.25" />
+        </linearGradient>
+
+        <linearGradient id="glassSecondary" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+            <stop offset="40%" stop-color="#f8fafc" stop-opacity="0.6" />
+            <stop offset="85%" stop-color="#e0f2fe" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.2" />
+        </linearGradient>
+
+        <linearGradient id="glassDeep" x1="0%" y1="0%" x2="100%" y2="80%">
+            <stop offset="0%" stop-color="#0056b3" stop-opacity="0.2" />
+            <stop offset="50%" stop-color="#0077cc" stop-opacity="0.1" />
+            <stop offset="100%" stop-color="#003366" stop-opacity="0.3" />
+        </linearGradient>
+
+        <linearGradient id="glassDarkSlab" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0f172a" stop-opacity="0.08" />
+            <stop offset="50%" stop-color="#1e293b" stop-opacity="0.04" />
+            <stop offset="100%" stop-color="#334155" stop-opacity="0.01" />
+        </linearGradient>
+
+        <!-- ── Optical Edge Bevels & Specular Refraction ── -->
+        <linearGradient id="edgeSpecularTop" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+            <stop offset="35%" stop-color="#ffffff" stop-opacity="0.7" />
+            <stop offset="70%" stop-color="#93c5fd" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2" />
+        </linearGradient>
+
+        <linearGradient id="edgeSpecularSide" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+            <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1" />
+        </linearGradient>
+
+        <linearGradient id="goldTrimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9" />
+            <stop offset="35%" stop-color="#c89d5c" stop-opacity="0.8" />
+            <stop offset="70%" stop-color="#916524" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#d4af37" stop-opacity="0.4" />
+        </linearGradient>
+
+        <linearGradient id="ribbonGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0056b3" stop-opacity="0" />
+            <stop offset="30%" stop-color="#0077cc" stop-opacity="0.4" />
+            <stop offset="65%" stop-color="#00b4d8" stop-opacity="0.7" />
+            <stop offset="85%" stop-color="#90e0ef" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1" />
+        </linearGradient>
+
+        <linearGradient id="ribbonGrad2" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#c89d5c" stop-opacity="0" />
+            <stop offset="40%" stop-color="#d4af37" stop-opacity="0.35" />
+            <stop offset="75%" stop-color="#e0a96d" stop-opacity="0.65" />
+            <stop offset="100%" stop-color="#fdf6b2" stop-opacity="0.85" />
+        </linearGradient>
+
+        <linearGradient id="lightBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+            <stop offset="60%" stop-color="#93c5fd" stop-opacity="0.08" />
+            <stop offset="100%" stop-color="#0056b3" stop-opacity="0" />
+        </linearGradient>
+
+        <!-- ── Spatial Depth Blur Filters ── -->
+        <filter id="ultraSoftShadow" x="-20%" y="-20%" width="150%" height="150%">
+            <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#0b192e" flood-opacity="0.09" />
+        </filter>
+
+        <filter id="deepSlabShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="-10" dy="36" stdDeviation="38" flood-color="#030712" flood-opacity="0.12" />
+        </filter>
+
+        <filter id="ambientBlur" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="60" />
+        </filter>
+
+        <filter id="fresnelBlur" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="12" />
+        </filter>
+
+        <filter id="causticBlur" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="40" />
+        </filter>
+
+        <!-- ── Micro Coordinate Matrix (Right-Side Only) ── -->
+        <pattern id="isoMatrix" width="70" height="40.41" patternUnits="userSpaceOnUse" patternTransform="translate(0, 0)">
+            <path d="M 35 0 L 70 20.2 L 35 40.41 L 0 20.2 Z" fill="none" stroke="#0056b3" stroke-width="0.75" stroke-opacity="0.04" />
+            <circle cx="35" cy="20.2" r="1" fill="#0056b3" fill-opacity="0.08" />
+        </pattern>
+    </defs>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 1: Ambient Atmosphere & Negative Space Canvas               -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- Negative space gradient on the left, smooth volumetric fill on the right -->
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#bgAtmosphere)" />
+
+    <!-- Isometric spatial grid restricted to right-side infrastructure zone with smooth gradient mask -->
+    <g opacity="0.8">
+        <rect x="750" y="0" width="1170" height="1080" fill="url(#isoMatrix)" />
+    </g>
+
+    <!-- Diffused Volumetric Caustic Glows (Atmospheric Perspective) -->
+    <ellipse cx="1450" cy="520" rx="550" ry="420" fill="url(#causticGlow1)" filter="url(#ambientBlur)" />
+    <ellipse cx="1600" cy="740" rx="420" ry="320" fill="url(#causticGlow2)" filter="url(#causticBlur)" />
+    <ellipse cx="1320" cy="380" rx="380" ry="280" fill="url(#coreAura)" filter="url(#ambientBlur)" />
+
+    <!-- Soft directional light shafts -->
+    <polygon points="1050,0 1520,0 1880,1080 1280,1080" fill="url(#lightBeam)" opacity="0.6" />
+    <polygon points="1280,0 1680,0 1920,850 1480,1080" fill="url(#lightBeam)" opacity="0.4" />
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 2: Background Architectural Monoliths (Distant Plane)       -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <g opacity="0.45" filter="url(#ultraSoftShadow)">
+        <!-- Distant monolith A: Deep vertical glass blade -->
+        <polygon points="1180,260 1260,210 1260,820 1180,870" fill="url(#glassDeep)" />
+        <polygon points="1260,210 1340,260 1340,870 1260,820" fill="url(#glassDarkSlab)" />
+        <polygon points="1180,260 1260,210 1340,260 1260,310" fill="url(#glassSecondary)" />
+
+        <!-- Distant monolith B: Elevated institutional block -->
+        <polygon points="1620,160 1740,90 1740,620 1620,690" fill="url(#glassDeep)" />
+        <polygon points="1740,90 1840,150 1840,680 1740,620" fill="url(#glassDarkSlab)" />
+        <polygon points="1620,160 1740,90 1840,150 1720,220" fill="url(#glassSecondary)" stroke="url(#edgeSpecularTop)" stroke-width="1" />
+    </g>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 3: Flowing Optical Glass Light Guides & Data Streams        -->
+    <!-- (Art-directed institutional capital & operational consensus arcs)  -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <g fill="none" stroke-linecap="round">
+        <!-- Ambient dispersion ribbon 1 -->
+        <path d="M 980 680 C 1140 680, 1260 410, 1490 420 C 1680 430, 1780 290, 1920 270"
+              stroke="url(#ribbonGrad1)" stroke-width="3" opacity="0.85" />
+        
+        <!-- Ambient dispersion ribbon 2 (Subtle champagne gold harmonic) -->
+        <path d="M 1060 740 C 1220 740, 1340 560, 1560 550 C 1720 540, 1820 420, 1920 400"
+              stroke="url(#ribbonGrad2)" stroke-width="2.5" opacity="0.75" />
+
+        <!-- High-frequency internal glass edge filament -->
+        <path d="M 1160 820 C 1300 820, 1420 640, 1640 620 C 1780 600, 1850 510, 1920 490"
+              stroke="url(#edgeSpecularTop)" stroke-width="1.5" opacity="0.6" />
+    </g>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 4: Midground Financial Infrastructure Tier                  -->
+    <!-- (Interlocking floating glass platforms & ledger nodes)            -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- Midground Foundation Slab (Tier 1) -->
+    <g filter="url(#deepSlabShadow)">
+        <!-- Base frosted prism -->
+        <polygon points="1280,680 1560,520 1820,670 1540,830"
+                 fill="url(#glassPrimary)" stroke="url(#edgeSpecularTop)" stroke-width="1.5" />
+        <!-- Front refraction edge -->
+        <polygon points="1280,680 1540,830 1540,860 1280,710"
+                 fill="url(#glassDeep)" stroke="url(#edgeSpecularSide)" stroke-width="1" />
+        <!-- Right refraction edge -->
+        <polygon points="1540,830 1820,670 1820,700 1540,860"
+                 fill="url(#glassDarkSlab)" stroke="url(#edgeSpecularSide)" stroke-width="0.8" />
+        
+        <!-- Precision Champagne Inset Rail (Institutional Quality Indicator) -->
+        <polygon points="1320,675 1540,550 1750,670 1530,795"
+                 fill="none" stroke="url(#goldTrimGrad)" stroke-width="1.5" opacity="0.7" />
+        <!-- Micro node points at precision intersections -->
+        <circle cx="1320" cy="675" r="2.5" fill="#c89d5c" />
+        <circle cx="1540" cy="550" r="2.5" fill="#ffffff" />
+        <circle cx="1750" cy="670" r="2.5" fill="#0099db" />
+        <circle cx="1530" cy="795" r="2.5" fill="#c89d5c" />
+    </g>
+
+    <!-- Midground Floating Tier 2 (Elevated Security & Ledger Chamber) -->
+    <g filter="url(#deepSlabShadow)">
+        <!-- Upper floating platform -->
+        <polygon points="1380,480 1600,350 1800,465 1580,595"
+                 fill="url(#glassSecondary)" stroke="url(#edgeSpecularTop)" stroke-width="2" />
+        <!-- Side thickness refraction -->
+        <polygon points="1380,480 1580,595 1580,620 1380,505"
+                 fill="url(#glassDeep)" stroke="url(#edgeSpecularSide)" stroke-width="1.2" />
+        <polygon points="1580,595 1800,465 1800,490 1580,620"
+                 fill="url(#glassDarkSlab)" />
+
+        <!-- Internal crystal core ring (Security / ISO consensus motif) -->
+        <path d="M 1480 470 L 1600 400 L 1700 460 L 1580 530 Z"
+              fill="url(#glassPrimary)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.8" />
+    </g>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 5: Foreground Monolithic Optical Crystal Pylons              -->
+    <!-- (Art-directed focal anchors with beveled edges & reflections)      -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    
+    <!-- Primary Foreground Monolith (The Central Core Pillar) -->
+    <g filter="url(#deepSlabShadow)">
+        <!-- Left frosted face -->
+        <polygon points="1440,240 1540,180 1540,760 1440,820"
+                 fill="url(#glassPrimary)" stroke="url(#edgeSpecularTop)" stroke-width="1.5" />
+        <!-- Right refractive face (internal light dispersion) -->
+        <polygon points="1540,180 1630,235 1630,815 1540,760"
+                 fill="url(#glassSecondary)" stroke="url(#edgeSpecularSide)" stroke-width="1.5" />
+        <!-- Top bevel cap -->
+        <polygon points="1440,240 1540,180 1630,235 1530,295"
+                 fill="#ffffff" fill-opacity="0.95" stroke="#ffffff" stroke-width="1" />
+        
+        <!-- Precision vertical internal light spine -->
+        <line x1="1540" y1="180" x2="1540" y2="760" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.9" />
+        <!-- Subtle gold harmonic trim line -->
+        <line x1="1543" y1="280" x2="1543" y2="680" stroke="url(#goldTrimGrad)" stroke-width="1.5" stroke-opacity="0.85" />
+    </g>
+
+    <!-- Secondary Satellite Monolith (Global Office / Multi-Jurisdiction node) -->
+    <g filter="url(#deepSlabShadow)">
+        <polygon points="1200,420 1280,370 1280,720 1200,770"
+                 fill="url(#glassPrimary)" stroke="url(#edgeSpecularTop)" stroke-width="1.2" />
+        <polygon points="1280,370 1350,410 1350,760 1280,720"
+                 fill="url(#glassSecondary)" stroke="url(#edgeSpecularSide)" stroke-width="1" />
+        <polygon points="1200,420 1280,370 1350,410 1270,460"
+                 fill="#ffffff" fill-opacity="0.9" />
+        <line x1="1280" y1="370" x2="1280" y2="720" stroke="#ffffff" stroke-width="1.8" stroke-opacity="0.8" />
+    </g>
+
+    <!-- Tertiary Foreground Crystal Shard (Foreground Layer Depth) -->
+    <g filter="url(#deepSlabShadow)">
+        <polygon points="1680,490 1760,440 1760,890 1680,940"
+                 fill="url(#glassPrimary)" opacity="0.85" stroke="url(#edgeSpecularTop)" stroke-width="1.5" />
+        <polygon points="1760,440 1830,480 1830,930 1760,890"
+                 fill="url(#glassDarkSlab)" opacity="0.9" stroke="url(#edgeSpecularSide)" stroke-width="1" />
+        <polygon points="1680,490 1760,440 1830,480 1750,530"
+                 fill="#ffffff" fill-opacity="0.95" />
+        <line x1="1760" y1="440" x2="1760" y2="890" stroke="#ffffff" stroke-width="2" stroke-opacity="0.8" />
+    </g>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 6: Specular Micro-Accents, Caustic Reflection Pools         -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- Specular light glints on key optical intersections -->
+    <g>
+        <!-- Glint 1: Central apex -->
+        <circle cx="1540" cy="180" r="4" fill="#ffffff" filter="url(#fresnelBlur)" />
+        <circle cx="1540" cy="180" r="2" fill="#ffffff" />
+
+        <!-- Glint 2: Platform corner -->
+        <circle cx="1380" cy="480" r="3.5" fill="#ffffff" filter="url(#fresnelBlur)" />
+        <circle cx="1380" cy="480" r="1.5" fill="#ffffff" />
+
+        <!-- Glint 3: Gold node accent -->
+        <circle cx="1600" cy="350" r="4" fill="#fef08a" filter="url(#fresnelBlur)" />
+        <circle cx="1600" cy="350" r="2" fill="#ffffff" />
+
+        <!-- Glint 4: Satellite apex -->
+        <circle cx="1280" cy="370" r="3" fill="#ffffff" />
+        
+        <!-- Glint 5: Shard apex -->
+        <circle cx="1760" cy="440" r="3" fill="#ffffff" />
+    </g>
+
+    <!-- Minimal, ultra-luxurious geometric coordinate ticks (Sophisticated FinTech Ledger alignment) -->
+    <g stroke="#0056b3" stroke-opacity="0.25" stroke-width="1" fill="none">
+        <line x1="1100" y1="880" x2="1140" y2="880" />
+        <line x1="1120" y1="860" x2="1120" y2="900" />
+        
+        <line x1="1840" y1="220" x2="1880" y2="220" />
+        <line x1="1860" y1="200" x2="1860" y2="240" />
+
+        <line x1="1450" y1="960" x2="1490" y2="960" stroke="#c89d5c" stroke-opacity="0.4" />
+        <line x1="1470" y1="940" x2="1470" y2="980" stroke="#c89d5c" stroke-opacity="0.4" />
+    </g>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- LAYER 7: Foreground Vignette & Left Typography Feathering         -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- Left-side feathering to guarantee 100% legibility of live HTML typography -->
+    <linearGradient id="featherLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#f8fafc" stop-opacity="1" />
+        <stop offset="45%" stop-color="#f8fafc" stop-opacity="0.85" />
+        <stop offset="65%" stop-color="#f8fafc" stop-opacity="0.3" />
+        <stop offset="85%" stop-color="#f8fafc" stop-opacity="0" />
+    </linearGradient>
+    <rect x="0" y="0" width="1100" height="1080" fill="url(#featherLeft)" />
+
+    <!-- Bottom ambient fade -->
+    <linearGradient id="featherBottom" x1="0%" y1="100%" x2="0%" y2="0%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+        <stop offset="25%" stop-color="#ffffff" stop-opacity="0.4" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <rect x="0" y="880" width="1920" height="200" fill="url(#featherBottom)" />
+</svg>

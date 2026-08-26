@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useId } from "react";
 import Link from "next/link";
 import styles from "./Nav.module.css";
+import { Logo } from "@/components/ui/Logo";
 import { NavItem, NavLink, NavColumn, defaultNavItems } from "@/data/navItemsData";
 
 export interface NavProps {
@@ -15,8 +16,8 @@ export interface NavProps {
 
 export function Nav({
   items = defaultNavItems,
-  brandName = "Vikas CA",
-  brandSub = "MANN JUDD",
+  brandName = "NICS",
+  brandSub,
   ctaLabel = "Contact Us",
   ctaHref = "#contact",
 }: NavProps) {
@@ -178,13 +179,10 @@ export function Nav({
                 setMobileOpen(false);
               }}
             >
-              <div className={styles.brandMonogram} aria-hidden="true">
-                <span>V</span>
-              </div>
-              <div className={styles.brandText}>
-                <span className={styles.brandName}>{brandName}</span>
-                {brandSub && <span className={styles.brandSub}>{brandSub}</span>}
-              </div>
+              <Logo className={styles.brandLogo} alt={brandName} priority />
+              {brandSub && (
+                <span className={styles.brandSub}>{brandSub}</span>
+              )}
             </Link>
 
             {/* Desktop Navigation Links (Center of pill) */}

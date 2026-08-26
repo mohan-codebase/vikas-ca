@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+        <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#0b1524" />
+            <stop offset="100%" stop-color="#001a33" />
+        </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#bg2)" />
+    <!-- Binary Matrix BG -->
+    <text x="50" y="50" fill="rgba(0,169,157,0.2)" font-family="monospace" font-size="20">010010 110100 001101 101010 010101 110011</text>
+    <text x="50" y="150" fill="rgba(0,169,157,0.2)" font-family="monospace" font-size="20">110110 001011 110010 011001 101010 001100</text>
+    <text x="50" y="250" fill="rgba(0,169,157,0.2)" font-family="monospace" font-size="20">001101 101010 010101 110011 010010 110100</text>
+    <text x="50" y="350" fill="rgba(0,169,157,0.2)" font-family="monospace" font-size="20">011001 101010 001100 110110 001011 110010</text>
+    <!-- Shield -->
+    <path d="M400 60 L550 120 L550 250 C550 350 450 400 400 420 C350 400 250 350 250 250 L250 120 Z" fill="none" stroke="#0099db" stroke-width="12" />
+    <path d="M400 80 L530 135 L530 250 C530 335 440 380 400 395 C360 380 270 335 270 250 L270 135 Z" fill="rgba(0,153,219,0.2)" />
+    <!-- Checkmark -->
+    <path d="M330 240 L380 290 L480 170" fill="none" stroke="#00a99d" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

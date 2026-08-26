@@ -86,7 +86,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     locationsData.forEach((loc) => {
       items.push({
         id: `loc-${loc.id}`,
-        title: `Vikas CA ${loc.name} Office`,
+        title: `NICS ${loc.name} Office`,
         subtitle: `${loc.address} • Lead: ${loc.leadPartner}`,
         category: "Locations",
         href: `#locations`,
@@ -170,9 +170,9 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     "Family Business Succession",
     "Debt Advisory",
     "UN Global Compact",
-    "Sydney Office",
+    "Chennai Delivery Centre",
     "R&D Tax Incentives",
-    "Perth Mining Advisory",
+    "Offshore Team Setup",
   ];
 
   if (!isOpen) return null;
@@ -255,7 +255,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   className="p-3 bg-stone-50 hover:bg-[#0056b3] hover:text-white text-[#0b1524] group border border-stone-200 rounded-xl transition-colors"
                 >
                   <MapPin className="w-4 h-4 mb-2 text-[#0056b3] group-hover:text-white transition-colors" />
-                  <span className="text-xs font-semibold block">10 AU/NZ Offices</span>
+                  <span className="text-xs font-semibold block">3 Global Offices</span>
                 </Link>
                 <Link
                   href="#insights"
@@ -315,7 +315,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               <Search className="w-8 h-8 text-stone-300 mx-auto mb-3" />
               <p className="text-stone-700 font-semibold">No results found for &ldquo;{query}&rdquo;</p>
               <p className="text-xs text-stone-400 mt-1">
-                Try searching for &ldquo;Services&rdquo;, &ldquo;Sydney&rdquo;, &ldquo;Tax&rdquo;, or &ldquo;Advisory&rdquo;.
+                Try searching for &ldquo;Services&rdquo;, &ldquo;Chennai&rdquo;, &ldquo;Tax&rdquo;, or &ldquo;Advisory&rdquo;.
               </p>
             </div>
           )}
@@ -323,7 +323,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
         {/* Footer info */}
         <div className="px-6 py-3 bg-stone-50 border-t border-stone-200 flex items-center justify-between text-xs text-stone-500">
-          <span>Vikas CA Knowledge & Service Directory</span>
+          <span>NICS Knowledge & Service Directory</span>
           <span>Press ESC to close</span>
         </div>
       </div>

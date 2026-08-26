@@ -155,9 +155,9 @@ export function MegaMenu({ item, onClose }: MegaMenuProps) {
       {/* Bottom bar */}
       <div className="border-t border-stone-200 bg-stone-50/70 px-8 py-3 flex items-center justify-between">
         <div className="flex items-center gap-4 text-[11px] text-stone-500">
-          <span>10 AU/NZ Offices</span>
+          <span>3 Global Offices</span>
           <span className="w-px h-3 bg-stone-300" />
-          <span>Vikas CA International — 157 Countries</span>
+          <span>NICS Global</span>
         </div>
         <ArrowLink href="#contact" variant="blue" size="sm" onClick={onClose}>
           Book a consultation

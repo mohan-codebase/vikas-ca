@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 
 export function Locations() {
-  const [activeLocationId, setActiveLocationId] = useState<string>("sydney");
+  const [activeLocationId, setActiveLocationId] = useState<string>(locationsData[0].id);
 
   const activeLocation =
     locationsData.find((l) => l.id === activeLocationId) || locationsData[0];
@@ -22,14 +22,14 @@ export function Locations() {
       <Container size="default">
         {/* Section Heading */}
         <SectionHeading
-          eyebrow="National Footprint & Global Reach"
-          title="Vikas CA Offices"
-          description="Autonomous Australian and New Zealand member firms delivering deep local market insights backed by global network capabilities."
+          eyebrow="Indian Delivery, Global Reach"
+          title="NICS Offices"
+          description="An India-headquartered delivery network with client-facing offices in Australia and the USA, backed by global network capabilities."
           align="split"
           action={
             <div className="flex items-center gap-3">
               <span className="text-xs font-semibold uppercase tracking-wider text-stone-500">
-                10 AU/NZ Locations • 157 Countries Global
+                3 Global Offices • 157 Countries Served
               </span>
             </div>
           }
@@ -112,7 +112,7 @@ export function Locations() {
                   </div>
 
                   <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0b1524]">
-                    Vikas CA {activeLocation.name}
+                    NICS {activeLocation.name}
                   </h3>
 
                   <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-normal">
@@ -182,7 +182,7 @@ export function Locations() {
                   <div className="relative aspect-[4/5] w-full rounded-xs overflow-hidden border border-stone-200 shadow-md group">
                     <Image
                       src={activeLocation.image}
-                      alt={`Vikas CA ${activeLocation.name} office location and skyline`}
+                      alt={`NICS ${activeLocation.name} office location and skyline`}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 30vw"

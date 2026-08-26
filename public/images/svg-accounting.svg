@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#002e5b" />
+            <stop offset="100%" stop-color="#0056b3" />
+        </linearGradient>
+        <linearGradient id="bar" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0099db" />
+            <stop offset="100%" stop-color="#00a99d" />
+        </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#bg)" />
+    <!-- Grid -->
+    <path d="M50 350 L750 350" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+    <path d="M50 250 L750 250" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <path d="M50 150 L750 150" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <!-- Bars -->
+    <rect x="100" y="200" width="80" height="150" rx="10" fill="url(#bar)" opacity="0.8" />
+    <rect x="250" y="120" width="80" height="230" rx="10" fill="url(#bar)" opacity="0.85" />
+    <rect x="400" y="250" width="80" height="100" rx="10" fill="url(#bar)" opacity="0.7" />
+    <rect x="550" y="80" width="80" height="270" rx="10" fill="#c89d5c" />
+    <!-- Line graph -->
+    <path d="M140 200 L290 120 L440 250 L590 80" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="140" cy="200" r="8" fill="#ffffff" />
+    <circle cx="290" cy="120" r="8" fill="#ffffff" />
+    <circle cx="440" cy="250" r="8" fill="#ffffff" />
+    <circle cx="590" cy="80" r="8" fill="#ffffff" />
+</svg>

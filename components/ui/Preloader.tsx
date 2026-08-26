@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Logo } from "@/components/ui/Logo";
 
 const LOAD_STEPS = [
   { label: "Initialising systems…", pct: 12 },
@@ -114,7 +115,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
 
           {/* Central content */}
           <div className="preloader__logo flex flex-col items-center gap-6">
-            {/* Spinning ring + Vikas CA monogram */}
+            {/* Spinning ring + brand lockup */}
             <div className="relative flex items-center justify-center">
               {/* Outer ring */}
               <motion.svg
@@ -183,19 +184,14 @@ export function Preloader({ onComplete }: PreloaderProps) {
                 />
               </motion.svg>
 
-              {/* Vikas CA monogram */}
+              {/* Brand lockup */}
               <motion.div
                 initial={{ scale: 0.7, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 className="relative z-10 flex flex-col items-center"
               >
-                <span
-                  className="text-3xl font-extrabold tracking-tighter text-[#0b1524]"
-                  style={{ letterSpacing: "-0.04em" }}
-                >
-                  Vikas CA
-                </span>
+                <Logo className="h-8" priority />
               </motion.div>
             </div>
 
@@ -222,17 +218,6 @@ export function Preloader({ onComplete }: PreloaderProps) {
               </motion.div>
             </motion.div>
 
-            {/* Vikas CA wordmark */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              className="flex items-center gap-2 text-xs text-stone-500 uppercase tracking-[0.22em] font-medium"
-            >
-              <span className="w-6 h-px bg-stone-300" />
-              MANN JUDD AUSTRALIA
-              <span className="w-6 h-px bg-stone-300" />
-            </motion.div>
           </div>
 
           {/* Progress bar at bottom */}
@@ -240,7 +225,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
 
           {/* Bottom status bar */}
           <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between text-[10px] text-stone-500 uppercase tracking-widest font-medium">
-            <span>Vikas CA International Network — 157 Countries</span>
+            <span>NICS International Network — 157 Countries</span>
             <span>Client Choice Awards 2026 — #1 Accounting Firm</span>
           </div>
         </motion.div>

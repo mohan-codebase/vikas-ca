@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
 export function ContactCTA() {
-  const [selectedOffice, setSelectedOffice] = useState("sydney");
+  const [selectedOffice, setSelectedOffice] = useState(locationsData[0].id);
   const [selectedService, setSelectedService] = useState("advisory");
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
@@ -51,13 +51,13 @@ export function ContactCTA() {
             <div className="p-6 bg-white border border-stone-200 shadow-sm rounded-xl space-y-4">
               <div className="flex items-center justify-between text-xs text-stone-500 border-b border-stone-100 pb-3">
                 <span className="uppercase tracking-wider font-bold text-stone-600">Direct Office Connection</span>
-                <span className="text-[#0056b3] font-mono font-bold">10 AU/NZ FIRMS</span>
+                <span className="text-[#0056b3] font-mono font-bold">3 GLOBAL OFFICES</span>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                 <div>
                   <span className="text-stone-400 block mb-1">Selected Location</span>
-                  <span className="text-sm font-bold text-[#0b1524] block">Vikas CA {activeOffice.name}</span>
+                  <span className="text-sm font-bold text-[#0b1524] block">NICS {activeOffice.name}</span>
                   <span className="text-stone-500 mt-0.5 block">{activeOffice.address}</span>
                 </div>
                 <div>
@@ -82,11 +82,11 @@ export function ContactCTA() {
             <div className="flex items-center gap-6 text-xs text-stone-600 pt-2">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0056b3]" />
-                <span>National: 1300 452 287</span>
+                <span>National: +61 406 727 061</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#0056b3]" />
-                <span>info@vikasca.com</span>
+                <span>info@nics.com</span>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export function ContactCTA() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0b1524]">Thank you for reaching out</h3>
                 <p className="text-sm text-stone-600 max-w-md mx-auto">
-                  Your message has been routed to the Managing Partner of our <strong>Vikas CA {activeOffice.name}</strong> office. An advisory director will contact you within 1 business day.
+                  Your message has been routed to the Managing Partner of our <strong>NICS {activeOffice.name}</strong> office. An advisory director will contact you within 1 business day.
                 </p>
                 <button
                   onClick={() => {
@@ -116,7 +116,7 @@ export function ContactCTA() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <h3 className="text-xl font-bold text-[#0b1524]">Connect with a Vikas CA Partner</h3>
+                  <h3 className="text-xl font-bold text-[#0b1524]">Connect with a NICS Partner</h3>
                   <p className="text-xs text-stone-500 mt-1">
                     Select your nearest office and service of interest for direct partner routing.
                   </p>
@@ -182,7 +182,7 @@ export function ContactCTA() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="eleanor@company.com.au"
+                    placeholder="eleanor@company.com"
                     className="w-full text-sm px-3.5 py-2.5 bg-stone-50/70 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#0056b3] focus:bg-white focus:outline-none placeholder-stone-400"
                   />
                 </div>

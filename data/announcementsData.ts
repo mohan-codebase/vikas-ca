@@ -12,36 +12,36 @@ export interface AnnouncementItem {
 
 export const announcementsData: AnnouncementItem[] = [
   {
-    id: "award-2026",
-    category: "Recognition",
-    badge: "2026 Client Choice Awards",
-    title: "Vikas CA named Best Accounting & Consulting Services Firm",
-    summary: "Reflecting our relentless focus on client care and commercial clarity, our network has been awarded top honours in the prestigious Australian Financial Review Client Choice Awards.",
+    id: "iso-27001-2026",
+    category: "Data Security",
+    badge: "ISO 27001 Certified",
+    title: "NICS Achieves 100% ISO 27001 Compliance Renewal",
+    summary: "Reaffirming our absolute commitment to client data protection, our global delivery centres have successfully completed the rigorous ISO 27001 certification audit.",
     date: "August 2026",
-    linkText: "Read the award announcement",
-    href: "#about-awards",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80"
+    linkText: "Read about our security standards",
+    href: "#about-security",
+    image: "/images/svg-global.svg"
   },
   {
-    id: "un-global-compact",
-    category: "Sustainability",
-    badge: "UN Global Compact",
-    title: "Strengthening sustainability commitment: Joining UN Global Compact Network",
-    summary: "Aligning our operations, governance, and client advisory practices with the Ten Principles of the UN Global Compact across human rights, labour, environment, and anti-corruption.",
+    id: "us-office-expansion",
+    category: "Global Growth",
+    badge: "New Office",
+    title: "NICS officially opens new US headquarters in Marlton, New Jersey",
+    summary: "Led by Co-Founder Andrew Noble, our new US presence allows us to provide tailored BPO and tax compliance support to North American firms.",
     date: "August 2026",
-    linkText: "Explore our ESG commitments",
-    href: "#about-commitment",
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80"
+    linkText: "Learn about our US services",
+    href: "#about-us-expansion",
+    image: "/images/svg-global.svg"
   },
   {
-    id: "leadership-promotions",
+    id: "leadership-update",
     category: "Firm News",
-    badge: "Leadership & Growth",
-    title: "National leadership strengthened with senior partner and director promotions",
-    summary: "Recognising exceptional talent and dedication across our corporate advisory, assurance, and tax divisions in Sydney, Melbourne, Brisbane, and Perth.",
+    badge: "Leadership",
+    title: "Boobalan Madhavan and Gorav Gupta celebrate 10 years of global BPO excellence",
+    summary: "Marking a decade of simplifying talent collaboration and delivering exceptional offshore services to accounting and financial planning firms worldwide.",
     date: "July 2026",
-    linkText: "Meet our new leaders",
+    linkText: "Read our founders' story",
     href: "#people",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/svg-global.svg"
   }
 ];

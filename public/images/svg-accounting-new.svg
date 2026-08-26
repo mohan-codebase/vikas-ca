@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+        <linearGradient id="bgAcct" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#001a33" />
+            <stop offset="100%" stop-color="#004080" />
+        </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#bgAcct)" />
+    
+    <g transform="translate(150, 80)">
+        <rect x="0" y="0" width="500" height="300" rx="8" fill="#ffffff" opacity="0.95" />
+        
+        <rect x="0" y="0" width="500" height="50" rx="8" fill="#0056b3" />
+        <rect x="0" y="25" width="500" height="25" fill="#0056b3" />
+        <text x="30" y="32" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">ASSETS</text>
+        <text x="200" y="32" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">Q1</text>
+        <text x="300" y="32" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">Q2</text>
+        <text x="400" y="32" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">YTD</text>
+
+        <path d="M 0 100 L 500 100" stroke="#e2e8f0" stroke-width="2" />
+        <path d="M 0 150 L 500 150" stroke="#e2e8f0" stroke-width="2" />
+        <path d="M 0 200 L 500 200" stroke="#e2e8f0" stroke-width="2" />
+        <path d="M 0 250 L 500 250" stroke="#e2e8f0" stroke-width="2" />
+
+        <path d="M 180 50 L 180 300" stroke="#e2e8f0" stroke-width="2" />
+        <path d="M 280 50 L 280 300" stroke="#e2e8f0" stroke-width="2" />
+        <path d="M 380 50 L 380 300" stroke="#e2e8f0" stroke-width="2" />
+
+        <g font-family="monospace" font-size="14" fill="#334155">
+            <text x="30" y="80" font-family="sans-serif">Cash &amp; Equiv</text>
+            <text x="200" y="80">$124,500</text>
+            <text x="300" y="80">$142,300</text>
+            <text x="400" y="80" font-weight="bold" fill="#0099db">$266,800</text>
+
+            <text x="30" y="130" font-family="sans-serif">Accounts Rec</text>
+            <text x="200" y="130">$45,200</text>
+            <text x="300" y="130">$51,800</text>
+            <text x="400" y="130" font-weight="bold" fill="#0099db">$97,000</text>
+
+            <text x="30" y="180" font-family="sans-serif">Inventory</text>
+            <text x="200" y="180">$88,100</text>
+            <text x="300" y="180">$79,400</text>
+            <text x="400" y="180" font-weight="bold" fill="#0099db">$167,500</text>
+            
+            <text x="30" y="230" font-family="sans-serif">Investments</text>
+            <text x="200" y="230">$210,000</text>
+            <text x="300" y="230">$225,000</text>
+            <text x="400" y="230" font-weight="bold" fill="#0099db">$435,000</text>
+
+            <text x="30" y="280" font-family="sans-serif" font-weight="bold" fill="#0b1524">TOTAL ASSETS</text>
+            <text x="200" y="280" font-weight="bold" fill="#0b1524">$467,800</text>
+            <text x="300" y="280" font-weight="bold" fill="#0b1524">$498,500</text>
+            <text x="400" y="280" font-weight="bold" fill="#00a99d">$966,300</text>
+        </g>
+    </g>
+
+    <g transform="translate(600, 250)">
+        <rect x="0" y="0" width="120" height="150" rx="12" fill="#0b1524" opacity="0.9" />
+        <rect x="15" y="15" width="90" height="30" rx="4" fill="#c89d5c" />
+        <text x="95" y="35" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="end">966,300</text>
+        
+        <circle cx="30" cy="70" r="10" fill="#334155" />
+        <circle cx="60" cy="70" r="10" fill="#334155" />
+        <circle cx="90" cy="70" r="10" fill="#0099db" />
+
+        <circle cx="30" cy="100" r="10" fill="#334155" />
+        <circle cx="60" cy="100" r="10" fill="#334155" />
+        <circle cx="90" cy="100" r="10" fill="#0099db" />
+
+        <circle cx="30" cy="130" r="10" fill="#334155" />
+        <circle cx="60" cy="130" r="10" fill="#334155" />
+        <circle cx="90" cy="130" r="10" fill="#00a99d" />
+    </g>
+</svg>

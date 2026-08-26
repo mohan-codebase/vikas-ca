@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+        <linearGradient id="tmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0b1e36" />
+            <stop offset="100%" stop-color="#002b49" />
+        </linearGradient>
+    </defs>
+    
+    <rect width="100%" height="100%" fill="url(#tmBg)" />
+
+    <!-- Global Connection Network Visual -->
+    <g transform="translate(100, 50)">
+        <rect width="600" height="350" rx="14" fill="#0d2542" stroke="#1b4573" stroke-width="2" />
+
+        <!-- Connecting Hubs Map Visual -->
+        <!-- Hub Australia -->
+        <g transform="translate(100, 100)">
+            <circle cx="0" cy="0" r="32" fill="#0056b3" stroke="#00a3e0" stroke-width="2" />
+            <text x="0" y="5" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">AU / NZ</text>
+            <text x="0" y="48" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Client Onshore</text>
+        </g>
+
+        <!-- Hub Chennai Delivery Center -->
+        <g transform="translate(300, 200)">
+            <circle cx="0" cy="0" r="44" fill="#c89d5c" stroke="#fcd34d" stroke-width="3" />
+            <text x="0" y="-3" fill="#071529" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">CHENNAI</text>
+            <text x="0" y="14" fill="#071529" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Global Delivery Hub</text>
+            <text x="0" y="62" fill="#e6ca94" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">24/7 Operations · ISO 27001</text>
+        </g>
+
+        <!-- Hub USA -->
+        <g transform="translate(500, 100)">
+            <circle cx="0" cy="0" r="32" fill="#0056b3" stroke="#00a3e0" stroke-width="2" />
+            <text x="0" y="5" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">USA</text>
+            <text x="0" y="48" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">New Jersey Office</text>
+        </g>
+
+        <!-- Connection lines with animated pulses / dots -->
+        <path d="M 100 100 Q 200 120, 300 200" fill="none" stroke="#00a3e0" stroke-width="3" stroke-dasharray="6 6" />
+        <path d="M 500 100 Q 400 120, 300 200" fill="none" stroke="#00a3e0" stroke-width="3" stroke-dasharray="6 6" />
+
+        <!-- Bottom Tag banner -->
+        <g transform="translate(40, 290)">
+            <rect width="520" height="40" rx="8" fill="#071529" stroke="#153254" stroke-width="1" />
+            <text x="260" y="25" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+                ✦ 100% Dedicated Qualified CA/CMA Professionals · Seamless Team Extension
+            </text>
+        </g>
+    </g>
+</svg>

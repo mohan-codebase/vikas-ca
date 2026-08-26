@@ -23,58 +23,58 @@ export interface ClientStory {
 }
 
 export const featuredCaseStudy: ClientStory = {
-  id: "infini-resources",
+  id: "scaling-sme-practice",
   badge: "Client Case Study",
-  category: "Resources & Capital Markets",
-  headline: "From Greenfield Exploration to ASX Debut: Powering the Clean Energy Transition",
-  subheadline: "How Vikas CA Perth guided Infini Resources through complex structuring, statutory audits, and an oversubscribed initial public offering.",
-  quote: "Vikas CA acted as true partners from day one. Their commercial agility and deep mining sector knowledge gave our board total confidence through the listing process.",
+  category: "Accounting & Compliance",
+  headline: "From Capacity Constraints to Uncapped Growth: Scaling a Mid-Tier Practice",
+  subheadline: "How NICS helped an Australian accounting firm overcome talent shortages and achieve 70% cost savings on compliance tasks.",
+  quote: "NICS simplified talent collaboration for us. Their team integrated seamlessly into our workflow, and the 100% ISO 27001 certification gave us absolute peace of mind.",
   author: {
-    name: "Charles Thomas",
-    title: "Managing Director",
-    firm: "Infini Resources (ASX: I88)",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80"
+    name: "Sarah Jenkins",
+    title: "Managing Partner",
+    firm: "Jenkins & Partners Advisory",
+    avatar: "/images/svg-team.svg"
   },
-  synopsis: "Infini Resources required specialized transaction advisory, Investigating Accountant's Reports (IAR), and tax structuring for its critical minerals assets across Western Australia and Canada. Vikas CA's Perth office delivered an end-to-end listing advisory program.",
+  synopsis: "Facing critical domestic talent shortages and rising operational costs, Jenkins & Partners needed a reliable way to handle baseline compliance and SMSF administration. NICS deployed a dedicated offshore team in Chennai that operated as a direct extension of their local staff.",
   stats: [
-    { label: "IPO Capital Raised", value: "$5.5M" },
-    { label: "Oversubscription", value: "140%" },
-    { label: "Timeline to Listing", value: "14 Weeks" }
+    { label: "Cost Savings", value: "70%" },
+    { label: "Turnaround Time", value: "-45%" },
+    { label: "Data Security", value: "ISO 27001" }
   ],
-  linkText: "Read the Infini Resources case study",
-  href: "#case-study-infini",
-  image: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80",
-  tags: ["Transaction Advisory", "ASX Listing", "Tax Structuring", "Mining & Resources"]
+  linkText: "Read the full case study",
+  href: "#case-study-sme",
+  image: "/images/svg-case-study-scaling.svg",
+  tags: ["Outsourcing", "Cost Savings", "SMSF", "Accounting"]
 };
 
 export const podcastStory: ClientStory = {
-  id: "talking-family-business",
-  badge: "Special Podcast Series",
-  category: "Family Business & Succession",
-  headline: "Talking Family Business: Navigating Harmony, Wealth & Legacy",
-  subheadline: "A 6-part investigative audio series unpacking the emotional and financial realities of Australia's family-owned enterprises.",
-  synopsis: "Family businesses generate over 50% of Australia's GDP. In this exclusive series, Vikas CA partners sit down with prominent multi-generational business leaders to discuss succession friction, governance frameworks, and preparing next-gen leadership.",
-  linkText: "Listen to all 6 podcast episodes",
-  href: "#podcast-series",
-  image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80",
-  tags: ["6 Episodes", "Apple Podcasts & Spotify", "Succession Planning", "Family Governance"]
+  id: "outsource-your-way-forward",
+  badge: "Webinar Series",
+  category: "Business Process Outsourcing",
+  headline: "Outsource Your Way Forward: Strategies for Modern Firms",
+  subheadline: "A 4-part series unpacking the benefits of BPO, offshore teams, and maintaining world-class data security.",
+  synopsis: "In this exclusive series, NICS founders Boobalan Madhavan and Andrew Noble discuss how modern practices can leverage global talent to drive margins and focus on high-value advisory.",
+  linkText: "Watch the webinar series",
+  href: "#webinar-series",
+  image: "/images/svg-webinar.svg",
+  tags: ["4 Episodes", "On-Demand Video", "BPO Strategy", "Offshoring"]
 };
 
 export const peopleQAStory: ClientStory = {
-  id: "will-and-remi",
-  badge: "People & Culture Spotlight",
-  category: "Life at Vikas CA",
-  headline: "Where Ambition Meets Humanity: Inside the Careers of Will & Rémi",
-  subheadline: "How our Sydney and Perth team members balance high-stakes corporate deals with endurance athletic pursuits and growing families.",
-  synopsis: "In this candid conversation, Will (Corporate Advisory Manager in Sydney) shares how becoming a stepparent and training for ultra-marathons thrives alongside heavy M&A dealflow, while Rémi (Tax Advisory in Perth) reflects on rapid promotion, mentorship, and community leadership.",
+  id: "global-talent",
+  badge: "Team Spotlight",
+  category: "Life at NICS",
+  headline: "Building Bridges: The NICS Global Delivery Team",
+  subheadline: "How our operations in Chennai ensure 24/7 capacity and seamless integration with our clients in Australia and the US.",
+  synopsis: "We sat down with Gorav Gupta, Co-Founder & Director, and key team leaders in our Chennai office to discuss our rigorous training programs, data security protocols, and what it takes to deliver world-class BPO services continuously.",
   author: {
-    name: "Will & Rémi",
-    title: "Corporate Advisory & Tax Managers",
-    firm: "Vikas CA Sydney & Vikas CA Perth",
-    avatar: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=300&q=80"
+    name: "Gorav Gupta",
+    title: "Co-Founder & Director",
+    firm: "NICS",
+    avatar: "/images/svg-team.svg"
   },
   linkText: "Read the full interview",
   href: "#people-qa",
-  image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
-  tags: ["Sydney & Perth", "Career Growth", "Wellbeing", "Work-Life Integration"]
+  image: "/images/svg-team-interview.svg",
+  tags: ["Chennai Operations", "24/7 Capacity", "ISO 27001", "Team Culture"]
 };
