@@ -18,114 +18,114 @@ export interface InsightArticle {
 }
 
 export const featuredInsight: InsightArticle = {
-  id: "bpo-guide-2026",
-  category: "Flagship Publication",
-  edition: "The NICS Guide — 2026 Edition",
-  title: "Maximising Margins: The Strategic Advantage of BPO in 2026",
-  excerpt: "Discover how accounting and financial planning firms are utilizing offshore teams to combat local skill shortages, achieving up to 70% cost savings without compromising on quality or security.",
-  date: "August 2026",
-  readTime: "12 min read",
+  id: "information-security-framework",
+  category: "Security Architecture",
+  edition: "Information Security Framework",
+  title: "Information Security Is Part of the Delivery Model",
+  excerpt: "When you outsource business processes, you are entrusting your service provider with business information. That is why information security is built into our operating approach, aligned with ISO/IEC 27001 principles across access control, user permissions, confidentiality, and secure information handling.",
+  date: "Security Standard",
+  readTime: "8 min read",
   author: {
-    name: "Boobalan Madhavan",
-    role: "Founder & MD",
-    office: "Sydney"
+    name: "Information Security Team",
+    role: "Governance & Security",
+    office: "Chennai & Sydney"
   },
   featured: true,
-  tags: ["BPO", "Cost Savings", "Offshore Teams", "Strategy"],
+  tags: ["ISO/IEC 27001", "Access Control", "Confidentiality", "Data Protection"],
   image: "/images/svg-security.svg",
-  href: "#insights-bpo-guide"
+  href: "#insights"
 };
 
 export const secondaryInsights: InsightArticle[] = [
   {
-    id: "iso-27001-security",
-    category: "Technical Guide",
-    title: "Why ISO 27001 Certification is Non-Negotiable for Your BPO Partner",
-    excerpt: "Understanding the stringent requirements of ISO 27001 and how NICS guarantees 100% data security for your sensitive client information.",
-    date: "August 18, 2026",
+    id: "australian-accounting-practice-support",
+    category: "Practice Operations",
+    title: "Support for Australian Accounting Practices: Expanding Capacity Without Permanent Overhead",
+    excerpt: "How accounting firms maintain delivery capacity for workpapers, financial statements, GST/BAS data, and year-end accounting while Australian partners retain professional judgement and sign-off.",
+    date: "Practice Briefing",
     readTime: "6 min read",
+    author: {
+      name: "Boobalan Madhavan",
+      role: "Founder & MD",
+      office: "Sydney"
+    },
+    tags: ["AASB", "Tax Return Support", "Workpapers", "Australian Practices"],
+    image: "/images/svg-security.svg",
+    href: "#insights"
+  },
+  {
+    id: "smsf-audit-back-office",
+    category: "Compliance & Assurance",
+    title: "SMSF & Audit Back-Office: Managing Uneven Workloads with Rigorous Documentation",
+    excerpt: "Audit teams often experience uneven seasonal demand. Explore how structured lead schedules, evidence organisation, sampling support, and SMSF bookkeeping bridge capacity gaps.",
+    date: "Technical Analysis",
+    readTime: "7 min read",
     author: {
       name: "Gorav Gupta",
       role: "Co-Founder & Director",
       office: "Chennai"
     },
-    tags: ["ISO 27001", "Data Security", "Compliance"],
+    tags: ["SMSF", "Audit Files", "Lead Schedules", "Evidence Organisation"],
     image: "/images/svg-security.svg",
-    href: "#insights-security"
+    href: "#insights"
   },
   {
-    id: "mortgage-broking-scale",
-    category: "Industry Analysis",
-    title: "Accelerating Settlements: Outsourcing for Mortgage Brokers",
-    excerpt: "How dedicated offshore processing teams enable brokers to write more loans and reduce turnaround times dramatically.",
-    date: "August 12, 2026",
+    id: "one-person-to-function",
+    category: "Scalability Guide",
+    title: "From One Person to an Offshore Function: Growing With Your Business",
+    excerpt: "Start small with a single bookkeeping resource, add accounts payable, and scale into reporting, audit support, or complete business operations when you're ready.",
+    date: "Strategy Guide",
     readTime: "5 min read",
     author: {
       name: "Andrew Noble",
       role: "Co-Founder",
       office: "USA"
     },
-    tags: ["Mortgage Broking", "Loan Processing", "Growth"],
+    tags: ["Scalable Model", "Offshore Function", "Dedicated Resource", "BOT Transition"],
     image: "/images/svg-security.svg",
-    href: "#insights-mortgage"
-  },
-  {
-    id: "financial-planning-paraplanning",
-    category: "Industry Analysis",
-    title: "Solving the Paraplanning Bottleneck with Offshore Teams",
-    excerpt: "Turn around Statements of Advice faster and reduce the cost of compliance with scalable paraplanning support.",
-    date: "August 04, 2026",
-    readTime: "7 min read",
-    author: {
-      name: "Boobalan Madhavan",
-      role: "Founder & MD",
-      office: "Sydney"
-    },
-    tags: ["Financial Planning", "Paraplanning", "Efficiency"],
-    image: "/images/svg-security.svg",
-    href: "#insights-paraplanning"
+    href: "#insights"
   }
 ];
 
 export const latestNewsItems = [
   {
     id: "news-1",
-    category: "Security Update",
-    title: "NICS renews ISO 27001 certification with zero non-conformances",
-    date: "14 Aug 2026",
+    category: "Information Security",
+    title: "ISO/IEC 27001 principles embedded across all client workflows and user permissions",
+    date: "Security Update",
     readTime: "4 min",
-    href: "#insights-security"
+    href: "#insights"
   },
   {
     id: "news-2",
-    category: "BPO Strategy",
-    title: "Talent collaboration simplified: integrating your local and offshore teams",
-    date: "11 Aug 2026",
-    readTime: "6 min",
-    href: "#insights-bpo-guide"
+    category: "AASB & GST",
+    title: "Supporting Australian accounting practices with structured workpapers and GST data prep",
+    date: "Practice Update",
+    readTime: "5 min",
+    href: "#insights"
   },
   {
     id: "news-3",
-    category: "Advisory Briefing",
-    title: "Outsource your way forward: 5 tasks you should delegate today",
-    date: "02 Aug 2026",
-    readTime: "5 min",
-    href: "#insights-delegate"
+    category: "Operating Principle",
+    title: "What you keep vs what we take care of: establishing clear ownership in offshore models",
+    date: "Governance Guide",
+    readTime: "6 min",
+    href: "#stories"
   },
   {
     id: "news-4",
-    category: "Tax Update",
-    title: "Streamlining tax season with 24/7 compliance processing",
-    date: "28 Jul 2026",
+    category: "Financial Services",
+    title: "Streamlining mortgage processing and SOA preparation support for Australian advisers",
+    date: "Operations Alert",
     readTime: "5 min",
-    href: "#insights-tax"
+    href: "#services"
   },
   {
     id: "news-5",
-    category: "Firm News",
-    title: "NICS expands support for US accounting practices",
-    date: "22 Jul 2026",
-    readTime: "7 min",
-    href: "#insights-us-expansion"
+    category: "Due Diligence & Legal Ops",
+    title: "Organising data rooms and contract administration for professional firms",
+    date: "Advisory Briefing",
+    readTime: "4 min",
+    href: "#services"
   }
 ];

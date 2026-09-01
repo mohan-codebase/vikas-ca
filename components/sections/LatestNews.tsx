@@ -25,19 +25,19 @@ export function LatestNews() {
             </div>
 
             <p className="text-sm text-stone-600 leading-relaxed">
-              Stay ahead of legislative developments, ATO tax benchmarks, and reporting standards with our regular news briefings.
+              Stay informed on information security practices, Australian compliance benchmarks, and offshore delivery workflows with our regular briefings.
             </p>
 
             <div className="p-5 bg-white border border-[#e6e4dc] rounded-xs space-y-3">
               <div className="flex items-center gap-2 text-xs font-bold text-[#0b1524] uppercase tracking-wider">
                 <BellRing className="w-4 h-4 text-[#0056b3]" />
-                Tax & Advisory Alerts
+                Practice & Security Briefings
               </div>
               <p className="text-xs text-stone-600">
-                Receive crucial regulatory and tax updates directly to your inbox every fortnight.
+                Receive structured updates on Australian standards, security controls, and operational workflows.
               </p>
               <ArrowLink href="#contact" variant="blue" size="sm">
-                Subscribe to NICS alerts
+                Get in touch with NICS
               </ArrowLink>
             </div>
           </div>

@@ -15,20 +15,20 @@ export function ClientStories() {
       <Container size="default">
         {/* Section Heading */}
         <SectionHeading
-          eyebrow="Real Impact & Partnerships"
-          title="What Our Clients Say"
-          description="Behind every balance sheet is an ambitious vision. Discover how our multidisciplinary teams partner with founders, boards, and leaders across Australasia."
+          eyebrow="Clear Ownership & Governance"
+          title="A Delivery Model Built Around Your Business"
+          description="There is no standard outsourcing package at NICS. Whether you need one dedicated accountant, an entire finance team, or seasonal audit support, our delivery model is structured around your specific requirements."
           align="split"
         />
 
-        {/* Major Split Layout: Featured Case Study (Infini Resources) */}
+        {/* Major Split Layout: Featured Delivery Model */}
         <div className="bg-white border border-[#e7e5dc] rounded-xs shadow-sm overflow-hidden mb-12 lg:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Left Image Showcase */}
             <div className="lg:col-span-6 relative aspect-[16/11] lg:aspect-auto min-h-[340px] lg:min-h-[480px]">
               <Image
                 src={featuredCaseStudy.image}
-                alt="Infini Resources clean energy critical minerals mining project in Western Australia"
+                alt="NICS offshore team delivery model"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -47,7 +47,7 @@ export function ClientStories() {
                   {featuredCaseStudy.category}
                 </div>
                 <div className="text-xl sm:text-2xl font-bold">
-                  Infini Resources (ASX: I88)
+                  What You Keep. What We Take Care Of.
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export function ClientStories() {
               <div className="space-y-4">
                 <div className="flex items-center gap-2 text-xs font-semibold text-[#0056b3] uppercase tracking-wider">
                   <Building2 className="w-4 h-4" />
-                  Transaction & Capital Advisory
+                  Operating Principle
                 </div>
 
                 <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0b1524] leading-snug">

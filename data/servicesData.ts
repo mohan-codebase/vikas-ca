@@ -26,118 +26,128 @@ export interface ServiceCategory {
 
 export const servicesData: ServiceCategory[] = [
   {
-    id: "accounting",
+    id: "accounting-finance",
     number: "01",
-    title: "Accounting",
-    subtitle: "End-to-End Accounting & Bookkeeping",
-    leadSummary: "Comprehensive accounting solutions designed to streamline operations and enhance financial clarity for your practice.",
-    fullDescription: "Our accounting specialists provide reliable, scalable support for firms, allowing them to focus on advisory and client relationships rather than day-to-day data entry and reconciliations.",
+    title: "Accounting & Finance",
+    subtitle: "Accounting & Finance Operations",
+    leadSummary: "Your finance function needs more than transaction processing. It needs reliable information, disciplined processes and timely reporting. NICS supports Australian accounting practices and businesses across the finance function.",
+    fullDescription: "From general ledger maintenance to monthly management packs and forecasting models, we ensure your financial data is accurate, compliant, and actionable.",
     keyMetric: {
-      value: "Up to 70%",
-      label: "Cost savings for accounting practices"
+      value: "Timely & Accurate",
+      label: "Disciplined processes, reporting & forecasting"
     },
     subServices: [
-      { name: "Bookkeeping", description: "Accurate ledger management, bank reconciliations, and AR/AP." },
-      { name: "Management Accounts", description: "Monthly and quarterly management reporting with deep insights." },
-      { name: "Payroll Services", description: "End-to-end payroll processing and compliance." },
-      { name: "Year-End Finalisation", description: "Preparation of year-end accounts and working papers." }
+      { name: "Bookkeeping & Transactions", description: "Bank reconciliations, transaction processing, general ledger maintenance, month-end and journals." },
+      { name: "Accounts Payable", description: "Complete supplier payment workflow: invoice receipt, processing, reconciliation and reporting." },
+      { name: "Accounts Receivable", description: "Customer billing, invoice processing, receipt allocation, and debtor reporting." },
+      { name: "Inventory Support", description: "Physical or online inventory records, reconciliations, reporting and supporting schedules." },
+      { name: "Management Reporting", description: "Monthly management packs, P&L, balance sheet, cash flow, KPIs, and budget vs actual analysis." },
+      { name: "Budgeting & Forecasting", description: "Financial models, budgets, cash-flow forecasts, scenario analysis and ongoing reporting." }
     ],
     image: "/images/svg-accounting-new.svg",
     featuredCaseStudy: {
-      client: "Mid-Tier Accounting Firm",
-      outcome: "Scaled operations with a dedicated offshore team, reducing overheads by 55%."
+      client: "Australian Commercial Enterprise",
+      outcome: "Optimised end-to-end accounts payable and monthly management reporting with structured workflows."
     }
   },
   {
-    id: "compliance",
+    id: "accounting-practices",
     number: "02",
-    title: "Compliance",
-    subtitle: "SMSF & Tax Compliance Simplified",
-    leadSummary: "Ensuring your clients remain compliant with evolving SMSF and tax regulations, delivered with 100% ISO 27001 certified data security.",
-    fullDescription: "From complex SMSF administration to tax return preparation, our compliance team ensures meticulous accuracy and adherence to regulatory frameworks across multiple jurisdictions.",
+    title: "Practice Support",
+    subtitle: "Support for Australian Accounting Practices",
+    leadSummary: "NICS works with accounting firms that need additional delivery capacity without continually increasing their internal headcount. We can support recurring compliance and accounting workflows.",
+    fullDescription: "Where professional registration, review or lodgement is required, the relevant responsibility remains with the Australian practitioner or registered entity. Our role is to strengthen your delivery capability—not replace your professional responsibility.",
     keyMetric: {
-      value: "100%",
-      label: "ISO 27001 Certified Data Security"
+      value: "Flexible Scale",
+      label: "Capacity without increasing internal headcount"
     },
     subServices: [
-      { name: "SMSF Administration", description: "Comprehensive self-managed super fund compliance and reporting." },
-      { name: "Tax Return Preparation", description: "Individual, company, trust, and partnership tax returns." },
-      { name: "BAS & IAS Preparation", description: "Timely and accurate business and instalment activity statements." },
-      { name: "Corporate Secretarial", description: "ASIC compliance, company formations, and statutory updates.", tag: "High Demand" }
+      { name: "Workpaper Preparation", description: "Structured workpaper preparation aligned with Australian accounting practice standards." },
+      { name: "Financial Statements", description: "Preparation of interim and annual financial statements for entities and trusts." },
+      { name: "GST / BAS Data Preparation", description: "Accurate processing of transaction data and schedules for GST and BAS lodgements." },
+      { name: "Tax Return Preparation Support", description: "Drafting tax return workpapers and supporting schedules across entity types." },
+      { name: "Account Reconciliations", description: "Comprehensive balance sheet and ledger reconciliations for client accounts." },
+      { name: "Year-End Accounting Support", description: "End-of-financial-year processing, adjusting entries, and compliance finalisation." }
     ],
     image: "/images/svg-security.svg",
     featuredCaseStudy: {
-      client: "Boutique Advisory Practice",
-      outcome: "Outsourced SMSF processing for 200+ funds, achieving 100% lodgement compliance."
+      client: "Mid-Tier Accounting Practice",
+      outcome: "Strengthened compliance delivery capacity during peak tax season while Australian partners retained review and sign-off."
     }
   },
   {
-    id: "mortgage-broking",
+    id: "smsf-audit",
     number: "03",
-    title: "Mortgage Broking",
-    subtitle: "Back-Office Support for Brokers",
-    leadSummary: "Empowering mortgage brokers with seamless loan processing, data entry, and follow-up support to accelerate settlement times.",
-    fullDescription: "We act as an integrated extension of your mortgage broking business. By handling the time-consuming administrative tasks, we free up your brokers to write more loans and build stronger client relationships.",
+    title: "SMSF & Audit",
+    subtitle: "SMSF Back-Office & Flexible Audit Support",
+    leadSummary: "SMSF work requires attention to detail, consistency and strong documentation. Audit teams often experience uneven workloads — NICS provides flexible audit and SMSF support without expanding your permanent team.",
+    fullDescription: "Your Australian team retains responsibility for professional review, judgement, conclusions and sign-off. We provide the disciplined documentation and back-office processing behind them.",
     keyMetric: {
-      value: "24/7",
-      label: "Capacity and operational support"
+      value: "Even Workloads",
+      label: "Flexible audit & SMSF support when required"
     },
     subServices: [
-      { name: "Loan Processing", description: "End-to-end processing from submission to settlement." },
-      { name: "Data Entry & CRM Management", description: "Accurate input into aggregator platforms and CRM systems." },
-      { name: "Lender Follow-Ups", description: "Proactive communication with lenders to fast-track approvals." },
-      { name: "Post-Settlement Support", description: "Ongoing client care and portfolio management." }
+      { name: "SMSF Bookkeeping & Data", description: "SMSF transaction processing, investment data feeds, and bank reconciliations." },
+      { name: "SMSF Financials & Tax Support", description: "Workpaper preparation, financial statements, and tax return draft schedules." },
+      { name: "Audit Documentation & Schedules", description: "Supporting schedules, audit documentation, and fund file administration." },
+      { name: "Audit Preparation & Lead Schedules", description: "Financial statement work, lead schedules, and account reconciliations for audit files." },
+      { name: "Evidence & Sampling Support", description: "Evidence organisation, data analysis, and testing sampling support." },
+      { name: "Audit File Administration", description: "Audit workpaper preparation and internal control documentation." }
     ],
     image: "/images/svg-mortgage.svg",
     featuredCaseStudy: {
-      client: "National Broker Network",
-      outcome: "Reduced average loan processing time by 40% through round-the-clock support."
+      client: "Specialist SMSF & Audit Firm",
+      outcome: "Streamlined SMSF back-office documentation and seasonal audit file preparation across 300+ engagements."
     }
   },
   {
-    id: "financial-planning",
+    id: "financial-services",
     number: "04",
-    title: "Financial Planning Support",
-    subtitle: "Paraplanning & Advice Administration",
-    leadSummary: "Reliable paraplanning and administrative support to help financial planners deliver high-quality advice efficiently.",
-    fullDescription: "Our specialized team assists financial advisers with Statement of Advice (SoA) preparation, financial modelling, and ongoing portfolio administration, ensuring high standards of compliance and quality.",
+    title: "Financial Services",
+    subtitle: "Financial Planning & Mortgage Processing Support",
+    leadSummary: "Australian financial services businesses often have significant administrative workloads sitting behind client-facing professionals. NICS can support these activities while your authorised professionals remain responsible for advice.",
+    fullDescription: "Regulated advice and lending decisions remain with the appropriately authorised Australian professional or licensee. NICS handles the time-consuming administrative workflows behind them.",
     keyMetric: {
-      value: "Up to 70%",
-      label: "Cost savings on paraplanning functions"
+      value: "Seamless Admin",
+      label: "Support behind client-facing professionals"
     },
     subServices: [
-      { name: "Paraplanning", description: "Preparation of complex Statements of Advice (SoAs) and RoAs." },
-      { name: "Financial Modelling", description: "Detailed projections and scenario analysis." },
-      { name: "Implementation Support", description: "Execution of advice and platform administration." },
-      { name: "Fee Disclosure & Opt-In", description: "Managing compliance with FDS and opt-in requirements." }
+      { name: "Client Data & File Preparation", description: "Client data preparation, file collation, and pre-SOA information gathering." },
+      { name: "SOA Preparation Support", description: "Assisting advisers with Statement of Advice (SOA) draft preparation and research." },
+      { name: "Implementation Administration", description: "Post-SOA administration, platform paperwork, and execution tracking." },
+      { name: "Mortgage Document & Data Entry", description: "Document collection, data entry into aggregator portals, and fact-checking." },
+      { name: "Serviceability Calculations", description: "Serviceability worksheets, lender policy checking, and document preparation." },
+      { name: "Portal & Settlement Admin", description: "Lender portal administration, application tracking, and settlement administration." }
     ],
     image: "/images/svg-team.svg",
     featuredCaseStudy: {
-      client: "Wealth Management Firm",
-      outcome: "Streamlined SoA turnaround times from 10 days to 3 days."
+      client: "National Wealth & Broking Group",
+      outcome: "Reduced administrative turnaround on SOAs and mortgage application files by 50%."
     }
   },
   {
-    id: "operations-admin",
+    id: "business-operations",
     number: "05",
-    title: "Operations",
-    subtitle: "Business Process Outsourcing & Admin",
-    leadSummary: "Customized operational support to drive efficiency, reduce overheads, and scale your business effortlessly.",
-    fullDescription: "From virtual assistants to specialized back-office roles, NICS provides the talent you need to optimize operations. We simplify talent collaboration so you can outsource your way forward.",
+    title: "Operations & Admin",
+    subtitle: "Legal Ops, Customer Admin, KYC & Virtual Support",
+    leadSummary: "Your customer-facing team should not spend its day maintaining databases and processing administrative tasks. NICS provides structured back-office assistance across legal ops, customer admin, data, KYC, and virtual support.",
+    fullDescription: "NICS provides administrative and operational support and does not replace Australian legal advice or the services of an Australian legal practitioner. Processes are performed according to your policies and regulatory requirements.",
     keyMetric: {
-      value: "100%",
-      label: "Scalable workforce solutions"
+      value: "High-Value Focus",
+      label: "Routine operations managed with disciplined SOPs"
     },
     subServices: [
-      { name: "Virtual Assistants", description: "Dedicated administrative support for executives and teams." },
-      { name: "Data Management", description: "Secure data entry, cleansing, and database maintenance." },
-      { name: "Customer Support", description: "Email and chat support to enhance client experience." },
-      { name: "Custom BPO Solutions", description: "Tailored outsourcing strategies for unique business needs." }
+      { name: "Contract Administration", description: "Contract registers, document management, key date tracking, summaries and repository maintenance." },
+      { name: "Legal Operations & Due Diligence", description: "Formatting, proofreading, file organisation, data room maintenance and document indexing." },
+      { name: "Customer Administration", description: "Customer onboarding, account updates, CRM maintenance, document collection, and follow-ups." },
+      { name: "Customer Support", description: "Email support, live chat, inbound enquiry management, and service request processing." },
+      { name: "Data Services", description: "Data entry, validation, data cleansing, database maintenance, and data reconciliation." },
+      { name: "KYC & Virtual Support", description: "Customer verification checking, KYC status tracking, calendar management, and travel admin." }
     ],
     image: "/images/svg-global.svg",
     featuredCaseStudy: {
-      client: "Growing SME Enterprise",
-      outcome: "Built an offshore administrative hub that scales dynamically with seasonal demand."
+      client: "Multi-Disciplinary Professional Firm",
+      outcome: "Centralised CRM maintenance, KYC document verification, and contract registers into a managed offshore function."
     }
   }
 ];

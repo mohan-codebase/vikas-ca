@@ -23,11 +23,11 @@ export const locationsData: OfficeLocation[] = [
     address: "Tidel Park, Tharamani, Chennai, Tamil Nadu 600113",
     phone: "+91 44 2254 1234",
     email: "operations@nics.com",
-    description: "NICS is headquartered in Chennai, where our delivery centre operates 24/7 with 100% ISO 27001 certified data security and world-class talent.",
+    description: "NICS operates its core delivery capability in Chennai, with disciplined processes, structured workflows, and information security aligned with ISO/IEC 27001 principles.",
     leadPartner: "Gorav Gupta",
     leadPartnerTitle: "Co-Founder & Director",
     partnersCount: 12,
-    specialties: ["Global Delivery Centre", "Data Security", "24/7 Processing", "Talent Management"],
+    specialties: ["Global Delivery Centre", "Accounting & Finance Ops", "SMSF & Audit Support", "Information Security"],
     image: "/images/svg-global.svg"
   },
   {
@@ -38,11 +38,11 @@ export const locationsData: OfficeLocation[] = [
     address: "Bridgeport Business Park, Pymble NSW 2073",
     phone: "+61 2 9000 1234",
     email: "hello@nics.com",
-    description: "Our Australian client-relations office in Pymble handles engagement management and strategic BPO advisory for firms across the APAC region.",
+    description: "Our Australian office manages client relationships, practice onboarding, and strategic alignment for Australian accounting firms and growing enterprises.",
     leadPartner: "Boobalan Madhavan",
     leadPartnerTitle: "Founder & MD",
     partnersCount: 5,
-    specialties: ["Strategic Outsourcing", "Accounting Support", "Compliance Solutions", "Client Relations"],
+    specialties: ["Australian Practice Liaison", "Engagement Models", "AASB Process Alignment", "Client Governance"],
     image: "/images/svg-global.svg"
   },
   {
@@ -53,11 +53,11 @@ export const locationsData: OfficeLocation[] = [
     address: "1000 Lincoln Drive East, Marlton, NJ 08053",
     phone: "+1 856 555 0199",
     email: "us.sales@nics.com",
-    description: "Our US office provides dedicated support to North American firms, delivering tailored BPO solutions with a focus on compliance and financial operations.",
+    description: "Our US office supports North American client engagements, delivering structured operational and back-office services across corporate functions.",
     leadPartner: "Andrew Noble",
     leadPartnerTitle: "Co-Founder",
     partnersCount: 3,
-    specialties: ["US Tax Support", "Mortgage Broking BPO", "Operations & Admin", "Business Development"],
+    specialties: ["International Operations", "Workflow Transition", "Business Operations", "Client Relations"],
     image: "/images/svg-global.svg"
   }
 ];

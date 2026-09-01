@@ -22,14 +22,14 @@ export function Locations() {
       <Container size="default">
         {/* Section Heading */}
         <SectionHeading
-          eyebrow="Indian Delivery, Global Reach"
-          title="NICS Offices"
-          description="An India-headquartered delivery network with client-facing offices in Australia and the USA, backed by global network capabilities."
+          eyebrow="India Delivery, Australian Governance"
+          title="NICS Delivery & Practice Offices"
+          description="An India-based core delivery capability paired with client-facing leadership in Australia and the USA."
           align="split"
           action={
             <div className="flex items-center gap-3">
               <span className="text-xs font-semibold uppercase tracking-wider text-stone-500">
-                3 Global Offices • 157 Countries Served
+                India · Australia · USA
               </span>
             </div>
           }
@@ -42,7 +42,7 @@ export function Locations() {
             <div className="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-[#e7e5dc] p-4 sm:p-6 lg:p-8 bg-[#fbfbfa]">
               <div className="text-xs font-bold uppercase tracking-[0.14em] text-stone-400 mb-4 px-3 flex items-center justify-between">
                 <span>Select an office</span>
-                <span className="font-mono text-stone-500">10 FIRMS</span>
+                <span className="font-mono text-stone-500">{locationsData.length} OFFICES</span>
               </div>
 
               <div className="space-y-1">

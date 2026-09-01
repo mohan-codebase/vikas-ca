@@ -24,20 +24,23 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nics.com"),
   title: {
-    default: "NICS | Outsource your way forward",
+    default: "NICS | Scale Your Business Without Building Every Function In-House",
     template: "%s | NICS",
   },
   description:
-    "NICS is a business process outsource company for accounting, operational, administrative and compliance business processes in small to large enterprises.",
+    "NICS provides Australian businesses and accounting practices with a flexible offshore delivery model across accounting, SMSF, audit, financial services, legal operations, and business administration.",
   keywords: [
     "NICS",
     "outsourcing",
     "BPO",
-    "accounting outsourcing",
-    "SMSF compliance",
-    "mortgage broking support",
-    "paraplanning offshore",
-    "offshore talent",
+    "Australian accounting outsourcing",
+    "SMSF back-office support",
+    "audit support",
+    "financial planning support",
+    "mortgage processing",
+    "legal operations support",
+    "business operations",
+    "ISO 27001",
   ],
   authors: [{ name: "NICS" }],
   creator: "NICS",
@@ -51,12 +54,12 @@ export const metadata: Metadata = {
     canonical: "https://www.nics.com",
   },
   openGraph: {
-    title: "NICS | Outsource your way forward",
+    title: "NICS | Scale Your Business Without Building Every Function In-House",
     description:
-      "Your trusted back-office BPO partner specializing in Accounting, Compliance, Operations, and Administration.",
+      "A flexible offshore delivery model giving Australian businesses and practices access to experienced accounting, finance, and operational professionals.",
     url: "https://www.nics.com",
     siteName: "NICS",
-    locale: "en_US",
+    locale: "en_AU",
     type: "website",
     images: [
       {
@@ -69,9 +72,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NICS | Talent collaboration simplified",
+    title: "NICS | Scale Your Business Without Building Every Function In-House",
     description:
-      "NICS empowers small and medium businesses to compete with large enterprise corporations by providing institutional-grade back-office infrastructure.",
+      "Flexible offshore delivery model for Australian businesses. Increase capacity, access specialist capability, and reduce operational pressure.",
     site: "@NICS",
     creator: "@NICS",
     images: ["/og-image.png"],
@@ -98,11 +101,11 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "NICS",
-    alternateName: "NICS BPO",
+    alternateName: "NICS Offshore Delivery",
     url: "https://www.nics.com",
     logo: "https://www.nics.com/logo.png",
     description:
-      "NICS is a business process outsourcing company for accounting, operational, administrative and compliance business processes.",
+      "NICS provides Australian businesses and accounting practices with a flexible offshore delivery model across accounting, finance, SMSF, audit, legal, and operational support.",
     sameAs: [
       "https://twitter.com/NICS",
       "https://www.linkedin.com/company/nics/"
