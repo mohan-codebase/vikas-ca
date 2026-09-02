@@ -28,7 +28,7 @@ export const locationsData: OfficeLocation[] = [
     leadPartnerTitle: "Co-Founder & Director",
     partnersCount: 12,
     specialties: ["Global Delivery Centre", "Accounting & Finance Ops", "SMSF & Audit Support", "Information Security"],
-    image: "/images/svg-global.svg"
+    image: "/images/global-office.avif"
   },
   {
     id: "australia-pymble",
@@ -43,7 +43,7 @@ export const locationsData: OfficeLocation[] = [
     leadPartnerTitle: "Founder & MD",
     partnersCount: 5,
     specialties: ["Australian Practice Liaison", "Engagement Models", "AASB Process Alignment", "Client Governance"],
-    image: "/images/svg-global.svg"
+    image: "/images/global-office.avif"
   },
   {
     id: "usa-marlton",
@@ -58,6 +58,6 @@ export const locationsData: OfficeLocation[] = [
     leadPartnerTitle: "Co-Founder",
     partnersCount: 3,
     specialties: ["International Operations", "Workflow Transition", "Business Operations", "Client Relations"],
-    image: "/images/svg-global.svg"
+    image: "/images/global-office.avif"
   }
 ];

@@ -32,7 +32,7 @@ export const featuredInsight: InsightArticle = {
   },
   featured: true,
   tags: ["ISO/IEC 27001", "Access Control", "Confidentiality", "Data Protection"],
-  image: "/images/svg-security.svg",
+  image: "/images/security.avif",
   href: "#insights"
 };
 
@@ -50,7 +50,7 @@ export const secondaryInsights: InsightArticle[] = [
       office: "Sydney"
     },
     tags: ["AASB", "Tax Return Support", "Workpapers", "Australian Practices"],
-    image: "/images/svg-security.svg",
+    image: "/images/security.avif",
     href: "#insights"
   },
   {
@@ -66,7 +66,7 @@ export const secondaryInsights: InsightArticle[] = [
       office: "Chennai"
     },
     tags: ["SMSF", "Audit Files", "Lead Schedules", "Evidence Organisation"],
-    image: "/images/svg-security.svg",
+    image: "/images/security.avif",
     href: "#insights"
   },
   {
@@ -82,7 +82,7 @@ export const secondaryInsights: InsightArticle[] = [
       office: "USA"
     },
     tags: ["Scalable Model", "Offshore Function", "Dedicated Resource", "BOT Transition"],
-    image: "/images/svg-security.svg",
+    image: "/images/security.avif",
     href: "#insights"
   }
 ];

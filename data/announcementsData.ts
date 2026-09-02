@@ -20,7 +20,7 @@ export const announcementsData: AnnouncementItem[] = [
     date: "Current Practice",
     linkText: "Read about our security approach",
     href: "#insights",
-    image: "/images/svg-global.svg"
+    image: "/images/global-office.avif"
   },
   {
     id: "australian-standards-alignment",
@@ -31,7 +31,7 @@ export const announcementsData: AnnouncementItem[] = [
     date: "Delivery Framework",
     linkText: "Learn about our compliance standards",
     href: "#careers-banner",
-    image: "/images/svg-global.svg"
+    image: "/images/global-office.avif"
   },
   {
     id: "scalable-delivery-model",
@@ -42,6 +42,6 @@ export const announcementsData: AnnouncementItem[] = [
     date: "Engagement Model",
     linkText: "Explore our delivery models",
     href: "#stories",
-    image: "/images/svg-global.svg"
+    image: "/images/global-office.avif"
   }
 ];
