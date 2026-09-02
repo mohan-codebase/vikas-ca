@@ -16,9 +16,9 @@ export function Insights() {
       <Container size="default">
         {/* Section Heading */}
         <SectionHeading
-          eyebrow="Intelligence & Market Perspectives"
-          title="Insights"
-          description="Authoritative thought leadership, accounting standard interpretations, tax alerts, and economic updates from our senior partners."
+          eyebrow="Security & Practice Intelligence"
+          title="Information Security & Standards"
+          description="Our operating approach is designed around recognized information security principles, ISO/IEC 27001, and AASB requirements for Australian practices."
           align="split"
           action={
             <Button
@@ -27,7 +27,7 @@ export function Insights() {
               size="sm"
               iconRight={<ArrowRight className="w-4 h-4" />}
             >
-              Browse all publications
+              View all briefings
             </Button>
           }
         />
@@ -93,8 +93,8 @@ export function Insights() {
               </div>
 
               <div className="pt-6 border-t border-stone-100">
-                <ArrowLink href={featuredInsight.href} variant="blue" size="md">
-                  Read full issue of The Bottom Line
+                <ArrowLink href="#contact" variant="blue" size="md">
+                  Learn about our information security framework
                 </ArrowLink>
               </div>
             </div>

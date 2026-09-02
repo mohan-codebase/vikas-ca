@@ -34,16 +34,19 @@ export function ContactCTA() {
             <div className="space-y-4">
               <div className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#0056b3] flex items-center gap-2">
                 <span className="w-2 h-0.5 bg-[#0056b3]" />
-                Get in Touch
+                Offshore Delivery Model
               </div>
 
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight-title text-[#0b1524] leading-[1.05]">
-                Let&apos;s talk about <br />
-                <span className="text-[#0056b3]">what&apos;s next.</span>
+                Outsource the Work. <br />
+                <span className="text-[#0056b3]">Keep the Business.</span>
               </h2>
 
               <p className="text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
-                Whether you are exploring a major transaction, navigating tax legislation, or seeking trusted business advisory, our partner-led teams are ready to assist.
+                You do not need to choose between growth and control. You can retain your Australian leadership, client relationships and decision-making while building additional delivery capacity through NICS.
+              </p>
+              <p className="text-sm text-stone-600 leading-relaxed max-w-xl">
+                Whether you need one dedicated professional, a project team or a complete offshore support function, we can design a model around your requirements.
               </p>
             </div>
 
@@ -100,7 +103,7 @@ export function ContactCTA() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#0b1524]">Thank you for reaching out</h3>
                 <p className="text-sm text-stone-600 max-w-md mx-auto">
-                  Your message has been routed to the Managing Partner of our <strong>NICS {activeOffice.name}</strong> office. An advisory director will contact you within 1 business day.
+                  Your message has been received. A NICS practice specialist will contact you within 1 business day to discuss what functions you could move offshore.
                 </p>
                 <button
                   onClick={() => {
@@ -116,9 +119,9 @@ export function ContactCTA() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <h3 className="text-xl font-bold text-[#0b1524]">Connect with a NICS Partner</h3>
-                  <p className="text-xs text-stone-500 mt-1">
-                    Select your nearest office and service of interest for direct partner routing.
+                  <h3 className="text-xl font-bold text-[#0b1524]">Let&apos;s discuss what you could move offshore.</h3>
+                  <p className="text-xs text-stone-500 mt-1 leading-relaxed">
+                    Tell us about your current workload, the functions you want to delegate and the level of control you want to retain.
                   </p>
                 </div>
 
@@ -142,19 +145,24 @@ export function ContactCTA() {
 
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">
-                      Service Line
+                      Service of Interest
                     </label>
                     <select
                       value={selectedService}
                       onChange={(e) => setSelectedService(e.target.value)}
                       className="w-full text-sm px-3.5 py-2.5 bg-stone-50/70 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#0056b3] focus:bg-white focus:outline-none"
                     >
-                      <option value="advisory">Advisory & Restructuring</option>
-                      <option value="audit">Audit & Assurance</option>
-                      <option value="business">Business Services & Outsourcing</option>
-                      <option value="tax">Tax Consulting & Compliance</option>
-                      <option value="wealth">Wealth Management & SMSF</option>
-                      <option value="general">General Commercial Inquiry</option>
+                      <option value="accounting-finance">Accounting & Finance Operations</option>
+                      <option value="practice-support">Support for Australian Accounting Practices</option>
+                      <option value="smsf-support">SMSF Back-Office Support</option>
+                      <option value="audit-support">Audit Support</option>
+                      <option value="financial-planning">Financial Planning Support</option>
+                      <option value="mortgage-processing">Mortgage Processing Support</option>
+                      <option value="legal-operations">Legal & Professional Services Support</option>
+                      <option value="business-operations">Business Operations Support</option>
+                      <option value="kyc-data">KYC & Data Services</option>
+                      <option value="virtual-admin">Virtual & Administrative Support</option>
+                      <option value="bot-model">Build–Operate–Transfer (BOT)</option>
                     </select>
                   </div>
                 </div>
@@ -189,11 +197,11 @@ export function ContactCTA() {
 
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">
-                    How Can We Assist? (Optional)
+                    Current Workload & Functions to Delegate
                   </label>
                   <textarea
                     rows={3}
-                    placeholder="Briefly describe your objectives or challenges..."
+                    placeholder="Briefly describe your current workload, roles needed, or functions to move offshore..."
                     className="w-full text-sm px-3.5 py-2.5 bg-stone-50/70 border border-stone-300 rounded-lg focus:ring-2 focus:ring-[#0056b3] focus:bg-white focus:outline-none placeholder-stone-400"
                   />
                 </div>
@@ -206,7 +214,7 @@ export function ContactCTA() {
                     className="w-full justify-center"
                     iconRight={<Send className="w-4 h-4" />}
                   >
-                    Submit Advisory Request
+                    Request Consultation
                   </Button>
                 </div>
 

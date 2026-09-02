@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, MapPin, Shield, Globe, ChevronDown } from "lucide-react";
 
-const WORDS = ["accounting", "compliance", "operations", "efficiency", "growth"];
+const WORDS = ["capacity", "accounting", "SMSF & audit", "operations", "growth"];
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -63,7 +63,7 @@ export function Hero() {
       >
         <Image
           src="/images/svg-hero.svg"
-          alt="NICS Corporate Office"
+          alt="NICS Offshore Delivery Center"
           fill
           priority
           className="object-cover object-center"
@@ -87,7 +87,7 @@ export function Hero() {
           {/* Main headline — stagger words */}
           <div className="mb-6">
             <motion.h1
-              className="text-5xl sm:text-6xl md:text-7xl xl:text-[84px] font-extrabold leading-[1.03] tracking-tight-title text-[#0b1524]"
+              className="text-5xl sm:text-6xl md:text-7xl xl:text-[80px] font-extrabold leading-[1.04] tracking-tight-title text-[#0b1524]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -99,7 +99,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
               >
-                Better
+                Scale Your Business
               </motion.span>
 
               {/* Line 2 — animated cycling word */}
@@ -109,7 +109,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
               >
-                <span className="text-[#0b1524]">outsourcing </span>
+                <span className="text-[#0b1524]">without building </span>
                 <span className="relative inline-block overflow-hidden h-[1.1em] align-bottom">
                   {WORDS.map((w, i) => (
                     <motion.span
@@ -147,7 +147,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
               >
-                for what&apos;s next.
+                every function in-house.
               </motion.span>
             </motion.h1>
           </div>
@@ -159,7 +159,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
           >
-            Accounting, compliance, and operational excellence built around scaling your business — delivered by our human-first offshore teams.
+            NICS provides Australian businesses with a flexible offshore delivery model that gives you access to experienced professionals without the cost and complexity of building every support function internally. You remain focused on your clients. We help you manage the workload behind them.
           </motion.p>
 
           {/* CTAs */}
@@ -180,13 +180,13 @@ export function Hero() {
             </motion.a>
 
             <motion.a
-              href="#locations"
+              href="#contact"
               className="group flex items-center justify-center gap-2 px-6 py-3.5 bg-white hover:bg-stone-50 border border-stone-300 hover:border-stone-400 text-[#0b1524] font-semibold text-sm rounded-xl transition-all duration-300 shadow-xs"
               whileHover={{ scale: 1.02, y: -1 }}
               whileTap={{ scale: 0.97 }}
             >
               <MapPin className="w-4 h-4 text-stone-500 group-hover:text-[#0056b3]" />
-              Find an office
+              Discuss what to move offshore
             </motion.a>
           </motion.div>
 
@@ -198,10 +198,10 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1.15 }}
           >
             {[
-              { value: "3", label: "Global Offices" },
-              { value: "70%", label: "Cost Savings", color: true },
-              { value: "24/7", label: "Workflow", accent: "cyan" },
-              { value: "100%", label: "ISO 27001", accent: "gold" },
+              { value: "Flexible", label: "Capacity" },
+              { value: "Cost", label: "Efficiency", color: true },
+              { value: "AASB", label: "Aligned", accent: "cyan" },
+              { value: "ISO 27001", label: "Principles", accent: "gold" },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -231,7 +231,7 @@ export function Hero() {
 
             <div className="h-8 w-px bg-stone-200 hidden sm:block" />
 
-            {/* NICS International badge */}
+            {/* NICS Delivery badge */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -240,7 +240,7 @@ export function Hero() {
             >
               <Globe className="w-3.5 h-3.5 text-[#0056b3]" />
               <span className="text-[11px] text-stone-600 font-medium">
-                NICS Global · India, USA, Australia
+                NICS Delivery · India & Australia
               </span>
             </motion.div>
           </motion.div>
@@ -269,10 +269,10 @@ export function Hero() {
             </div>
             <div>
               <div className="text-[10px] font-bold uppercase tracking-wider text-[#0056b3]">
-                Security Standard
+                Information Security
               </div>
               <div className="text-[12px] font-bold text-[#0b1524]">
-                ISO 27001 Certified
+                ISO/IEC 27001 Aligned
               </div>
             </div>
           </div>
@@ -280,7 +280,7 @@ export function Hero() {
             {[...Array(5)].map((_, i) => (
               <div key={i} className="w-4 h-1 rounded-full bg-[#c89d5c]" />
             ))}
-            <span className="text-[10px] text-stone-500 ml-1 font-medium">Global BPO Partner</span>
+            <span className="text-[10px] text-stone-500 ml-1 font-medium">Offshore Delivery Partner</span>
           </div>
         </div>
       </motion.div>

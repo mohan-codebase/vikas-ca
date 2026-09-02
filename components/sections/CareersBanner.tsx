@@ -9,19 +9,19 @@ import { Button } from "@/components/ui/Button";
 
 const highlights = [
   {
-    icon: GraduationCap,
-    title: "CA/CMA Graduates",
-    description: "Access to India's top talent pool of certified professionals.",
+    icon: Award,
+    title: "Australian Standards & Requirements",
+    description: "AASB requirements, Australian taxation and GST, privacy obligations, and Australian business practices.",
   },
   {
     icon: Compass,
-    title: "Global Reach",
-    description: "Seamless collaboration across India, USA, and Australia.",
+    title: "International Frameworks",
+    description: "ISO/IEC 27001 principles, IFRS, risk management frameworks, and internal control principles.",
   },
   {
-    icon: Award,
-    title: "Empowering EVP",
-    description: "A human-first approach with excellent employee value proposition.",
+    icon: GraduationCap,
+    title: "From One Person to a Function",
+    description: "Start small with one dedicated resource, prove the model, and scale into a complete support function when you're ready.",
   },
 ];
 
@@ -47,21 +47,11 @@ export function CareersBanner() {
           <div className="lg:col-span-7 space-y-7 reveal-left">
             <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.14em] uppercase text-[#0056b3]">
               <Briefcase className="w-4 h-4" />
-              Careers at NICS
+              Standards & Scalability
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight-title text-[#0b1524] leading-[1.07]">
-              What makes us{" "}
-              <span className="relative">
-                unique?
-                <motion.span
-                  className="absolute bottom-1 left-0 right-0 h-[3px] rounded-full bg-[#0056b3]"
-                  initial={{ scaleX: 0, originX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                />
-              </span>
+              Australian Requirements.{" "}
               <br />
               <span
                 style={{
@@ -71,12 +61,12 @@ export function CareersBanner() {
                   backgroundClip: "text",
                 }}
               >
-                You do.
+                International Standards.
               </span>
             </h2>
 
             <p className="text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
-              It is our differences and shared purpose that bring strength, empathy, and innovation. At NICS, you are never just a number — you contribute to our clients&apos; outcomes from day one.
+              NICS combines an India-based delivery capability with processes designed to support Australian businesses. Our work can be aligned with relevant Australian requirements and internationally recognised frameworks, maintaining the process discipline expected by Australian practices.
             </p>
 
             {/* Highlights */}
@@ -97,15 +87,15 @@ export function CareersBanner() {
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <Button
-                href="#careers"
+                href="#stories"
                 variant="primary-blue"
                 size="md"
                 iconRight={<ArrowRight className="w-4 h-4" />}
               >
-                Explore open positions
+                Explore delivery models
               </Button>
-              <Button href="#careers-graduates" variant="secondary" size="md">
-                Graduate programs
+              <Button href="#contact" variant="secondary" size="md">
+                Discuss what to move offshore
               </Button>
             </div>
           </div>
@@ -122,7 +112,7 @@ export function CareersBanner() {
               <div className="relative aspect-[4/3] sm:aspect-[1/1] rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
                 <Image
                   src="/images/svg-accounting.svg"
-                  alt="NICS young professionals graduate cohort"
+                  alt="NICS Australian standard offshore delivery processes"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -133,8 +123,8 @@ export function CareersBanner() {
                     <div className="flex items-center gap-2.5">
                       <Award className="w-4 h-4 text-[#916524]" />
                       <div>
-                        <div className="text-[10px] font-bold uppercase tracking-wider text-[#0056b3]">Recognition</div>
-                        <div className="text-xs font-bold text-[#0b1524]">Top 100 Graduate Employer 2026</div>
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-[#0056b3]">Quality & Compliance</div>
+                        <div className="text-xs font-bold text-[#0b1524]">AASB & ISO/IEC 27001 Aligned</div>
                       </div>
                     </div>
                   </div>

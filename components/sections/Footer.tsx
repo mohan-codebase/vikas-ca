@@ -33,8 +33,8 @@ export function Footer() {
           <div className="space-y-4 max-w-sm">
             <Logo className="h-[54px]" />
             <p className="text-[13px] text-stone-600 leading-relaxed">
-              Chartered Accountants, Business Advisers & Wealth Specialists.<br />
-              India&apos;s trusted back-office partner for accounting and advisory firms worldwide.
+              Flexible offshore delivery model for Australian accounting practices and businesses.<br />
+              Scale your capacity without the cost and complexity of building every function internally.
             </p>
 
             {/* Social */}
@@ -68,7 +68,7 @@ export function Footer() {
                   ),
                 },
                 {
-                  label: "Podcast",
+                  label: "Delivery Models",
                   href: "#stories",
                   icon: <Radio className="w-3.5 h-3.5" />,
                 },
@@ -124,17 +124,17 @@ export function Footer() {
           ))}
         </div>
 
-        {/* ── NICS International Notice ──────────────────── */}
+        {/* ── NICS Professional Responsibility Notice ──────────────────── */}
         <div className="py-6 border-b border-stone-200 space-y-2">
           <div className="flex items-center gap-2 text-[12px] text-stone-800 font-semibold">
             <Globe className="w-3.5 h-3.5 text-[#0056b3]" />
-            NICS International Member Network
+            Australian Professional Standards & Responsibility Notice
           </div>
           <p className="text-[11px] text-stone-600 leading-relaxed max-w-3xl">
-            NICS is an independent network of accounting and advisory firms. Member firms of NICS International, a worldwide network present in 157 countries. Each member firm is a separate and independent legal entity.
+            NICS provides back-office, operational and administrative support. Where professional registration, review, advice or lodgement is required, the relevant responsibility remains with the Australian practitioner, registered entity, or appropriately authorised licensee. Our role is to strengthen your delivery capability—not replace your professional responsibility.
           </p>
           <p className="text-[11px] text-stone-500">
-            Liability limited by a scheme approved under Professional Standards Legislation.
+            Offshore delivery capability aligned with AASB requirements, Australian taxation & GST, and ISO/IEC 27001 information security principles.
           </p>
         </div>
 

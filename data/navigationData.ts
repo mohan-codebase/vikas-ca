@@ -36,24 +36,24 @@ export interface MegaMenuItem {
 export const navigationData: MegaMenuItem[] = [
   {
     title: "Why Outsourcing",
-    href: "#why",
-    description: "The strategic advantages of outsourcing.",
+    href: "#culture",
+    description: "More Capacity. Less Operational Pressure.",
     featured: {
-      tag: "Competitive Edge",
-      title: "Cost Advantage",
-      description: "Up to 70% direct cost savings with zero CapEx and no infrastructure costs.",
-      linkText: "Read more",
-      href: "#cost",
+      tag: "Operational Value",
+      title: "Why Australian Businesses Work With NICS",
+      description: "Access flexible capacity, professional capability, structured delivery, and quality focus.",
+      linkText: "Learn more",
+      href: "#stories",
       image: "/images/svg-hero.svg",
     },
     columns: [
       {
-        heading: "Benefits",
+        heading: "Strategic Advantages",
         items: [
-          { title: "Enhance Productivity", href: "#productivity", description: "Eliminate bottlenecks" },
-          { title: "Empowering Business", href: "#empower", description: "Scale without overhead" },
-          { title: "Cost Advantages", href: "#cost", description: "Up to 70% savings" },
-          { title: "NICS Advantage", href: "#advantage", description: "Proven domain expertise" },
+          { title: "Flexible Capacity", href: "#culture", description: "Scale during peak workloads" },
+          { title: "Professional Capability", href: "#culture", description: "Experienced finance professionals" },
+          { title: "Structured Delivery", href: "#stories", description: "SOPs, review & quality controls" },
+          { title: "Cost Efficiency", href: "#stories", description: "Build capacity without in-house overhead" },
         ],
       }
     ]
@@ -61,56 +61,56 @@ export const navigationData: MegaMenuItem[] = [
   {
     title: "Services",
     href: "#services",
-    description: "End-to-End Back-Office Capabilities.",
+    description: "Offshore Support Across Core Business Functions.",
     featured: {
-      tag: "Specialised Teams",
-      title: "Compliance & Audit",
-      description: "SMSF, tax filings, and audit back-office support.",
-      linkText: "Explore Compliance",
+      tag: "Specialised Delivery",
+      title: "Support for Australian Practices",
+      description: "Workpapers, tax returns, SMSF, audit, and management reporting.",
+      linkText: "Explore Services",
       href: "#services",
       image: "/images/svg-team.svg",
     },
     columns: [
       {
-        heading: "Core Offerings",
+        heading: "Service Capabilities",
         items: [
-          { title: "Accounting", href: "#services", description: "Bookkeeping & reporting" },
-          { title: "Compliance", href: "#services", description: "Tax & SMSF" },
-          { title: "Mortgage Broking", href: "#services", description: "Loan processing" },
-          { title: "Financial Planning", href: "#services", description: "Paraplanning & SOAs" },
-          { title: "Operations", href: "#services", description: "Virtual assistants & admin" },
+          { title: "Accounting & Finance", href: "#services", description: "Bookkeeping, AP/AR & Reporting" },
+          { title: "Australian Practice Support", href: "#services", description: "Workpapers & Tax return support" },
+          { title: "SMSF & Audit Support", href: "#services", description: "Back-office SMSF & audit files" },
+          { title: "Financial Services Support", href: "#services", description: "Financial planning & mortgage BPO" },
+          { title: "Legal & Business Ops", href: "#services", description: "Contracts, due diligence, KYC & data" },
         ],
       }
     ]
   },
   {
-    title: "How It Works",
-    href: "#how-it-works",
-    description: "Seamless integration process and models.",
+    title: "Delivery Models",
+    href: "#stories",
+    description: "A Delivery Model Built Around Your Business.",
     columns: [
       {
         heading: "Engagement Models",
         items: [
-          { title: "Insourcing", href: "#models", description: "Dedicated resource" },
-          { title: "Insourcing with Manager", href: "#models", description: "Supervised dedicated resource" },
-          { title: "Job-by-Job", href: "#models", description: "Ad-hoc task basis" },
-          { title: "BOT Model", href: "#models", description: "Build, Operate, Transfer" },
+          { title: "Dedicated Resource", href: "#stories", description: "Works exclusively on your business" },
+          { title: "Managed Function", href: "#stories", description: "Supervised agreed operational scope" },
+          { title: "Project Support", href: "#stories", description: "Specific assignment or backlog" },
+          { title: "Build–Operate–Transfer", href: "#stories", description: "Transition to your offshore entity" },
         ],
       }
     ]
   },
   {
-    title: "Who We Are",
-    href: "#who-we-are",
-    description: "About NICS.",
+    title: "Standards & Security",
+    href: "#careers-banner",
+    description: "Australian Requirements. International Standards.",
     columns: [
       {
-        heading: "Our Company",
+        heading: "Compliance & Security",
         items: [
-          { title: "About Us", href: "#about", description: "Our mission and vision" },
-          { title: "Team", href: "#team", description: "Leadership team" },
-          { title: "Customer Value", href: "#cvp", description: "Empowering clients" },
-          { title: "Employee Value", href: "#evp", description: "Nurturing careers" },
+          { title: "Information Security", href: "#insights", description: "ISO/IEC 27001 aligned principles" },
+          { title: "AASB & Australian Tax", href: "#careers-banner", description: "Australian accounting standards" },
+          { title: "Quality Focus", href: "#stories", description: "Accountability & continuous improvement" },
+          { title: "One Person to Function", href: "#careers-banner", description: "Start small. Scale when ready." },
         ],
       }
     ]

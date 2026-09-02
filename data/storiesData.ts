@@ -23,58 +23,58 @@ export interface ClientStory {
 }
 
 export const featuredCaseStudy: ClientStory = {
-  id: "scaling-sme-practice",
-  badge: "Client Case Study",
-  category: "Accounting & Compliance",
-  headline: "From Capacity Constraints to Uncapped Growth: Scaling a Mid-Tier Practice",
-  subheadline: "How NICS helped an Australian accounting firm overcome talent shortages and achieve 70% cost savings on compliance tasks.",
-  quote: "NICS simplified talent collaboration for us. Their team integrated seamlessly into our workflow, and the 100% ISO 27001 certification gave us absolute peace of mind.",
+  id: "delivery-model-ownership",
+  badge: "Clear Ownership",
+  category: "Operating Principle",
+  headline: "What You Keep. What We Take Care Of.",
+  subheadline: "A successful offshore model requires clear ownership. You control the outcome. We help deliver the work.",
+  quote: "You retain client relationships, commercial decisions, professional judgement, and final approvals. NICS manages resource allocation, day-to-day processing, staff coordination, and quality review.",
   author: {
-    name: "Sarah Jenkins",
-    title: "Managing Partner",
-    firm: "Jenkins & Partners Advisory",
+    name: "Operating Principle",
+    title: "Shared Governance Framework",
+    firm: "NICS Delivery Model",
     avatar: "/images/svg-team.svg"
   },
-  synopsis: "Facing critical domestic talent shortages and rising operational costs, Jenkins & Partners needed a reliable way to handle baseline compliance and SMSF administration. NICS deployed a dedicated offshore team in Chennai that operated as a direct extension of their local staff.",
+  synopsis: "There is no standard outsourcing package at NICS. Some clients need one accountant. Others need an entire finance support team. Some require assistance only during month-end or tax season, while others want a long-term offshore operation. Our delivery model is structured around your exact requirements.",
   stats: [
-    { label: "Cost Savings", value: "70%" },
-    { label: "Turnaround Time", value: "-45%" },
-    { label: "Data Security", value: "ISO 27001" }
+    { label: "You Retain", value: "Strategy" },
+    { label: "NICS Manages", value: "Execution" },
+    { label: "Governance", value: "100% Clear" }
   ],
-  linkText: "Read the full case study",
-  href: "#case-study-sme",
+  linkText: "Discuss how we structure ownership",
+  href: "#contact",
   image: "/images/svg-case-study-scaling.svg",
-  tags: ["Outsourcing", "Cost Savings", "SMSF", "Accounting"]
+  tags: ["Dedicated Resource", "Managed Function", "Project Support", "BOT Model"]
 };
 
 export const podcastStory: ClientStory = {
-  id: "outsource-your-way-forward",
-  badge: "Webinar Series",
-  category: "Business Process Outsourcing",
-  headline: "Outsource Your Way Forward: Strategies for Modern Firms",
-  subheadline: "A 4-part series unpacking the benefits of BPO, offshore teams, and maintaining world-class data security.",
-  synopsis: "In this exclusive series, NICS founders Boobalan Madhavan and Andrew Noble discuss how modern practices can leverage global talent to drive margins and focus on high-value advisory.",
-  linkText: "Watch the webinar series",
-  href: "#webinar-series",
+  id: "why-australian-businesses-work-with-nics",
+  badge: "The NICS Advantage",
+  category: "Client Value",
+  headline: "Why Australian Businesses Work With NICS",
+  subheadline: "Eight core advantages that make NICS a disciplined extension of your existing team.",
+  synopsis: "Access flexible capacity when workloads peak, professional capability across accounting and operations, structured delivery with SOPs, scalable resourcing, technology enablement in your existing software, quality review focus, cost efficiency, and true integration.",
+  linkText: "Read about our client advantages",
+  href: "#contact",
   image: "/images/svg-webinar.svg",
-  tags: ["4 Episodes", "On-Demand Video", "BPO Strategy", "Offshoring"]
+  tags: ["Flexible Capacity", "Structured Delivery", "Quality Focus", "Cost Efficiency"]
 };
 
 export const peopleQAStory: ClientStory = {
-  id: "global-talent",
-  badge: "Team Spotlight",
-  category: "Life at NICS",
-  headline: "Building Bridges: The NICS Global Delivery Team",
-  subheadline: "How our operations in Chennai ensure 24/7 capacity and seamless integration with our clients in Australia and the US.",
-  synopsis: "We sat down with Gorav Gupta, Co-Founder & Director, and key team leaders in our Chennai office to discuss our rigorous training programs, data security protocols, and what it takes to deliver world-class BPO services continuously.",
+  id: "tailored-delivery-models",
+  badge: "Engagement Models",
+  category: "Delivery Architecture",
+  headline: "A Delivery Model Built Around Your Business",
+  subheadline: "Flexible engagement structures tailored to your scale, timeline, and operational control requirements.",
+  synopsis: "Whether you need a Dedicated Resource who works exclusively on your systems, a Managed Function with defined supervisor workflows, Project Support for backlog clearance, or Build–Operate–Transfer (BOT) to build your own offshore entity.",
   author: {
-    name: "Gorav Gupta",
-    title: "Co-Founder & Director",
+    name: "Delivery Leadership",
+    title: "Client Solutions Team",
     firm: "NICS",
     avatar: "/images/svg-team.svg"
   },
-  linkText: "Read the full interview",
-  href: "#people-qa",
+  linkText: "Explore our 4 engagement models",
+  href: "#contact",
   image: "/images/svg-team-interview.svg",
-  tags: ["Chennai Operations", "24/7 Capacity", "ISO 27001", "Team Culture"]
+  tags: ["Dedicated Resource", "Managed Function", "Project Support", "BOT Transition"]
 };

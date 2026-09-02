@@ -22,9 +22,9 @@ export function Services() {
       <Container size="default">
         {/* Section Heading */}
         <SectionHeading
-          eyebrow="Capabilities & Solutions"
+          eyebrow="Delivery Capabilities & Solutions"
           title="Our Services"
-          description="Integrated corporate advisory, assurance, tax, and private wealth capabilities engineered for ambitious mid-market companies and private wealth."
+          description="Disciplined accounting, SMSF, audit, financial services, legal operations, and business administrative capabilities engineered for Australian businesses and practices."
           align="split"
           action={
             <Button
@@ -33,7 +33,7 @@ export function Services() {
               size="sm"
               iconRight={<ArrowRight className="w-4 h-4" />}
             >
-              Request advisory consultation
+              Discuss what to move offshore
             </Button>
           }
         />
@@ -163,7 +163,7 @@ export function Services() {
 
             <div className="pt-4 flex items-center gap-6">
               <ArrowLink href="#contact" variant="blue" size="md">
-                Consult with our {activeService.title} partners
+                Discuss your {activeService.title} requirements
               </ArrowLink>
             </div>
               </motion.div>
@@ -195,7 +195,7 @@ export function Services() {
               </AnimatePresence>
               <div className="absolute bottom-4 left-4 right-4 text-white">
                 <div className="text-xs font-semibold text-[#00a3e0] uppercase tracking-wider">
-                  Specialist Advisory Practice
+                  Offshore Delivery Practice
                 </div>
                 <div className="text-base font-bold">
                   NICS {activeService.title}
