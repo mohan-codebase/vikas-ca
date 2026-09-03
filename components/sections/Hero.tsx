@@ -6,7 +6,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#f8fafc] text-[#0b1524]">
+    <section id="home" className="relative isolate overflow-hidden bg-[#f8fafc] text-[#0b1524]">
       <div className="absolute inset-0 hero-mesh pointer-events-none opacity-70" />
 
       <div className="absolute inset-y-0 right-0 hidden w-[54%] lg:block">

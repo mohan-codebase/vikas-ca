@@ -24,6 +24,10 @@ export interface NavItem {
 
 export const defaultNavItems: NavItem[] = [
   {
+    label: "Home",
+    href: "#home",
+  },
+  {
     label: "Why Outsourcing",
     href: "#culture",
     heroTag: "Operational Value",
