@@ -66,7 +66,7 @@ export function MegaMenu({ item, onClose }: MegaMenuProps) {
                       src={item.featured.image}
                       alt={item.featured.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     <div className="absolute bottom-2 left-3">

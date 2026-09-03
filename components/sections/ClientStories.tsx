@@ -119,7 +119,7 @@ export function ClientStories() {
                   src={podcastStory.image}
                   alt="Talking Family Business podcast recording studio"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/30" />
                 <div className="absolute top-3 left-3">
@@ -172,7 +172,7 @@ export function ClientStories() {
                   src={peopleQAStory.image}
                   alt="NICS professionals Will and Rémi collaborating"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/30" />
                 <div className="absolute top-3 left-3">

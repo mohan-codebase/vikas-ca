@@ -184,7 +184,7 @@ export function Locations() {
                       src={activeLocation.image}
                       alt={`NICS ${activeLocation.name} office location and skyline`}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="object-cover"
                       sizes="(max-width: 768px) 100vw, 30vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0b1524]/70 via-transparent to-transparent" />

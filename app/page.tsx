@@ -16,6 +16,7 @@ import { Insights } from "@/components/sections/Insights";
 import { LatestNews } from "@/components/sections/LatestNews";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Footer } from "@/components/sections/Footer";
+import { FloatingActions } from "@/components/ui/FloatingActions";
 
 export default function HomePage() {
   const [preloaderDone, setPreloaderDone] = useState(false);
@@ -115,6 +116,8 @@ export default function HomePage() {
 
               {/* Floating footer */}
               <Footer />
+
+              <FloatingActions />
             </ScrollReveal>
           </motion.div>
         )}
