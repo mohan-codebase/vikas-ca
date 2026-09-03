@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Logo } from "@/components/ui/Logo";
 
 const LOAD_STEPS = [
-  { label: "Initialising systems…", pct: 12 },
-  { label: "Loading practice data…", pct: 30 },
-  { label: "Calibrating insights…", pct: 54 },
-  { label: "Connecting global network…", pct: 75 },
-  { label: "Preparing your experience…", pct: 91 },
-  { label: "Almost ready…", pct: 99 },
+  { pct: 12 },
+  { pct: 30 },
+  { pct: 54 },
+  { pct: 75 },
+  { pct: 91 },
+  { pct: 99 },
 ];
 
 interface PreloaderProps {
@@ -19,7 +19,6 @@ interface PreloaderProps {
 
 export function Preloader({ onComplete }: PreloaderProps) {
   const [progress, setProgress] = useState(0);
-  const [stepIndex, setStepIndex] = useState(0);
   const [done, setDone] = useState(false);
 
   useEffect(() => {
@@ -36,15 +35,12 @@ export function Preloader({ onComplete }: PreloaderProps) {
       }
       const { pct } = LOAD_STEPS[step];
       setProgress(pct);
-      setStepIndex(step);
       step++;
       setTimeout(advance, step === 1 ? 220 : step === LOAD_STEPS.length ? 150 : 280);
     };
     const id = setTimeout(advance, 150);
     return () => clearTimeout(id);
   }, [onComplete]);
-
-  const displayCounter = Math.min(Math.round(progress), 100);
 
   return (
     <AnimatePresence>
@@ -195,39 +191,11 @@ export function Preloader({ onComplete }: PreloaderProps) {
               </motion.div>
             </div>
 
-            {/* Counter */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="flex flex-col items-center gap-2"
-            >
-              <div className="preloader__counter">
-                {String(displayCounter).padStart(2, "0")}
-                <span className="text-[#0056b3]">%</span>
-              </div>
-
-              <motion.div
-                key={stepIndex}
-                initial={{ opacity: 0, y: 4 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                className="preloader__label"
-              >
-                {LOAD_STEPS[Math.min(stepIndex, LOAD_STEPS.length - 1)]?.label}
-              </motion.div>
-            </motion.div>
-
           </div>
 
           {/* Progress bar at bottom */}
           <div className="preloader__bar" style={{ width: `${progress}%` }} />
 
-          {/* Bottom status bar */}
-          <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between text-[10px] text-stone-500 uppercase tracking-widest font-medium">
-            <span>NICS International Network — 157 Countries</span>
-            <span>Client Choice Awards 2026 — #1 Accounting Firm</span>
-          </div>
         </motion.div>
       )}
     </AnimatePresence>
