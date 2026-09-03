@@ -140,6 +140,66 @@ body {
   z-index: 0;
 }
 
+/* ─── Premium Desktop Cursor ─────────────────────────────────── */
+.premium-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.premium-cursor[data-visible="true"] {
+  opacity: 1;
+}
+
+.premium-cursor__ring,
+.premium-cursor__dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.premium-cursor__ring {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 86, 179, 0.55);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 18px rgba(0, 86, 179, 0.12);
+}
+
+.premium-cursor__dot {
+  width: 5px;
+  height: 5px;
+  background: #0056b3;
+}
+
+.premium-cursor[data-interactive="true"] .premium-cursor__ring {
+  width: 42px;
+  height: 42px;
+  border-color: rgba(0, 86, 179, 0.8);
+  background: rgba(0, 86, 179, 0.08);
+}
+
+.premium-cursor[data-interactive="true"] .premium-cursor__dot {
+  width: 7px;
+  height: 7px;
+  background: #0099db;
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .premium-cursor {
+    display: none;
+  }
+}
+
 /* ─── Noise Texture Overlay ──────────────────────────────────── */
 .noise-overlay {
   position: absolute;
@@ -291,9 +351,10 @@ body {
 /* Scroll reveal (JS-driven) */
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(36px);
+  will-change: opacity, transform;
+  transition: opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+              transform 0.95s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
 }
 .reveal.in-view {
   opacity: 1;
@@ -302,9 +363,10 @@ body {
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-24px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-32px);
+  will-change: opacity, transform;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
 }
 .reveal-left.in-view {
   opacity: 1;
@@ -313,9 +375,10 @@ body {
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(24px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(32px);
+  will-change: opacity, transform;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
 }
 .reveal-right.in-view {
   opacity: 1;
@@ -325,8 +388,9 @@ body {
 .reveal-scale {
   opacity: 0;
   transform: scale(0.95);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
 }
 .reveal-scale.in-view {
   opacity: 1;
@@ -339,6 +403,18 @@ body {
   transform: translateY(20px);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
+  .stagger-children > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 .stagger-children.in-view > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0s; }
 .stagger-children.in-view > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.1s; }

@@ -44,7 +44,7 @@ export const footerColumns: FooterColumn[] = [
       { title: "Chennai (HQ Delivery Centre)", href: "#locations" },
       { title: "Sydney (Australian Client Relations)", href: "#locations" },
       { title: "Marlton, NJ (USA Office)", href: "#locations" },
-      { title: "Discuss What to Move Offshore", href: "#contact" },
+      { title: "Discuss What to Move Offshore", href: "/contact" },
     ],
   },
 ];

@@ -17,6 +17,7 @@ import { LatestNews } from "@/components/sections/LatestNews";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Footer } from "@/components/sections/Footer";
 import { FloatingActions } from "@/components/ui/FloatingActions";
+import { PremiumCursor } from "@/components/ui/PremiumCursor";
 
 export default function HomePage() {
   const [preloaderDone, setPreloaderDone] = useState(false);
@@ -48,6 +49,7 @@ export default function HomePage() {
           top: cursorPos.y,
         }}
       />
+      <PremiumCursor />
 
       {/* ── Main site content ───────────────────────── */}
       <AnimatePresence>

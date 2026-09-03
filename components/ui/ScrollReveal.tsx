@@ -28,7 +28,10 @@ export function ScrollReveal({ children }: { children: React.ReactNode }) {
       }
     );
 
-    targets.forEach((t) => observer.observe(t));
+    targets.forEach((target, index) => {
+      target.style.setProperty("--reveal-delay", `${(index % 3) * 80}ms`);
+      observer.observe(target);
+    });
     return () => observer.disconnect();
   }, []);
 

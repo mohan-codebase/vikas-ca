@@ -18,8 +18,8 @@ export function Nav({
   items = defaultNavItems,
   brandName = "NICS",
   brandSub,
-  ctaLabel = "Contact Us",
-  ctaHref = "#contact",
+  ctaLabel = "Contact",
+  ctaHref = "/contact",
 }: NavProps) {
   const [scrollStage, setScrollStage] = useState<0 | 1 | 2>(0);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -54,7 +54,7 @@ export function Nav({
       <header className={styles.headerWrapper}>
         <div className={containerClass}>
           <nav className={styles.navInner} aria-label="Primary">
-            <Link href="#home" className={styles.brand} onClick={closeMobileMenu}>
+            <Link href="/" className={styles.brand} onClick={closeMobileMenu}>
               <Logo className={styles.brandLogo} alt={brandName} priority />
               {brandSub && <span className={styles.brandSub}>{brandSub}</span>}
             </Link>
