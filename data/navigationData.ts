@@ -68,7 +68,7 @@ export const navigationData: MegaMenuItem[] = [
       description: "Workpapers, tax returns, SMSF, audit, and management reporting.",
       linkText: "Explore Services",
       href: "#services",
-      image: "/images/svg-team.svg",
+      image: "/images/team.avif",
     },
     columns: [
       {

@@ -44,7 +44,7 @@ export const servicesData: ServiceCategory[] = [
       { name: "Management Reporting", description: "Monthly management packs, P&L, balance sheet, cash flow, KPIs, and budget vs actual analysis." },
       { name: "Budgeting & Forecasting", description: "Financial models, budgets, cash-flow forecasts, scenario analysis and ongoing reporting." }
     ],
-    image: "/images/svg-accounting-new.svg",
+    image: "/images/accounting.avif",
     featuredCaseStudy: {
       client: "Australian Commercial Enterprise",
       outcome: "Optimised end-to-end accounts payable and monthly management reporting with structured workflows."
@@ -69,7 +69,7 @@ export const servicesData: ServiceCategory[] = [
       { name: "Account Reconciliations", description: "Comprehensive balance sheet and ledger reconciliations for client accounts." },
       { name: "Year-End Accounting Support", description: "End-of-financial-year processing, adjusting entries, and compliance finalisation." }
     ],
-    image: "/images/svg-security.svg",
+    image: "/images/support.avif",
     featuredCaseStudy: {
       client: "Mid-Tier Accounting Practice",
       outcome: "Strengthened compliance delivery capacity during peak tax season while Australian partners retained review and sign-off."
@@ -94,7 +94,7 @@ export const servicesData: ServiceCategory[] = [
       { name: "Evidence & Sampling Support", description: "Evidence organisation, data analysis, and testing sampling support." },
       { name: "Audit File Administration", description: "Audit workpaper preparation and internal control documentation." }
     ],
-    image: "/images/svg-mortgage.svg",
+    image: "/images/audit.avif",
     featuredCaseStudy: {
       client: "Specialist SMSF & Audit Firm",
       outcome: "Streamlined SMSF back-office documentation and seasonal audit file preparation across 300+ engagements."
@@ -119,7 +119,7 @@ export const servicesData: ServiceCategory[] = [
       { name: "Serviceability Calculations", description: "Serviceability worksheets, lender policy checking, and document preparation." },
       { name: "Portal & Settlement Admin", description: "Lender portal administration, application tracking, and settlement administration." }
     ],
-    image: "/images/svg-team.svg",
+    image: "/images/team.avif",
     featuredCaseStudy: {
       client: "National Wealth & Broking Group",
       outcome: "Reduced administrative turnaround on SOAs and mortgage application files by 50%."
@@ -144,7 +144,7 @@ export const servicesData: ServiceCategory[] = [
       { name: "Data Services", description: "Data entry, validation, data cleansing, database maintenance, and data reconciliation." },
       { name: "KYC & Virtual Support", description: "Customer verification checking, KYC status tracking, calendar management, and travel admin." }
     ],
-    image: "/images/svg-global.svg",
+    image: "/images/global-office.avif",
     featuredCaseStudy: {
       client: "Multi-Disciplinary Professional Firm",
       outcome: "Centralised CRM maintenance, KYC document verification, and contract registers into a managed offshore function."

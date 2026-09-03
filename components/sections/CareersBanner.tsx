@@ -111,7 +111,7 @@ export function CareersBanner() {
             >
               <div className="relative aspect-[4/3] sm:aspect-[1/1] rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
                 <Image
-                  src="/images/svg-accounting.svg"
+                  src="/images/quality.avif"
                   alt="NICS Australian standard offshore delivery processes"
                   fill
                   className="object-cover"

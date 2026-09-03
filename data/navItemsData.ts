@@ -54,7 +54,7 @@ export const defaultNavItems: NavItem[] = [
       "There is no standard outsourcing package at NICS. We structure our delivery model around your specific requirements.",
     heroLinkText: "What You Keep vs What We Manage",
     heroLinkHref: "#stories",
-    heroImage: "/images/svg-team.svg",
+    heroImage: "/images/team.avif",
     columns: [
       {
         title: "Engagement Structures",
@@ -76,7 +76,7 @@ export const defaultNavItems: NavItem[] = [
       "Disciplined accounting, SMSF, audit, financial services, legal and operations support designed for Australian businesses.",
     heroLinkText: "Explore All Capabilities",
     heroLinkHref: "#services",
-    heroImage: "/images/svg-mortgage.svg",
+    heroImage: "/images/audit.avif",
     columns: [
       {
         title: "Core Service Lines",
@@ -121,7 +121,7 @@ export const defaultNavItems: NavItem[] = [
       "You do not need to choose between growth and control. Retain your Australian leadership while building additional capacity.",
     heroLinkText: "Discuss What to Move Offshore",
     heroLinkHref: "#contact",
-    heroImage: "/images/svg-team.svg",
+    heroImage: "/images/team.avif",
     columns: [
       {
         title: "Offices & Inquiry",
