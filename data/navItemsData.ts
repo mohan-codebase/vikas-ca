@@ -23,9 +23,11 @@ export interface NavItem {
 }
 
 export const defaultNavItems: NavItem[] = [
-  { label: "Accounting", href: "/#services" },
-  { label: "Compliance", href: "/#services" },
+  { label: "Home", href: "/" },
+  { label: "Accounting", href: "/accounting" },
+  { label: "Compliance", href: "/compliance" },
   { label: "Legal", href: "/legal" },
   { label: "Operational", href: "/operational" },
   { label: "Administrative", href: "/administrative" },
+  { label: "Blog", href: "/blogs" },
 ];

@@ -4,13 +4,13 @@ import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle2,
-  FileSpreadsheet,
-  FileText,
-  Headset,
-  Keyboard,
-  Layers,
-  Mic,
-  Briefcase,
+  BookOpen,
+  Boxes,
+  ReceiptText,
+  HandCoins,
+  BarChart3,
+  PieChart,
+  Home,
   Building2,
   TrendingUp,
   Users,
@@ -27,110 +27,110 @@ import { Container } from "@/components/ui/Container";
 import { servicesData } from "@/data/servicesData";
 
 export const metadata: Metadata = {
-  title: "Administrative Services We Provide | NICS",
+  title: "Accounting Services We Provide | NICS",
   description:
-    "Find out the administrative services we provide and the outsourcing models of NICS. Virtual Assistant, Data Entry, Back Office Admin, SOA Preparation, Transcription, and Mortgage Broking.",
+    "Find out the accounting services we provide at NICS — Bookkeeping, Inventory Management, Accounts Payable (P2P), Accounts Receivable (O2C), Management Reporting, Financial Planning support, and Mortgage Brokering.",
 };
 
-const service = servicesData.find((item) => item.id === "business-operations")!;
+const service = servicesData.find((item) => item.id === "accounting-finance")!;
 
-const administrativeServices = [
+const accountingServices = [
   {
-    id: "virtual-assistant",
-    name: "Virtual Assistant",
-    tag: "Productivity & ROI",
-    icon: Headset,
+    id: "bookkeeping",
+    name: "Bookkeeping",
+    tag: "Reliable & Current",
+    icon: BookOpen,
     description:
-      "Eliminate mundane, repetitive and fatigue-causing tasks from your working week. Grow your business, focus on your ROI while we clear the clutter and streamline disorganized and uncategorized tasks.",
+      "Using industry-leading software and best practices, receive reliable recording of transactions that keeps you one step ahead.",
     points: [
-      "Inbox management and email triaging",
-      "Calendar scheduling and diary coordination",
-      "Task prioritization and routine administrative tracking",
-      "Workflow decluttering to focus on high-value business growth",
+      "Daily and periodic transaction recording",
+      "Bank, credit card, and clearing account reconciliations",
+      "Chart of accounts setup and ongoing maintenance",
+      "Cloud ledger management in your preferred software",
     ],
   },
   {
-    id: "data-entry-services",
-    name: "Data Entry Services",
-    tag: "High Precision & Tech",
-    icon: Keyboard,
+    id: "inventory-management",
+    name: "Inventory Management",
+    tag: "Stores & Stock Flow",
+    icon: Boxes,
     description:
-      "Accurate and high-quality data entry services for manual digitization of records by incorporating best-in-class technology.",
+      "From traditional stores to online portals, maintaining stores ledger, supervising the flow of goods from manufacturers to warehouses and from these facilities to point of sale.",
     points: [
-      "Manual and automated record digitization",
-      "Structured data cleansing and formatting",
-      "Database maintenance and system updates",
-      "Multi-point quality checks ensuring maximum accuracy",
+      "Stores ledger maintenance and stock movement tracking",
+      "Goods flow oversight from manufacturer to point of sale",
+      "Online portal and marketplace inventory reconciliation",
+      "Stock valuation, variance analysis, and write-off support",
     ],
   },
   {
-    id: "back-office-administration",
-    name: "Back Office Administration",
-    tag: "Operational Backbone",
-    icon: FileSpreadsheet,
+    id: "accounts-payable",
+    name: "Accounts Payable – Procure to Pay",
+    tag: "P2P Cycle",
+    icon: ReceiptText,
     description:
-      "Suite of back office administrative services like data management, billing and invoicing, transaction processing, management services and all kinds of back office administration services.",
+      "The P2P service covers the complete cycle from vendor master maintenance through procurement and vendor invoice processing to the resulting payment processing to external vendors and the period closing activities.",
     points: [
-      "Billing, invoicing, and debtor reconciliation",
-      "Transaction processing and ledger updates",
-      "Document indexing and central repository management",
-      "Recurring administrative reports and audit logs",
+      "Vendor master data creation and maintenance",
+      "Purchase order matching and invoice processing",
+      "Payment run preparation and remittance handling",
+      "Vendor statement reconciliation and period close activities",
     ],
   },
   {
-    id: "soa-preparation",
-    name: "Statement of Advice Preparation",
-    tag: "Financial Planning Support",
-    icon: FileText,
+    id: "accounts-receivable",
+    name: "Accounts Receivable – Order to Cash",
+    tag: "O2C Cycle",
+    icon: HandCoins,
     description:
-      "Backend support services for paraplanners or independent financial advisors. It encompasses, Pre-SOA, Statement of Advice and Post SOA.",
+      "Streamline the defining aspect of your business – the OTC process – so that you can serve customers faster and more effectively, minimize errors and delays.",
     points: [
-      "Pre-SOA client fact-finding and file collation",
-      "Research compilation and draft SOA document preparation",
-      "Product comparison data and compliance file setup",
-      "Post-SOA administrative execution and platform paperwork",
+      "Customer master setup and sales order processing",
+      "Invoice generation, delivery, and dispute tracking",
+      "Receipt allocation and cash application",
+      "Debtor ageing analysis and collections follow-up",
     ],
   },
   {
-    id: "virtual-assistant-support",
-    name: "Virtual Assistant Support",
-    tag: "Executive & Daily Admin",
-    icon: Briefcase,
+    id: "management-reporting",
+    name: "Management Reporting",
+    tag: "Business Intelligence",
+    icon: BarChart3,
     description:
-      "Manage your routine administrative tasks including booking flights and meetings, taking notes and documenting follow up actions and sending business correspondence.",
+      "Management reporting is vital to take decisions that will affect your business in many ways. Advantage from the expertise of accurate business intelligence that will enable you to make better-informed decisions.",
     points: [
-      "Flight, hotel, and itinerary coordination",
-      "Meeting setup, agenda preparation, and client coordination",
-      "Detailed meeting minutes and follow-up action tracking",
-      "Drafting and sending professional business correspondence",
+      "Monthly management accounts and reporting packs",
+      "Budget versus actual and variance commentary",
+      "Cash flow forecasting and KPI dashboards",
+      "Custom board and stakeholder reporting formats",
     ],
   },
   {
-    id: "transcription-services",
-    name: "Transcription Services",
-    tag: "Secure & Scheduled",
-    icon: Mic,
+    id: "financial-planning",
+    name: "Financial Planning",
+    tag: "Paraplanning & VA Support",
+    icon: PieChart,
     description:
-      "Rely on a secure, streamlined workflow and a team of highly trained experts, who create a client-specific delivery plan, vet and review the data and follow through until satisfied delivery. Be it any project specifications, including specialized formatting and recurring delivery schedules (daily, weekly, monthly, or even yearly), you can be confident on the accuracy and timeliness of delivery.",
+      "As an outsourcing solution provider NICS can equip financial planning firms with top-tier operational and administrative capabilities through paraplanners and virtual assistants. Gear your firm up with higher capacity through comprehensive outsourcing solutions, backed by a robust IT and ISO 27001 security framework.",
     points: [
-      "Secure audio, video, and dictation transcription",
-      "Client-specific delivery plans with specialized formatting",
-      "Multi-tiered review process for accuracy and completeness",
-      "Flexible turnaround schedules (daily, weekly, monthly, or yearly)",
+      "Dedicated paraplanning and advice document support",
+      "Virtual assistant capacity for client administration",
+      "Higher firm capacity without permanent headcount",
+      "ISO 27001 aligned security framework for client data",
     ],
   },
   {
-    id: "mortgage-broking",
-    name: "Mortgage Broking",
-    tag: "Lending & Loan Processing",
-    icon: Layers,
+    id: "mortgage-brokering",
+    name: "Mortgage Brokering",
+    tag: "Loan Processing",
+    icon: Home,
     description:
       "Loan Processing Service includes fact checks, and preparation of serviceability calculators, discharge forms and processing, compliance documents, lender’s application online or on lender’s software, etc.",
     points: [
       "Fact checks and borrower documentation verification",
-      "Serviceability calculators and lender policy reviews",
-      "Discharge forms preparation and tracking",
-      "Data entry into aggregator CRM and lender portal submissions",
+      "Serviceability calculator preparation",
+      "Discharge forms and compliance document processing",
+      "Lender application lodgement online or in lender software",
     ],
   },
 ];
@@ -140,33 +140,33 @@ const industrySolutions = [
     title: "Accounting Industry",
     icon: Building2,
     description:
-      "Empower your accounting practice by offloading client document chasing, workpaper digitisation, CRM updates, and admin tasks so your team can focus on client advisory.",
+      "Keep up with ATO obligations and tight deadlines without stretching margins — dedicated preparers handle the ledger work behind your client service.",
     benefits: [
-      "Client onboarding pack coordination",
-      "Permanent audit file indexing and maintenance",
-      "Practice management software data reconciliation",
+      "Bookkeeping and reconciliation capacity through peak periods",
+      "Standardised workpapers ready for partner review",
+      "Practice management and cloud ledger data upkeep",
     ],
   },
   {
     title: "Business Enterprises",
     icon: TrendingUp,
     description:
-      "Optimize enterprise back-office workflows, transaction entries, vendor billing, and executive scheduling with seamless virtual assistant support.",
+      "Run complete P2P and O2C cycles, inventory ledgers, and monthly reporting packs with a trained offshore finance team embedded in your systems.",
     benefits: [
-      "End-to-end billing and invoicing cycles",
-      "Executive calendar and travel logistics",
-      "Cross-departmental database cleansing and indexing",
+      "End-to-end payables and receivables processing",
+      "Inventory and stores ledger control",
+      "Monthly management reporting and cash flow forecasting",
     ],
   },
   {
-    title: "Financial Advisors",
+    title: "Financial Planning & Mortgage Brokers",
     icon: Users,
     description:
-      "Provide paraplanners and independent financial advisers with dedicated pre-SOA data gathering, compliant draft preparation, and post-advice implementation.",
+      "Add paraplanning, virtual assistant, and loan processing capacity so advisers and brokers spend their time with clients rather than paperwork.",
     benefits: [
-      "Comprehensive pre-SOA fact-find collation",
-      "Draft Statement of Advice preparation",
-      "Post-SOA portfolio platform paperwork processing",
+      "Paraplanning and advice document preparation",
+      "Loan fact checks and serviceability calculators",
+      "Lender application lodgement and compliance documents",
     ],
   },
 ];
@@ -177,7 +177,7 @@ const outsourcingModels = [
     title: "Insourcing",
     tag: "Dedicated Extension",
     description:
-      "Dedicated full-time resources working directly inside your systems and workflows, operating seamlessly as an integrated extension of your internal team.",
+      "Dedicated full-time accountants working directly inside your systems and workflows, operating seamlessly as an integrated extension of your internal team.",
     highlights: [
       "100% dedicated to your firm",
       "Works in your software & timezone",
@@ -189,7 +189,7 @@ const outsourcingModels = [
     title: "Insourcing with Manager Support",
     tag: "Managed Governance",
     description:
-      "Dedicated team members backed by experienced operational managers and team leads who ensure quality control, SLA adherence, and ongoing performance coaching.",
+      "Dedicated preparers backed by experienced finance managers and team leads who ensure quality control, SLA adherence, and ongoing technical coaching.",
     highlights: [
       "Dedicated resources + Team Lead oversight",
       "Built-in quality assurance & SOP governance",
@@ -213,7 +213,7 @@ const outsourcingModels = [
     title: "BOT Model",
     tag: "Build · Operate · Transfer",
     description:
-      "We recruit, train, and build your dedicated offshore administrative unit, manage daily operations under stringent SLAs, and transfer complete operational ownership when ready.",
+      "We recruit, train, and build your dedicated offshore finance unit, manage daily operations under stringent SLAs, and transfer complete operational ownership when ready.",
     highlights: [
       "Custom team recruitment and setup",
       "Operational maturity and SLA governance",
@@ -222,7 +222,7 @@ const outsourcingModels = [
   },
 ];
 
-export default function AdministrativePage() {
+export default function AccountingPage() {
   return (
     <div className="min-h-screen bg-white text-[#0b1524]">
       <Header />
@@ -236,13 +236,13 @@ export default function AdministrativePage() {
               <div className="lg:col-span-7">
                 <div className="inline-flex items-center gap-2 rounded-full border border-[#0056b3]/20 bg-[#0056b3]/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#0056b3]">
                   <Sparkles className="size-3.5" />
-                  Administrative Services
+                  Accounting Services
                 </div>
                 <h1 className="mt-6 max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl text-[#0b1524]">
-                  Administrative Services We Provide
+                  Accounting Services We Provide
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                  Your team at NICS can enable you to seize new trends and opportunities by partnering with experts for superior process automation and optimizing all your routine administrative business processes.
+                  It could be challenging to keep up with ATO obligations and other regulatory requirements with constant updates and tight deadlines. Hiring, training and retaining qualified staff can be taxing on your margins when your clients expect more value and a smaller bill. That’s where the team at NICS can help.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -264,15 +264,15 @@ export default function AdministrativePage() {
                 <div className="mt-10 grid grid-cols-3 gap-4 border-t border-stone-200 pt-6">
                   <div>
                     <div className="text-2xl font-bold text-[#0056b3]">7+</div>
-                    <div className="text-xs text-stone-500 font-medium">Core Admin Services</div>
+                    <div className="text-xs text-stone-500 font-medium">Core Accounting Services</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-[#0056b3]">4</div>
                     <div className="text-xs text-stone-500 font-medium">Outsourcing Models</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-[#0056b3]">100%</div>
-                    <div className="text-xs text-stone-500 font-medium">Process Automation</div>
+                    <div className="text-2xl font-bold text-[#0056b3]">ISO 27001</div>
+                    <div className="text-xs text-stone-500 font-medium">Aligned Security Framework</div>
                   </div>
                 </div>
               </div>
@@ -281,7 +281,7 @@ export default function AdministrativePage() {
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-stone-200 shadow-2xl">
                   <Image
                     src={service.image}
-                    alt="Administrative and operations support"
+                    alt="Offshore accounting and finance support"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 42vw"
@@ -290,11 +290,11 @@ export default function AdministrativePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0b1524]/80 via-[#0b1524]/20 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 text-white">
                     <div className="inline-block rounded-md bg-[#0056b3]/80 px-2.5 py-1 text-xs font-bold uppercase tracking-[0.16em] text-[#8bc7ff]">
-                      NICS Operations
+                      NICS Accounting
                     </div>
-                    <div className="mt-2 text-xl font-bold">Superior Process Automation & Admin Optimization</div>
+                    <div className="mt-2 text-xl font-bold">Ledgers, Cycles & Reporting Handled End to End</div>
                     <p className="mt-1 text-xs text-slate-200">
-                      Eliminate routine operational friction with dedicated, trained offshore specialists.
+                      Deadline-driven accounting capacity that protects your margins and your client experience.
                     </p>
                   </div>
                 </div>
@@ -309,15 +309,15 @@ export default function AdministrativePage() {
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#0056b3]">What We Provide</p>
               <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl text-[#0b1524]">
-                Administrative Services
+                Accounting Services
               </h2>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
-                From virtual assistance and precision data entry to specialized paraplanning and loan processing, our team handles routine administration so your onshore talent can focus on high-impact work.
+                From day-to-day bookkeeping and full payables and receivables cycles to management reporting, paraplanning, and loan processing — our accountants keep your obligations on schedule.
               </p>
             </div>
 
             <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {administrativeServices.map((item, index) => {
+              {accountingServices.map((item, index) => {
                 const IconComponent = item.icon;
                 const isFeatured = index === 0;
                 return (
@@ -385,7 +385,7 @@ export default function AdministrativePage() {
                 View Solutions by Industry
               </h2>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
-                Discover how our administrative expertise is configured to address the specific challenges of your sector.
+                Discover how our accounting expertise is configured to address the specific pressures of your sector.
               </p>
             </div>
 
@@ -444,7 +444,7 @@ export default function AdministrativePage() {
                 Outsourcing Models
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-300">
-                Choose the model that fits your operational needs, internal management preferences, and scaling roadmap.
+                Choose the model that fits your reporting calendar, internal review preferences, and scaling roadmap.
               </p>
             </div>
 
@@ -503,7 +503,7 @@ export default function AdministrativePage() {
               Let’s set up a truly customisable model to help you structure and run your process efficiently.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-stone-600">
-              Partner with experienced administrative professionals to clear operational bottlenecks, automate recurring workflows, and elevate overall team productivity.
+              Partner with experienced accountants to meet regulatory deadlines, protect your margins, and give your senior team room for the advisory work clients actually pay for.
             </p>
 
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -531,4 +531,3 @@ export default function AdministrativePage() {
     </div>
   );
 }
-

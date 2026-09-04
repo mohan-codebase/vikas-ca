@@ -4,16 +4,12 @@ import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle2,
-  FileSpreadsheet,
-  FileText,
-  Headset,
-  Keyboard,
-  Layers,
-  Mic,
-  Briefcase,
+  ClipboardCheck,
+  FileCheck2,
+  PiggyBank,
+  Scale,
   Building2,
   TrendingUp,
-  Users,
   ShieldCheck,
   Zap,
   ArrowUpRight,
@@ -27,110 +23,54 @@ import { Container } from "@/components/ui/Container";
 import { servicesData } from "@/data/servicesData";
 
 export const metadata: Metadata = {
-  title: "Administrative Services We Provide | NICS",
+  title: "Compliance Services We Provide | NICS",
   description:
-    "Find out the administrative services we provide and the outsourcing models of NICS. Virtual Assistant, Data Entry, Back Office Admin, SOA Preparation, Transcription, and Mortgage Broking.",
+    "Statutory filings and compliance support from NICS — SMSF compliance, financial statement preparation, GST and VAT returns, individual and company tax returns, and audit back office support.",
 };
 
-const service = servicesData.find((item) => item.id === "business-operations")!;
+const service = servicesData.find((item) => item.id === "smsf-audit")!;
 
-const administrativeServices = [
+const complianceServices = [
   {
-    id: "virtual-assistant",
-    name: "Virtual Assistant",
-    tag: "Productivity & ROI",
-    icon: Headset,
+    id: "smsf-compliance",
+    name: "SMSF Compliance",
+    tag: "Bundled Accounts & Audit",
+    icon: PiggyBank,
     description:
-      "Eliminate mundane, repetitive and fatigue-causing tasks from your working week. Grow your business, focus on your ROI while we clear the clutter and streamline disorganized and uncategorized tasks.",
+      "Comprehensive back-office support for SMSF compliance (year-end financial statements and tax returns) and administration. Our industry-leading SMSF bundled service (accounts and audit) offers a one-stop solution for all your SMSF needs and is a great value addition for your business.",
     points: [
-      "Inbox management and email triaging",
-      "Calendar scheduling and diary coordination",
-      "Task prioritization and routine administrative tracking",
-      "Workflow decluttering to focus on high-value business growth",
+      "Year-end SMSF financial statements and member statements",
+      "SMSF annual return preparation and supporting schedules",
+      "Fund administration, data feeds, and bank reconciliations",
+      "Bundled accounts and audit delivery as a single workflow",
     ],
   },
   {
-    id: "data-entry-services",
-    name: "Data Entry Services",
-    tag: "High Precision & Tech",
-    icon: Keyboard,
+    id: "compliance-processes",
+    name: "Compliance Processes",
+    tag: "Statutory Filings",
+    icon: FileCheck2,
     description:
-      "Accurate and high-quality data entry services for manual digitization of records by incorporating best-in-class technology.",
+      "Statutory filings and compliances encompassing financial statements preparation, GST and VAT returns, individual tax returns, and company tax returns.",
     points: [
-      "Manual and automated record digitization",
-      "Structured data cleansing and formatting",
-      "Database maintenance and system updates",
-      "Multi-point quality checks ensuring maximum accuracy",
+      "Financial statement preparation to applicable standards",
+      "GST and VAT return preparation and reconciliation",
+      "Individual tax return preparation and workpapers",
+      "Company tax returns with supporting compliance schedules",
     ],
   },
   {
-    id: "back-office-administration",
-    name: "Back Office Administration",
-    tag: "Operational Backbone",
-    icon: FileSpreadsheet,
+    id: "audit-back-office-support",
+    name: "Audit Back Office Support",
+    tag: "Assurance & Risk",
+    icon: ClipboardCheck,
     description:
-      "Suite of back office administrative services like data management, billing and invoicing, transaction processing, management services and all kinds of back office administration services.",
+      "Have an expert team of industry experts, accountants and finance professionals undertake your audit support requirements. Be it audit, tax or advisory work, execute any-and-all audit related work from sophisticated accountants who harness newer technologies and industry best practices to ensure a comprehensive support service.",
     points: [
-      "Billing, invoicing, and debtor reconciliation",
-      "Transaction processing and ledger updates",
-      "Document indexing and central repository management",
-      "Recurring administrative reports and audit logs",
-    ],
-  },
-  {
-    id: "soa-preparation",
-    name: "Statement of Advice Preparation",
-    tag: "Financial Planning Support",
-    icon: FileText,
-    description:
-      "Backend support services for paraplanners or independent financial advisors. It encompasses, Pre-SOA, Statement of Advice and Post SOA.",
-    points: [
-      "Pre-SOA client fact-finding and file collation",
-      "Research compilation and draft SOA document preparation",
-      "Product comparison data and compliance file setup",
-      "Post-SOA administrative execution and platform paperwork",
-    ],
-  },
-  {
-    id: "virtual-assistant-support",
-    name: "Virtual Assistant Support",
-    tag: "Executive & Daily Admin",
-    icon: Briefcase,
-    description:
-      "Manage your routine administrative tasks including booking flights and meetings, taking notes and documenting follow up actions and sending business correspondence.",
-    points: [
-      "Flight, hotel, and itinerary coordination",
-      "Meeting setup, agenda preparation, and client coordination",
-      "Detailed meeting minutes and follow-up action tracking",
-      "Drafting and sending professional business correspondence",
-    ],
-  },
-  {
-    id: "transcription-services",
-    name: "Transcription Services",
-    tag: "Secure & Scheduled",
-    icon: Mic,
-    description:
-      "Rely on a secure, streamlined workflow and a team of highly trained experts, who create a client-specific delivery plan, vet and review the data and follow through until satisfied delivery. Be it any project specifications, including specialized formatting and recurring delivery schedules (daily, weekly, monthly, or even yearly), you can be confident on the accuracy and timeliness of delivery.",
-    points: [
-      "Secure audio, video, and dictation transcription",
-      "Client-specific delivery plans with specialized formatting",
-      "Multi-tiered review process for accuracy and completeness",
-      "Flexible turnaround schedules (daily, weekly, monthly, or yearly)",
-    ],
-  },
-  {
-    id: "mortgage-broking",
-    name: "Mortgage Broking",
-    tag: "Lending & Loan Processing",
-    icon: Layers,
-    description:
-      "Loan Processing Service includes fact checks, and preparation of serviceability calculators, discharge forms and processing, compliance documents, lender’s application online or on lender’s software, etc.",
-    points: [
-      "Fact checks and borrower documentation verification",
-      "Serviceability calculators and lender policy reviews",
-      "Discharge forms preparation and tracking",
-      "Data entry into aggregator CRM and lender portal submissions",
+      "Examining financial records and categorizing key focus areas",
+      "Lead schedules, reconciliations, and evidence organisation",
+      "Internal control documentation and testing sampling support",
+      "Closely controlled processes that lift effectiveness and profitability",
     ],
   },
 ];
@@ -140,33 +80,33 @@ const industrySolutions = [
     title: "Accounting Industry",
     icon: Building2,
     description:
-      "Empower your accounting practice by offloading client document chasing, workpaper digitisation, CRM updates, and admin tasks so your team can focus on client advisory.",
+      "Give your practice consistent compliance capacity through peak season — workpapers, financial statements, and returns prepared to your templates and review standards.",
     benefits: [
-      "Client onboarding pack coordination",
-      "Permanent audit file indexing and maintenance",
-      "Practice management software data reconciliation",
+      "Standardised workpapers and lead schedules",
+      "Financial statements and tax return drafts ready for review",
+      "Consistent turnaround across compliance season peaks",
     ],
   },
   {
     title: "Business Enterprises",
     icon: TrendingUp,
     description:
-      "Optimize enterprise back-office workflows, transaction entries, vendor billing, and executive scheduling with seamless virtual assistant support.",
+      "Keep statutory obligations on schedule with dedicated support for indirect tax returns, year-end reporting packs, and audit readiness across entities.",
     benefits: [
-      "End-to-end billing and invoicing cycles",
-      "Executive calendar and travel logistics",
-      "Cross-departmental database cleansing and indexing",
+      "GST and VAT return cycles with reconciliation trails",
+      "Year-end reporting packs and group consolidation support",
+      "Audit-ready documentation maintained through the year",
     ],
   },
   {
-    title: "Financial Advisors",
-    icon: Users,
+    title: "SMSF Specialists",
+    icon: Scale,
     description:
-      "Provide paraplanners and independent financial advisers with dedicated pre-SOA data gathering, compliant draft preparation, and post-advice implementation.",
+      "A one-stop bundled service for SMSF administrators and specialist firms, covering fund accounting through to audit documentation under one delivery workflow.",
     benefits: [
-      "Comprehensive pre-SOA fact-find collation",
-      "Draft Statement of Advice preparation",
-      "Post-SOA portfolio platform paperwork processing",
+      "End-to-end SMSF accounts and annual return preparation",
+      "Bundled accounts and audit as a single engagement",
+      "Fund file administration and permanent document upkeep",
     ],
   },
 ];
@@ -177,7 +117,7 @@ const outsourcingModels = [
     title: "Insourcing",
     tag: "Dedicated Extension",
     description:
-      "Dedicated full-time resources working directly inside your systems and workflows, operating seamlessly as an integrated extension of your internal team.",
+      "Dedicated full-time compliance resources working directly inside your systems and workflows, operating seamlessly as an integrated extension of your internal team.",
     highlights: [
       "100% dedicated to your firm",
       "Works in your software & timezone",
@@ -189,7 +129,7 @@ const outsourcingModels = [
     title: "Insourcing with Manager Support",
     tag: "Managed Governance",
     description:
-      "Dedicated team members backed by experienced operational managers and team leads who ensure quality control, SLA adherence, and ongoing performance coaching.",
+      "Dedicated preparers backed by experienced compliance managers and team leads who ensure quality control, SLA adherence, and ongoing technical coaching.",
     highlights: [
       "Dedicated resources + Team Lead oversight",
       "Built-in quality assurance & SOP governance",
@@ -201,10 +141,10 @@ const outsourcingModels = [
     title: "Job-by-Job",
     tag: "On-Demand & Scalable",
     description:
-      "A flexible, pay-as-you-go delivery model where work is submitted on a per-task or per-file basis, ideal for handling seasonal spikes and overflow work.",
+      "A flexible, pay-as-you-go delivery model where compliance work is submitted per job or per file, ideal for handling lodgement deadlines and overflow work.",
     highlights: [
       "Pay only for work completed",
-      "Ideal for overflow and peak seasons",
+      "Ideal for lodgement peaks and overflow",
       "No long-term staffing commitments",
     ],
   },
@@ -213,7 +153,7 @@ const outsourcingModels = [
     title: "BOT Model",
     tag: "Build · Operate · Transfer",
     description:
-      "We recruit, train, and build your dedicated offshore administrative unit, manage daily operations under stringent SLAs, and transfer complete operational ownership when ready.",
+      "We recruit, train, and build your dedicated offshore compliance unit, manage daily operations under stringent SLAs, and transfer complete operational ownership when ready.",
     highlights: [
       "Custom team recruitment and setup",
       "Operational maturity and SLA governance",
@@ -222,7 +162,7 @@ const outsourcingModels = [
   },
 ];
 
-export default function AdministrativePage() {
+export default function CompliancePage() {
   return (
     <div className="min-h-screen bg-white text-[#0b1524]">
       <Header />
@@ -236,13 +176,13 @@ export default function AdministrativePage() {
               <div className="lg:col-span-7">
                 <div className="inline-flex items-center gap-2 rounded-full border border-[#0056b3]/20 bg-[#0056b3]/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#0056b3]">
                   <Sparkles className="size-3.5" />
-                  Administrative Services
+                  Compliance Services
                 </div>
                 <h1 className="mt-6 max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl text-[#0b1524]">
-                  Administrative Services We Provide
+                  Compliance Services We Provide
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                  Your team at NICS can enable you to seize new trends and opportunities by partnering with experts for superior process automation and optimizing all your routine administrative business processes.
+                  The team at NICS can help with your compliance requirements including statutory filings and compliances encompassing financial statements preparation, GST and VAT returns, individual tax returns, and company tax returns.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -263,8 +203,8 @@ export default function AdministrativePage() {
 
                 <div className="mt-10 grid grid-cols-3 gap-4 border-t border-stone-200 pt-6">
                   <div>
-                    <div className="text-2xl font-bold text-[#0056b3]">7+</div>
-                    <div className="text-xs text-stone-500 font-medium">Core Admin Services</div>
+                    <div className="text-2xl font-bold text-[#0056b3]">3</div>
+                    <div className="text-xs text-stone-500 font-medium">Core Compliance Services</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-[#0056b3]">4</div>
@@ -272,7 +212,7 @@ export default function AdministrativePage() {
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-[#0056b3]">100%</div>
-                    <div className="text-xs text-stone-500 font-medium">Process Automation</div>
+                    <div className="text-xs text-stone-500 font-medium">Review-Ready Files</div>
                   </div>
                 </div>
               </div>
@@ -281,7 +221,7 @@ export default function AdministrativePage() {
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-stone-200 shadow-2xl">
                   <Image
                     src={service.image}
-                    alt="Administrative and operations support"
+                    alt="Compliance and audit back office support"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 42vw"
@@ -290,11 +230,11 @@ export default function AdministrativePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0b1524]/80 via-[#0b1524]/20 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 text-white">
                     <div className="inline-block rounded-md bg-[#0056b3]/80 px-2.5 py-1 text-xs font-bold uppercase tracking-[0.16em] text-[#8bc7ff]">
-                      NICS Operations
+                      NICS Compliance
                     </div>
-                    <div className="mt-2 text-xl font-bold">Superior Process Automation & Admin Optimization</div>
+                    <div className="mt-2 text-xl font-bold">Statutory Filings, SMSF & Audit Support</div>
                     <p className="mt-1 text-xs text-slate-200">
-                      Eliminate routine operational friction with dedicated, trained offshore specialists.
+                      Disciplined documentation behind every lodgement — your team retains review and sign-off.
                     </p>
                   </div>
                 </div>
@@ -309,15 +249,15 @@ export default function AdministrativePage() {
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#0056b3]">What We Provide</p>
               <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl text-[#0b1524]">
-                Administrative Services
+                Compliance Services
               </h2>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
-                From virtual assistance and precision data entry to specialized paraplanning and loan processing, our team handles routine administration so your onshore talent can focus on high-impact work.
+                From SMSF compliance and statutory filings to full audit back office support, our accountants prepare the workpapers, statements, and returns your team reviews and signs off.
               </p>
             </div>
 
             <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {administrativeServices.map((item, index) => {
+              {complianceServices.map((item, index) => {
                 const IconComponent = item.icon;
                 const isFeatured = index === 0;
                 return (
@@ -385,7 +325,7 @@ export default function AdministrativePage() {
                 View Solutions by Industry
               </h2>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
-                Discover how our administrative expertise is configured to address the specific challenges of your sector.
+                Discover how our compliance expertise is configured to address the specific obligations of your sector.
               </p>
             </div>
 
@@ -444,7 +384,7 @@ export default function AdministrativePage() {
                 Outsourcing Models
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-300">
-                Choose the model that fits your operational needs, internal management preferences, and scaling roadmap.
+                Choose the model that fits your compliance calendar, internal review preferences, and scaling roadmap.
               </p>
             </div>
 
@@ -503,7 +443,7 @@ export default function AdministrativePage() {
               Let’s set up a truly customisable model to help you structure and run your process efficiently.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-stone-600">
-              Partner with experienced administrative professionals to clear operational bottlenecks, automate recurring workflows, and elevate overall team productivity.
+              Partner with experienced compliance professionals to keep statutory obligations on schedule, standardise workpapers, and free your senior team for review and advisory work.
             </p>
 
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -518,7 +458,7 @@ export default function AdministrativePage() {
                 href="#services"
                 className="inline-flex items-center gap-2 rounded-xl border border-stone-300 bg-white px-6 py-4 text-sm font-bold text-[#0b1524] shadow-sm transition-all hover:border-[#0056b3]/40 hover:text-[#0056b3] hover:shadow-md"
               >
-                Review All 7 Services
+                Review All 3 Services
               </a>
             </div>
           </Container>
@@ -531,4 +471,3 @@ export default function AdministrativePage() {
     </div>
   );
 }
-

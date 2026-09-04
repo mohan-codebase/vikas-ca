@@ -31,6 +31,12 @@ export const footerColumns: FooterColumn[] = [
   {
     heading: "Standards & Why NICS",
     links: [
+      { title: "Who We Are", href: "/who-we-are" },
+      { title: "Build Your Team", href: "/build-your-team" },
+      { title: "Blogs & PR", href: "/blogs" },
+      { title: "Why Outsourcing", href: "/why-outsourcing" },
+      { title: "How It Works", href: "/how-it-works" },
+      { title: "Discover More (FAQs)", href: "/discover-more" },
       { title: "Flexible Capacity", href: "#culture" },
       { title: "Professional Capability", href: "#culture" },
       { title: "ISO/IEC 27001 Information Security", href: "#insights" },
@@ -50,7 +56,7 @@ export const footerColumns: FooterColumn[] = [
 ];
 
 export const legalLinks = [
-  { title: "Privacy Policy", href: "#privacy" },
+  { title: "Privacy Policy", href: "/privacy-policy" },
   { title: "Terms of Engagement", href: "#terms" },
   { title: "Information Security", href: "#insights" },
   { title: "Australian Standards & Compliance", href: "#careers-banner" },
